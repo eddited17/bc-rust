@@ -1,0 +1,47 @@
+# Build and run the workspace tests that do not need vendor/ or data/ (neither is in git: vendor/ holds
+# Microsoft's BCApps sources, data/ local evidence and secrets). The AL test suite (al-test) and the ratchet
+# (tools/ratchet) need vendor/ and run on the development host, not here.
+# Skipped because they read vendor/bcapps: bc-nst's page metadata tests (metadata::tests::) and two RDLC layout
+# tests of al-runtime (tests/p9_rdlc.rs).
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Workspace tests without vendor/
+        run: >
+          cargo test --release --workspace --no-fail-fast --
+          --skip metadata::tests::
+          --skip archived_sales_quote_model
+          --skip tablix_rows_have_one_cell_per_column
+  # Source-policy guard (SOURCES.md, tools/legal/guard.sh). Warn mode: it reports findings and never fails
+  # the build. BCApps is fetched at the commit docs/sources.md pins, as input for the generated names allowlist.
+  sources-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: BCApps at the pinned commit
+        continue-on-error: true
+        run: |
+          pin=$(tools/legal/guard.sh --print-pin)
+          git init -q vendor/bcapps
+          git -C vendor/bcapps fetch -q --depth 1 https://github.com/microsoft/BCApps "$pin"
+          git -C vendor/bcapps checkout -q FETCH_HEAD
+      - name: Guard (warn mode)
+        continue-on-error: true
+        env:
+          BEFORE: ${{ github.event.before }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: tools/legal/guard.sh --range "${BASE:-$BEFORE}..$HEAD_SHA"

@@ -1,0 +1,19 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-tasks
+# area: a26
+# title: TaskScheduler: CanCreateTask, CreateTask, TaskExists, CancelTask
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox container, on-prem, single tenant, no encryption key, user ADMIN, web service session). Probe TASKS of the stream N probe app, run grid2-1128, 2026-11-10.
+# note: outcome ok: result is what the probe printed; outcome error: GetLastErrorCode and GetLastErrorText (line breaks as \n). Keys and values are the probe's own (k repeated n times, etc.).
+# rows: 7
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	outcome	result	error_code	error_text
+CanCreateTask	value	Yes		
+create	ok	{216AB3B2-D31B-4BAF-86D9-F61BA5DB3FD7}		
+exists	ok	Yes		
+cancel	ok	Yes		
+exists after cancel	ok	No		
+cancel again	ok	No		
+exists of new guid	ok	No		

@@ -1,0 +1,155 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-virt-time-zone-all
+# area: a13
+# title: Virtual table Time Zone, all rows
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox, CRONUS International Ltd.), virtual table 2000000164: Time Zone; filter field 0 = ''; 144 rows, 144 listed. Values in XML format (Format(v, 0, 9)); options as ordinals. Probe VIRT-2000000164-0-all (stream N), 2026-11-10.
+# rows: 144
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+No.	ID	Display Name
+1	Dateline Standard Time	(UTC-12:00) International Date Line West
+2	UTC-11	(UTC-11:00) Coordinated Universal Time-11
+3	Aleutian Standard Time	(UTC-10:00) Aleutian Islands
+4	Hawaiian Standard Time	(UTC-10:00) Hawaii
+5	Marquesas Standard Time	(UTC-09:30) Marquesas Islands
+6	Alaskan Standard Time	(UTC-09:00) Alaska
+7	UTC-09	(UTC-09:00) Coordinated Universal Time-09
+8	British Columbia Standard Time	(UTC-07:00) Pacific Time (British Columbia)
+9	Pacific Standard Time (Mexico)	(UTC-08:00) Baja California
+10	UTC-08	(UTC-08:00) Coordinated Universal Time-08
+11	Pacific Standard Time	(UTC-08:00) Pacific Time (US & Canada)
+12	Alberta Standard Time	(UTC-06:00) Mountain Time (Alberta)
+13	US Mountain Standard Time	(UTC-07:00) Arizona
+14	Mountain Standard Time (Mexico)	(UTC-07:00) La Paz, Mazatlan
+15	Mountain Standard Time	(UTC-07:00) Mountain Time (US & Canada)
+16	Yukon Standard Time	(UTC-07:00) Yukon
+17	Manitoba Standard Time	(UTC-05:00) Manitoba
+18	Central America Standard Time	(UTC-06:00) Central America
+19	Central Standard Time	(UTC-06:00) Central Time (US & Canada)
+20	Easter Island Standard Time	(UTC-06:00) Easter Island
+21	Central Standard Time (Mexico)	(UTC-06:00) Guadalajara, Mexico City, Monterrey
+22	Canada Central Standard Time	(UTC-06:00) Saskatchewan
+23	SA Pacific Standard Time	(UTC-05:00) Bogota, Lima, Quito, Rio Branco
+24	Eastern Standard Time (Mexico)	(UTC-05:00) Chetumal
+25	Eastern Standard Time	(UTC-05:00) Eastern Time (US & Canada)
+26	Haiti Standard Time	(UTC-05:00) Haiti
+27	Cuba Standard Time	(UTC-05:00) Havana
+28	US Eastern Standard Time	(UTC-05:00) Indiana (East)
+29	Turks And Caicos Standard Time	(UTC-05:00) Turks and Caicos
+30	Atlantic Standard Time	(UTC-04:00) Atlantic Time (Canada)
+31	Venezuela Standard Time	(UTC-04:00) Caracas
+32	Central Brazilian Standard Time	(UTC-04:00) Cuiaba
+33	SA Western Standard Time	(UTC-04:00) Georgetown, La Paz, Manaus, San Juan
+34	Pacific SA Standard Time	(UTC-04:00) Santiago
+35	Newfoundland Standard Time	(UTC-03:30) Newfoundland
+36	Tocantins Standard Time	(UTC-03:00) Araguaina
+37	Paraguay Standard Time	(UTC-03:00) Asuncion
+38	E. South America Standard Time	(UTC-03:00) Brasilia
+39	SA Eastern Standard Time	(UTC-03:00) Cayenne, Fortaleza
+40	Argentina Standard Time	(UTC-03:00) City of Buenos Aires
+41	Montevideo Standard Time	(UTC-03:00) Montevideo
+42	Magallanes Standard Time	(UTC-03:00) Punta Arenas
+43	Saint Pierre Standard Time	(UTC-03:00) Saint Pierre and Miquelon
+44	Bahia Standard Time	(UTC-03:00) Salvador
+45	UTC-02	(UTC-02:00) Coordinated Universal Time-02
+46	Greenland Standard Time	(UTC-02:00) Greenland
+47	Mid-Atlantic Standard Time	(UTC-02:00) Mid-Atlantic - Old
+48	Azores Standard Time	(UTC-01:00) Azores
+49	Cape Verde Standard Time	(UTC-01:00) Cabo Verde Is.
+50	UTC	(UTC) Coordinated Universal Time
+51	Morocco Standard Time	(UTC+00:00) Casablanca
+52	GMT Standard Time	(UTC+00:00) Dublin, Edinburgh, Lisbon, London
+53	Greenwich Standard Time	(UTC+00:00) Monrovia, Reykjavik
+54	Sao Tome Standard Time	(UTC+00:00) Sao Tome
+55	W. Europe Standard Time	(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna
+56	Central Europe Standard Time	(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague
+57	Romance Standard Time	(UTC+01:00) Brussels, Copenhagen, Madrid, Paris
+58	Central European Standard Time	(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+59	W. Central Africa Standard Time	(UTC+01:00) West Central Africa
+60	GTB Standard Time	(UTC+02:00) Athens, Bucharest
+61	Middle East Standard Time	(UTC+02:00) Beirut
+62	Egypt Standard Time	(UTC+02:00) Cairo
+63	E. Europe Standard Time	(UTC+02:00) Chisinau
+64	West Bank Standard Time	(UTC+02:00) Gaza, Hebron
+65	South Africa Standard Time	(UTC+02:00) Harare, Pretoria
+66	FLE Standard Time	(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius
+67	Israel Standard Time	(UTC+02:00) Jerusalem
+68	South Sudan Standard Time	(UTC+02:00) Juba
+69	Kaliningrad Standard Time	(UTC+02:00) Kaliningrad
+70	Sudan Standard Time	(UTC+02:00) Khartoum
+71	Libya Standard Time	(UTC+02:00) Tripoli
+72	Namibia Standard Time	(UTC+02:00) Windhoek
+73	Jordan Standard Time	(UTC+03:00) Amman
+74	Arabic Standard Time	(UTC+03:00) Baghdad
+75	Syria Standard Time	(UTC+03:00) Damascus
+76	Turkey Standard Time	(UTC+03:00) Istanbul
+77	Arab Standard Time	(UTC+03:00) Kuwait, Riyadh
+78	Belarus Standard Time	(UTC+03:00) Minsk
+79	Russian Standard Time	(UTC+03:00) Moscow, St. Petersburg
+80	E. Africa Standard Time	(UTC+03:00) Nairobi
+81	Volgograd Standard Time	(UTC+03:00) Volgograd
+82	Iran Standard Time	(UTC+03:30) Tehran
+83	Arabian Standard Time	(UTC+04:00) Abu Dhabi, Muscat
+84	Astrakhan Standard Time	(UTC+04:00) Astrakhan, Ulyanovsk
+85	Azerbaijan Standard Time	(UTC+04:00) Baku
+86	Russia Time Zone 3	(UTC+04:00) Izhevsk, Samara
+87	Mauritius Standard Time	(UTC+04:00) Port Louis
+88	Saratov Standard Time	(UTC+04:00) Saratov
+89	Georgian Standard Time	(UTC+04:00) Tbilisi
+90	Caucasus Standard Time	(UTC+04:00) Yerevan
+91	Afghanistan Standard Time	(UTC+04:30) Kabul
+92	West Asia Standard Time	(UTC+05:00) Ashgabat, Tashkent
+93	Qyzylorda Standard Time	(UTC+05:00) Astana
+94	Ekaterinburg Standard Time	(UTC+05:00) Ekaterinburg
+95	Pakistan Standard Time	(UTC+05:00) Islamabad, Karachi
+96	India Standard Time	(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+97	Sri Lanka Standard Time	(UTC+05:30) Sri Jayawardenepura
+98	Nepal Standard Time	(UTC+05:45) Kathmandu
+99	Central Asia Standard Time	(UTC+06:00) Bishkek
+100	Bangladesh Standard Time	(UTC+06:00) Dhaka
+101	Omsk Standard Time	(UTC+06:00) Omsk
+102	Myanmar Standard Time	(UTC+06:30) Yangon (Rangoon)
+103	SE Asia Standard Time	(UTC+07:00) Bangkok, Hanoi, Jakarta
+104	Altai Standard Time	(UTC+07:00) Barnaul, Gorno-Altaysk
+105	W. Mongolia Standard Time	(UTC+07:00) Hovd
+106	North Asia Standard Time	(UTC+07:00) Krasnoyarsk
+107	N. Central Asia Standard Time	(UTC+07:00) Novosibirsk
+108	Tomsk Standard Time	(UTC+07:00) Tomsk
+109	China Standard Time	(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi
+110	North Asia East Standard Time	(UTC+08:00) Irkutsk
+111	Singapore Standard Time	(UTC+08:00) Kuala Lumpur, Singapore
+112	W. Australia Standard Time	(UTC+08:00) Perth
+113	Taipei Standard Time	(UTC+08:00) Taipei
+114	Ulaanbaatar Standard Time	(UTC+08:00) Ulaanbaatar
+115	Aus Central W. Standard Time	(UTC+08:45) Eucla
+116	Transbaikal Standard Time	(UTC+09:00) Chita
+117	Tokyo Standard Time	(UTC+09:00) Osaka, Sapporo, Tokyo
+118	North Korea Standard Time	(UTC+09:00) Pyongyang
+119	Korea Standard Time	(UTC+09:00) Seoul
+120	Yakutsk Standard Time	(UTC+09:00) Yakutsk
+121	Cen. Australia Standard Time	(UTC+09:30) Adelaide
+122	AUS Central Standard Time	(UTC+09:30) Darwin
+123	E. Australia Standard Time	(UTC+10:00) Brisbane
+124	AUS Eastern Standard Time	(UTC+10:00) Canberra, Melbourne, Sydney
+125	West Pacific Standard Time	(UTC+10:00) Guam, Port Moresby
+126	Tasmania Standard Time	(UTC+10:00) Hobart
+127	Vladivostok Standard Time	(UTC+10:00) Vladivostok
+128	Lord Howe Standard Time	(UTC+10:30) Lord Howe Island
+129	Bougainville Standard Time	(UTC+11:00) Bougainville Island
+130	Russia Time Zone 10	(UTC+11:00) Chokurdakh
+131	Magadan Standard Time	(UTC+11:00) Magadan
+132	Norfolk Standard Time	(UTC+11:00) Norfolk Island
+133	Sakhalin Standard Time	(UTC+11:00) Sakhalin
+134	Central Pacific Standard Time	(UTC+11:00) Solomon Is., New Caledonia
+135	Russia Time Zone 11	(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky
+136	New Zealand Standard Time	(UTC+12:00) Auckland, Wellington
+137	UTC+12	(UTC+12:00) Coordinated Universal Time+12
+138	Fiji Standard Time	(UTC+12:00) Fiji
+139	Kamchatka Standard Time	(UTC+12:00) Petropavlovsk-Kamchatsky - Old
+140	Chatham Islands Standard Time	(UTC+12:45) Chatham Islands
+141	UTC+13	(UTC+13:00) Coordinated Universal Time+13
+142	Tonga Standard Time	(UTC+13:00) Nuku'alofa
+143	Samoa Standard Time	(UTC+13:00) Samoa
+144	Line Islands Standard Time	(UTC+14:00) Kiritimati Island

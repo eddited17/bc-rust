@@ -1,0 +1,20 @@
+[package]
+name = "platform-gen-probe"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+# Standalone on purpose: tools/platform-gen/gen.py builds it with --manifest-path, and the
+# bc-rust workspace stays unchanged.
+[workspace]
+
+[dependencies]
+al-model = { path = "../../../crates/al-model" }
+al-syntax = { path = "../../../crates/al-syntax" }
+anyhow = "1"
+
+[profile.release]
+debug = 1
+lto = "thin"
+codegen-units = 16

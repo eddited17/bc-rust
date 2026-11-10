@@ -1,0 +1,6 @@
+# build outputs of the shims (rebuilt by run.sh --install)
+obj/
+out/
+# PrincipalWindowsShim: dotnet/runtime downloads and the source made from them (fetch-upstream.sh)
+upstream/
+gen/

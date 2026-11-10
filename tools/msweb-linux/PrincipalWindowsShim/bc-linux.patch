@@ -1,0 +1,53 @@
+BC-LINUX changes to System.Security.Principal.Windows for Microsoft's BC web server on Linux.
+
+fetch-upstream.sh applies this patch to gen/System.Security.Principal.Windows.cs, the file
+gen-notsupported.py makes from dotnet/runtime's reference source. Without the patch that file is the
+assembly .NET ships for Linux, where every member throws PlatformNotSupportedException.
+
+The BC web server calls WindowsIdentity.RunImpersonated(SafeAccessTokenHandle.InvalidHandle, ...) around
+file access, at startup and when it serves resources. On Windows an invalid handle means "run as the
+process identity", so calling the delegate directly does the same. The patch changes exactly that:
+
+  * SafeAccessTokenHandle: constructors, InvalidHandle, IsInvalid and ReleaseHandle work. The handle is a
+    plain IntPtr wrapper that closes nothing.
+  * WindowsIdentity.RunImpersonated and RunImpersonatedAsync (4 overloads) check the delegate for null
+    and call it on the current thread. There is no impersonation on Linux.
+
+Everything else still throws, as in the shipped assembly.
+
+--- a/System.Security.Principal.Windows.cs
++++ b/System.Security.Principal.Windows.cs
+@@ -8,11 +8,12 @@
+ {
+     public sealed partial class SafeAccessTokenHandle : System.Runtime.InteropServices.SafeHandle
+     {
+-        public SafeAccessTokenHandle() : base (default(System.IntPtr), default(bool)) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public SafeAccessTokenHandle(System.IntPtr handle) : base (default(System.IntPtr), default(bool)) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public static Microsoft.Win32.SafeHandles.SafeAccessTokenHandle InvalidHandle { get { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); } }
+-        public override bool IsInvalid { get { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); } }
+-        protected override bool ReleaseHandle() { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
++        // BC-LINUX: SafeAccessTokenHandle works, as a plain IntPtr wrapper that closes nothing.
++        public SafeAccessTokenHandle() : base (System.IntPtr.Zero, true) { }
++        public SafeAccessTokenHandle(System.IntPtr handle) : base (System.IntPtr.Zero, true) { SetHandle(handle); }
++        public static Microsoft.Win32.SafeHandles.SafeAccessTokenHandle InvalidHandle { get { return new SafeAccessTokenHandle(System.IntPtr.Zero); } }
++        public override bool IsInvalid { get { return handle == System.IntPtr.Zero || handle == new System.IntPtr(-1); } }
++        protected override bool ReleaseHandle() { return true; }
+     }
+ }
+ namespace System.Security.Principal
+@@ -265,10 +266,11 @@
+         public static System.Security.Principal.WindowsIdentity GetCurrent() { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+         public static System.Security.Principal.WindowsIdentity? GetCurrent(bool ifImpersonating) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+         public static System.Security.Principal.WindowsIdentity GetCurrent(System.Security.Principal.TokenAccessLevels desiredAccess) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public static void RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Action action) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public static System.Threading.Tasks.Task RunImpersonatedAsync(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<System.Threading.Tasks.Task> func) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public static System.Threading.Tasks.Task<T> RunImpersonatedAsync<T>(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<System.Threading.Tasks.Task<T>> func) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+-        public static T RunImpersonated<T>(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<T> func) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
++        // BC-LINUX: there is no impersonation on Linux. Run the delegate on the current thread as the process user.
++        public static void RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Action action) { System.ArgumentNullException.ThrowIfNull(action); action(); }
++        public static System.Threading.Tasks.Task RunImpersonatedAsync(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<System.Threading.Tasks.Task> func) { System.ArgumentNullException.ThrowIfNull(func); return func(); }
++        public static System.Threading.Tasks.Task<T> RunImpersonatedAsync<T>(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<System.Threading.Tasks.Task<T>> func) { System.ArgumentNullException.ThrowIfNull(func); return func(); }
++        public static T RunImpersonated<T>(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, System.Func<T> func) { System.ArgumentNullException.ThrowIfNull(func); return func(); }
+         void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object? sender) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+         void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) { throw new System.PlatformNotSupportedException(System.SR.PlatformNotSupported_Principal); }
+     }

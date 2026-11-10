@@ -1,0 +1,72 @@
+:root { --bar:#1f2b3a; --accent:#4f46e5; --accent2:#4338ca; --bg:#f3f2f1; --card:#fff; --line:#e1dfdd; --text:#201f1e; --muted:#605e5c; --err:#a4262c; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; font-size:14px; color:var(--text); background:var(--bg); }
+a { color: var(--accent2); text-decoration: none; }
+.appbar { display:flex; align-items:center; gap:16px; height:48px; padding:0 16px; background:var(--bar); color:#fff; position:sticky; top:0; z-index:5; }
+.brand { display:flex; align-items:center; gap:10px; color:#fff; font-weight:600; white-space:nowrap; }
+.logo { background:var(--accent); border-radius:4px; padding:2px 6px; font-size:12px; }
+.tellme { flex:1; max-width:520px; position:relative; }
+.tellme input { width:100%; height:30px; border-radius:3px; border:none; padding:0 10px; font-size:14px; }
+.dropdown { position:absolute; top:34px; left:0; right:0; background:#fff; color:var(--text); border:1px solid var(--line); box-shadow:0 6px 18px rgba(0,0,0,.18); max-height:420px; overflow:auto; }
+.dropdown a { display:flex; justify-content:space-between; padding:7px 12px; color:var(--text); }
+.dropdown a:hover, .dropdown a.sel { background:#edebe9; }
+.dropdown small { color:var(--muted); }
+.company { margin-left:auto; font-size:13px; opacity:.9; }
+.hidden { display:none !important; }
+main { padding:20px 28px 60px; }
+h1 { font-size:22px; font-weight:600; margin:0 0 4px; }
+.sub { color:var(--muted); margin-bottom:14px; }
+.groups { display:grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap:18px; }
+.group { background:var(--card); border:1px solid var(--line); border-radius:4px; padding:14px 16px; }
+.group h2 { font-size:15px; margin:0 0 10px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+.tiles { display:flex; flex-wrap:wrap; gap:10px; }
+.tile { width:132px; height:92px; background:var(--accent); color:#fff; border-radius:3px; padding:8px 10px; display:flex; flex-direction:column; justify-content:space-between; }
+.tile:hover { background:var(--accent2); }
+.tile .n { font-size:26px; font-weight:300; }
+.tile .c { font-size:12.5px; line-height:1.2; }
+.toolbar { display:flex; gap:6px; align-items:center; margin:10px 0 12px; flex-wrap:wrap; }
+button { font:inherit; border:1px solid var(--line); background:#fff; border-radius:2px; padding:5px 12px; cursor:pointer; }
+button:hover { background:#f3f2f1; }
+button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+button.primary:hover { background:var(--accent2); }
+button:disabled { opacity:.5; cursor:default; }
+.search { height:30px; border:1px solid var(--line); border-radius:2px; padding:0 8px; min-width:240px; }
+table.grid { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); }
+.grid th { text-align:left; font-weight:600; font-size:12.5px; color:var(--muted); padding:7px 10px; border-bottom:1px solid var(--line); background:#faf9f8; position:sticky; top:48px; white-space:nowrap; }
+.grid td { padding:6px 10px; border-bottom:1px solid #f0efee; white-space:nowrap; max-width:320px; overflow:hidden; text-overflow:ellipsis; }
+.grid tr:hover td { background:#f5f5ff; cursor:pointer; }
+.grid td.num { text-align:right; font-variant-numeric: tabular-nums; }
+.grid tr.sel td { background:#e8e7fc; }
+.fasttab { background:var(--card); border:1px solid var(--line); border-radius:3px; margin-bottom:12px; }
+.fasttab > .hd { display:flex; justify-content:space-between; align-items:center; padding:10px 16px; cursor:pointer; font-weight:600; font-size:15px; }
+.fasttab > .hd .peek { color:var(--muted); font-weight:400; font-size:13px; max-width:60%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.fasttab.closed > .bd { display:none; }
+.fasttab > .bd { padding:4px 16px 14px; }
+.fields { display:grid; grid-template-columns: 1fr 1fr; column-gap:48px; }
+@media (max-width: 900px) { .fields { grid-template-columns: 1fr; } }
+.fld { display:grid; grid-template-columns: 200px 1fr; align-items:center; min-height:34px; border-bottom:1px dotted #edebe9; }
+.fld label { color:var(--muted); font-size:13px; padding-right:8px; }
+.fld input, .fld select { width:100%; height:28px; border:1px solid transparent; border-bottom-color:#c8c6c4; background:transparent; font:inherit; padding:0 4px; }
+.fld input:focus, .fld select:focus { outline:none; border-color:var(--accent); background:#fff; }
+.fld input[readonly] { border-bottom-color:transparent; color:#323130; }
+.fld input[type=checkbox] { width:auto; height:auto; }
+.fld.additional { display:none; }
+.show-more .fld.additional { display:grid; }
+.fld .num { text-align:right; }
+.more { font-size:13px; margin-top:8px; display:inline-block; }
+.part h3 { font-size:15px; margin:8px 0; }
+footer { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--line); font-size:12px; color:var(--muted); padding:4px 16px; display:flex; gap:18px; }
+.dialog { position:fixed; inset:0; background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; z-index:20; }
+.dialog-box { background:#fff; width:min(560px, 92vw); border-radius:4px; box-shadow:0 12px 40px rgba(0,0,0,.3); }
+.dialog-title { padding:16px 20px 4px; font-weight:600; font-size:16px; }
+.dialog-body { padding:8px 20px 16px; white-space:pre-wrap; line-height:1.45; }
+.dialog-actions { padding:10px 20px 16px; display:flex; justify-content:flex-end; }
+.err-title { color:var(--err); }
+.pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:9px; background:#edebe9; color:var(--muted); margin-left:8px; vertical-align:middle; }
+.about { background:#fff; border-left:3px solid var(--accent); padding:8px 12px; margin-bottom:12px; color:#323130; font-size:13px; }
+.grid.edit td { padding:2px 4px; }
+.grid.edit input, .grid.edit select { width:100%; min-width:70px; height:28px; border:1px solid transparent; background:transparent; font:inherit; padding:0 4px; }
+.grid.edit input:focus, .grid.edit select:focus { outline:none; border-color:var(--accent); background:#fff; }
+.grid.edit input.num { text-align:right; }
+.grid.edit tr:hover td { cursor:default; }
+.part .toolbar { margin:4px 0 8px; }

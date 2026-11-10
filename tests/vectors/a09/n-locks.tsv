@@ -1,0 +1,68 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-locks
+# area: a09
+# title: Two-session lock probe: read modes, writes, commits on a shared clock
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: 2801be8b8d80cc3fcedccad104159981c2fbbc1ec9a048ef787e268535db6345 a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e 40821170cff8eea9b3467a7c865edd86af31d2df4d6cc9bfcfbcd414c07c9945
+# runs: locks-g1-1111 (2026-11-10T11:11Z), grid2-1128, grid3-1142
+# note: Two-session lock probe on Business Central 29.1 (stream N). spec = readMode,writeMode,row,readAt,writeAt,commitAt (ms after T0).
+# note: Read modes: 1 Get, 2 FindSet(), 3 FindSet(false), 4 FindSet(true), 5 LockTable+FindSet(), 6 ReadIsolation UpdLock+FindFirst, 7 FindFirst, 8 Find('-'), 9 RecordRef.FindSet(true), 10 LockTable+Get, 12 ReadIsolation ReadCommitted+FindSet(true), 13 ReadIsolation ReadUncommitted+FindSet(true), 14 ReadIsolation RepeatableRead+FindSet(false), 15 ReadIsolation ReadCommitted+FindFirst, 16 ReadIsolation UpdLock+FindSet(false), 17 FindLast, 18 FindSet(true) on all rows.
+# note: Write modes: 0 none, 1 Val += 1 and Modify on the record read, 3 FindSet(true) on the other row (3 - row) and Modify it.
+# note: b_read: wait = B's read returned only after A's commit; nowait = under 100 ms. a_result/b_result: ok or GetLastErrorCode. final_val: Val of row 1 at the end.
+# rows: 54
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	a_spec	b_spec	b_read	b_val	a_result	b_result	final_val	bc_version
+S1-m1	1,1,1,0,1000,1500	1,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m2	2,1,1,0,1000,1500	2,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m3	3,1,1,0,1000,1500	3,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m4	4,1,1,0,1000,1500	4,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m5	5,1,1,0,1000,1500	5,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m6	6,1,1,0,1000,1500	6,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m7	7,1,1,0,1000,1500	7,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m8	8,1,1,0,1000,1500	8,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m9	9,1,1,0,1000,1500	9,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m10	10,1,1,0,1000,1500	10,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m12	12,1,1,0,1000,1500	12,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m13	13,1,1,0,1000,1500	13,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m14	14,1,1,0,1000,1500	14,1,1,500,2500,3000	nowait	0	NDBCS:Deadlock	ok	1	29.1.57326.57497
+S1-m15	15,1,1,0,1000,1500	15,1,1,500,2500,3000	nowait	0	Sql:Sql	ok	1	29.1.57326.57497
+S1-m16	16,1,1,0,1000,1500	16,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m17	17,1,1,0,1000,1500	17,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m18	18,1,1,0,1000,1500	18,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-A4-Br1	4,1,1,0,1000,1500	1,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S1-A4-Br2	4,1,1,0,1000,1500	2,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S1-A4-Br7	4,1,1,0,1000,1500	7,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S1-A4-Br15	4,1,1,0,1000,1500	15,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S1-A4-Br14	4,1,1,0,1000,1500	14,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S1-A4-Br3	4,1,1,0,1000,1500	3,0,1,500,0,3000	nowait	0	ok	ok	1	29.1.57326.57497
+S2-Br1	4,1,1,0,200,2000	1,0,1,1000,0,3000	nowait	1	ok	ok	1	29.1.57326.57497
+S2-Br2	4,1,1,0,200,2000	2,0,1,1000,0,3000	nowait	1	ok	ok	1	29.1.57326.57497
+S2-Br4	4,1,1,0,200,2000	4,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+S2-Br7	4,1,1,0,200,2000	7,0,1,1000,0,3000	nowait	1	ok	ok	1	29.1.57326.57497
+S2-Br12	4,1,1,0,200,2000	12,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+S2-Br13	4,1,1,0,200,2000	13,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+S2-Br14	4,1,1,0,200,2000	14,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+S2-Br15	4,1,1,0,200,2000	15,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+S2-Br6	4,1,1,0,200,2000	6,0,1,1000,0,3000	wait	1	ok	ok	1	29.1.57326.57497
+G-A4-B4	4,0,1,0,0,2000	4,0,2,500,0,2500	nowait	0	ok	ok	0	29.1.57326.57497
+G-A5-B5	5,0,1,0,0,2000	5,0,2,500,0,2500	nowait	0	ok	ok	0	29.1.57326.57497
+G-A6-B6	6,0,1,0,0,2000	6,0,2,500,0,2500	nowait	0	ok	ok	0	29.1.57326.57497
+G-A18-B4	18,0,1,0,0,2000	4,0,2,500,0,2500	wait	0	ok	ok	0	29.1.57326.57497
+G-A4-B18	4,0,1,0,0,2000	18,0,2,500,0,2500	wait	0	ok	ok	0	29.1.57326.57497
+G-A10-B10	10,0,1,0,0,2000	10,0,2,500,0,2500	nowait	0	ok	ok	0	29.1.57326.57497
+T-A4-B4	4,0,1,0,0,25000	4,0,1,500,0,600	error	-	ok	NDBCS:LockTimeout	0	29.1.57326.57497
+T-A4w-B1	4,1,1,0,100,25000	10,0,1,500,0,600	error	-	ok	NDBCS:LockTimeout	1	29.1.57326.57497
+D1	4,3,1,0,1000,3000	4,3,2,200,1000,3000	nowait	0	ok	NDBCS:Deadlock	0	29.1.57326.57497
+D2	4,3,1,0,1000,3000	4,3,2,200,1000,3000	nowait	0	ok	NDBCS:Deadlock	0	29.1.57326.57497
+T2-A4-B4	4,0,1,0,0,40000	4,0,1,500,0,600	error	-	ok	NDBCS:LockTimeout	0	29.1.57326.57497
+T2-A4w-B2	4,1,1,0,100,40000	2,0,1,500,0,600	nowait	1	ok	ok	1	29.1.57326.57497
+T2-A4w-B15	4,1,1,0,100,40000	15,0,1,500,0,600	error	-	ok	NDBCS:LockTimeout	1	29.1.57326.57497
+S1-m4-again	4,1,1,0,1000,1500	4,1,1,500,2500,3000	wait	1	ok	ok	2	29.1.57326.57497
+S1-m3-again	3,1,1,0,1000,1500	3,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m15-r1	15,1,1,0,1000,1500	15,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+S1-m14-r1	14,1,1,0,1000,1500	14,1,1,500,2500,3000	nowait	0	ok	NDBCS:Deadlock	1	29.1.57326.57497
+S1-m15-r2	15,1,1,0,1000,1500	15,1,1,500,2500,3000	nowait	0	Sql:Sql	ok	1	29.1.57326.57497
+S1-m14-r2	14,1,1,0,1000,1500	14,1,1,500,2500,3000	nowait	0	NDBCS:Deadlock	ok	1	29.1.57326.57497
+S1-m1-cap	1,1,1,0,1000,1500	1,1,1,500,2500,3000	nowait	0	ok	DB:RecordChanged	1	29.1.57326.57497
+D1-cap	4,3,1,0,1000,3000	4,3,2,200,1000,3000	nowait	0	NDBCS:Deadlock	ok	1	29.1.57326.57497
+T3-A4-B4-cap	4,0,1,0,0,20000	4,0,1,500,0,600	error	-	ok	NDBCS:LockTimeout	0	29.1.57326.57497

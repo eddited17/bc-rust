@@ -1,0 +1,12 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-virt-report-metadata-1306
+# area: a13
+# title: Virtual table Report Metadata, report 1306
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox, CRONUS International Ltd.), virtual table 2000000139: Report Metadata; filter field 1 = '1306'; 1 rows, 1 listed. Values in XML format (Format(v, 0, 9)); options as ordinals. Probe VIRT-2000000139-1-1306 (stream N), 2026-11-10.
+# rows: 1
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+ID	Name	Caption	UseRequestPage	UseSystemPrinter	EnableExternalImages	EnableHyperLinks	EnableExternalAssemblies	ProcessingOnly	ShowPrintStatus	TransactionType	PaperSourceFirstPage	PaperSourceDefaultPage	PaperSourceLastPage	PreviewMode	DefaultLayout	WordMergeDataItem	FirstDataItemTableID	MaxRows	MaxDocuments	Timeout	AllowScheduling	DefaultLayoutName	FormatRegion	ExcelLayoutMultipleDataSheets	App ID	InherentPermissions	InherentEntitlements	AL Namespace	DefaultHeaderFooterPartName	DefaultThemePartName
+1306	Standard Sales - Invoice	Sales - Invoice	true	false	false	true	false	false	true	0	0	0	0	1	1	Header	112	0	0	P0DT0H0M0.0S	true	StandardSalesInvoice.docx		false	{437DBF0E-84FF-417A-965D-ED2BB9650972}			Microsoft.Sales.History		

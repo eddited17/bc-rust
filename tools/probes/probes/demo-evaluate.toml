@@ -1,0 +1,38 @@
+# Demo grid: Evaluate(Integer, Text) with and without a used return value, valid and invalid input,
+# English and German session language.
+id = "demo-evaluate"
+area = "demo"
+title = "Evaluate(Integer, Text): return value used (if) or not (error)"
+contexts = ["locale=en-US&lang=1033", "locale=de-DE&lang=1031"]
+
+vars = """
+I: Integer;
+"""
+
+body = """
+case mode of
+    'if':
+        if Evaluate(I, t) then
+            Result := 'true ' + Format(I, 0, 9)
+        else
+            Result := 'false ' + Format(I, 0, 9);
+    'plain':
+        begin
+            Evaluate(I, t);
+            Result := Format(I, 0, 9);
+        end;
+end;
+"""
+
+[[dim]]
+name = "mode"
+type = "Text"
+values = ["if", "plain"]
+
+[[dim]]
+name = "t"
+type = "Text"
+values = ["", " ", "0", "1", "-1", "+1", "-0", " 7", "7 ", "1,000", "1.000", "1 000", "1.5", "1,5", "2147483646",
+          "2147483647", "2147483648", "-2147483647", "-2147483648", "-2147483649", "abc", "12a", "0x10", "1e3",
+          "١٢", "１２", "1\t", "1\n"]
+gen = [{ kind = "text_lengths", fill = "9", from = 1, to = 12 }]

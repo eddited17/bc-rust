@@ -1,0 +1,15 @@
+#!/bin/sh
+# Git pre-push hook: only refs/heads/main may be pushed (SOURCES.md). No other branches, tags or
+# mirrors, and main is never deleted. Install: cp tools/legal/pre-push .git/hooks/pre-push
+zero=0000000000000000000000000000000000000000
+status=0
+while read -r local_ref local_sha remote_ref remote_sha; do
+  if [ "$remote_ref" != "refs/heads/main" ]; then
+    echo "pre-push: refusing $local_ref -> $remote_ref: only refs/heads/main is pushed" >&2
+    status=1
+  elif [ "$local_sha" = "$zero" ]; then
+    echo "pre-push: refusing to delete $remote_ref" >&2
+    status=1
+  fi
+done
+exit $status

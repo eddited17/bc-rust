@@ -1,0 +1,581 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-virt-api-webhook-entity-all
+# area: a13
+# title: Virtual table API Webhook Entity, all rows
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox, CRONUS International Ltd.), virtual table 2000000097: API Webhook Entity; filter field 0 = ''; 570 rows, 570 listed. Values in XML format (Format(v, 0, 9)); options as ordinals. Probe VIRT-2000000097-0-all (stream N), 2026-11-10.
+# rows: 570
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+Publisher	Group	Version	Name	Table No.	Table Temporary	Key Fields	OData Key Specified	Object Type	Object ID	Package ID
+		beta	customerSales	18	false	1	false	9	5480	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+		beta	vendorPurchases	23	false	1	false	9	5481	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+		v1.0	accounts	15	false	2000000000	true	8	20014	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	agedAccountsPayable	5499	true	1	false	8	20032	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	agedAccountsReceivable	5499	true	1	false	8	20031	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	attachments	5509	true	8001,8000	true	8	20039	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	balanceSheet	5487	true	1	false	8	20033	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	bankAccounts	270	false	2000000000	true	8	20051	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	cashFlowStatement	5503	true	1	false	8	20026	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	companyInformation	79	false	2000000000	true	8	20011	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	countriesRegions	9	false	2000000000	true	8	20027	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	currencies	4	false	2000000000	true	8	20019	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	customerFinancialDetails	18	false	2000000000	true	8	20048	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	customerPaymentJournals	232	false	2000000000	true	8	20013	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	customerPayments	81	false	2000000000	true	8	20058	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	customers	18	false	2000000000	true	8	20009	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	customerSales	18	false	1	false	9	20000	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	dimensionLines	5489	true	8002,8000	false	8	20022	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	dimensions	348	false	2000000000	true	8	20021	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	dimensionValues	349	false	2000000000	true	8	20053	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	employees	5200	false	2000000000	true	8	20017	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	generalLedgerEntries	17	false	1	false	8	20018	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	generalLedgerEntryAttachments	5509	true	8003,8000	true	8	20040	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	incomeStatement	5503	true	1	false	8	20035	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	itemCategories	5722	false	2000000000	true	8	20025	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	items	27	false	2000000000	true	8	20008	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	itemVariants	5401	false	2000000000	true	8	20052	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	journalLines	81	false	2000000000	true	8	20049	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	journals	232	false	2000000000	true	8	20016	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	paymentMethods	289	false	2000000000	true	8	20020	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	paymentTerms	3	false	2000000000	true	8	20023	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	projects	167	false	2000000000	true	8	20050	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	purchaseInvoices	5477	false	8000	true	8	20042	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	retainedEarningsStatement	5503	true	1	false	8	20029	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	salesCreditMemos	5507	false	8000	true	8	20038	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	salesInvoices	5475	false	8000	true	8	20012	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	salesOrders	5495	false	8000	true	8	20028	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	salesQuotes	5505	false	8000	true	8	20037	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	shipmentMethods	10	false	2000000000	true	8	20024	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	taxAreas	5504	true	8000	false	8	20036	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	taxGroups	5480	true	8000	false	8	20015	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	timeRegistrationEntries	5510	true	8000	true	8	20041	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	trialBalance	5488	true	1	false	8	20034	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	unitsOfMeasure	204	false	2000000000	true	8	20030	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	vendorPurchases	23	false	1	false	9	20001	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v1.0	vendors	23	false	2000000000	true	8	20010	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+		v2.0	accountingPeriods	50	false	2000000000	true	8	30086	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	accounts	15	false	2000000000	true	8	30014	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	agedAccountsPayables	5499	true	1	true	8	30032	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	agedAccountsReceivables	5499	true	1	true	8	30031	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	applyVendorEntries	2250	true	2000000000	true	8	30073	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	approvalEntries	454	false	2000000000	true	8	30094	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	approvalUserSetups	91	false	2000000000	true	8	30095	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	assemblyOrderLines	901	false	2000000000	true	8	30225	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	assemblyOrders	900	false	2000000000	true	8	30224	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	attachments	5509	true	8000	true	8	30039	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	balanceSheets	5487	true	8000	true	8	30033	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	bankAccounts	270	false	2000000000	true	8	30051	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	blanketPurchaseOrderLines	39	false	2000000000	true	8	30201	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	blanketPurchaseOrders	38	false	2000000000	true	8	30003	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	blanketSalesOrderLines	37	false	2000000000	true	8	30203	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	blanketSalesOrders	36	false	2000000000	true	8	30058	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	cashFlowStatements	5503	true	8000	true	8	30026	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	companyInformation	79	false	2000000000	true	8	30011	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	contacts	5050	false	2000000000	true	8	30071	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	contactsInformation	5049	true	1	true	8	30072	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	countriesRegions	9	false	2000000000	true	8	30027	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	currencies	4	false	2000000000	true	8	30019	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	currencyExchangeRates	330	false	2000000000	true	8	30085	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerContacts	5050	false	2000000000	true	8	30089	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerFinancialDetails	18	false	2000000000	true	8	30048	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerPaymentJournals	232	false	2000000000	true	8	30013	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerPayments	81	false	2000000000	true	8	30055	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerReturnReasons	231	false	2000000000	true	8	30077	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customers	18	false	2000000000	true	8	30009	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	customerSales	18	false	1	false	9	30000	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	defaultDimensions	352	false	2000000000	true	8	30054	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	dimensions	348	false	2000000000	true	8	30021	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	dimensionSetLines	5489	true	8000	true	8	30022	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	dimensionValues	349	false	2000000000	true	8	30040	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	disputeStatus	142	false	2000000000	true	8	30088	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	documentAttachments	5509	true	8000	true	8	30080	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	employees	5200	false	2000000000	true	8	30017	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	fixedAssetLocations	5609	false	2000000000	true	8	30097	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	fixedAssets	5600	false	2000000000	true	8	30098	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	generalLedgerEntries	17	false	2000000000	true	8	30018	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	generalLedgerSetup	98	false	2000000000	true	8	30087	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	generalProductPostingGroups	251	false	2000000000	true	8	30079	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	incomeStatements	5503	true	8000	true	8	30035	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	inventoryPostingGroups	94	false	2000000000	true	8	30096	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	inventoryReceiptLines	5851	false	2000000000	true	8	30243	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	inventoryReceipts	5850	false	2000000000	true	8	30242	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	inventoryShipmentLines	5851	false	2000000000	true	8	30241	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	inventoryShipments	5850	false	2000000000	true	8	30240	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	itemCategories	5722	false	2000000000	true	8	30025	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	itemLedgerEntries	32	false	2000000000	true	8	30069	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	items	27	false	2000000000	true	8	30008	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	itemVariants	5401	false	2000000000	true	8	30052	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	jobQueueEntries	472	false	2000000000	true	8	30091	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	jobQueueLogEntries	474	false	2000000000	true	8	30090	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	journalLines	81	false	2000000000	true	8	30049	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	journals	232	false	2000000000	true	8	30016	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	locations	14	false	2000000000	true	8	30076	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	opportunities	5092	false	2000000000	true	8	30070	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	paymentMethods	289	false	2000000000	true	8	30020	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	paymentTerms	3	false	2000000000	true	8	30023	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	pdfDocument	5509	true	8000	true	8	30056	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	physicalInventoryOrderLines	5876	false	2000000000	true	8	30233	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	physicalInventoryOrders	5875	false	2000000000	true	8	30232	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	physicalInventoryRecordingLines	5878	false	2000000000	true	8	30237	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	physicalInventoryRecordings	5877	false	2000000000	true	8	30236	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	pictures	5468	true	1	true	8	30053	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedApprovalEntries	456	false	2000000000	true	8	30093	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedAssemblyOrderLines	911	false	2000000000	true	8	30227	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedAssemblyOrders	910	false	2000000000	true	8	30226	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedDirectTransferLines	5857	false	2000000000	true	8	30211	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedDirectTransfers	5856	false	2000000000	true	8	30210	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedInventoryReceiptLines	5853	false	2000000000	true	8	30247	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedInventoryReceipts	5852	false	2000000000	true	8	30246	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedInventoryShipmentLines	5855	false	2000000000	true	8	30245	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedInventoryShipments	5854	false	2000000000	true	8	30244	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedPhysicalInventoryOrderLines	5880	false	2000000000	true	8	30235	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedPhysicalInventoryOrders	5879	false	2000000000	true	8	30234	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedPhysicalInventoryRecordingLines	5882	false	2000000000	true	8	30239	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	postedPhysicalInventoryRecordings	5881	false	2000000000	true	8	30238	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	projects	167	false	2000000000	true	8	30050	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseBlanketOrderArchiveLines	5110	false	2000000000	true	8	30231	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseBlanketOrderArchives	5109	false	2000000000	true	8	30230	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseCreditMemoLines	5478	true	2000000000	true	8	30084	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseCreditMemos	5508	false	8000	true	8	30083	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseInvoiceLines	5478	true	2000000000	true	8	30047	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseInvoices	5477	false	8000	true	8	30042	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseOrderArchiveLines	5110	false	2000000000	true	8	30219	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseOrderArchives	5109	false	2000000000	true	8	30218	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseOrderLines	5478	true	2000000000	true	8	30067	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseOrders	5496	false	8000	true	8	30066	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseQuoteArchiveLines	5110	false	2000000000	true	8	30217	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseQuoteArchives	5109	false	2000000000	true	8	30216	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseQuoteLines	39	false	2000000000	true	8	30248	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseQuotes	38	false	2000000000	true	8	30099	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReceiptLines	121	false	2000000000	true	8	30065	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReceipts	120	false	2000000000	true	8	30064	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReturnOrderArchiveLines	5110	false	2000000000	true	8	30223	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReturnOrderArchives	5109	false	2000000000	true	8	30222	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReturnOrderLines	39	false	2000000000	true	8	30249	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReturnOrders	38	false	2000000000	true	8	30250	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	purchaseReturnShipments	6650	false	2000000000	true	8	30200	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	retainedEarningsStatements	5503	true	8000	true	8	30029	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	returnReceipts	6660	false	2000000000	true	8	30252	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesBlanketOrderArchiveLines	5108	false	2000000000	true	8	30229	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesBlanketOrderArchives	5107	false	2000000000	true	8	30228	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesCreditMemoLines	5476	true	2000000000	true	8	30046	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesCreditMemos	5507	false	8000	true	8	30038	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesInvoiceLines	5476	true	2000000000	true	8	30043	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesInvoices	5475	false	8000	true	8	30012	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesOrderArchiveLines	5108	false	2000000000	true	8	30215	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesOrderArchives	5107	false	2000000000	true	8	30214	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesOrderLines	5476	true	2000000000	true	8	30044	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesOrders	5495	false	8000	true	8	30028	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salespeoplePurchasers	13	false	2000000000	true	8	30075	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesQuoteArchiveLines	5108	false	2000000000	true	8	30213	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesQuoteArchives	5107	false	2000000000	true	8	30212	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesQuoteLines	5476	true	2000000000	true	8	30045	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesQuotes	5505	false	8000	true	8	30037	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesReturnOrderArchiveLines	5108	false	2000000000	true	8	30221	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesReturnOrderArchives	5107	false	2000000000	true	8	30220	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesReturnOrderLines	37	false	2000000000	true	8	30202	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesReturnOrders	36	false	2000000000	true	8	30251	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesShipmentLines	111	false	2000000000	true	8	30063	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	salesShipments	110	false	2000000000	true	8	30062	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	shipmentMethods	10	false	2000000000	true	8	30024	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	taxAreas	5504	true	8000	true	8	30036	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	taxGroups	5480	true	8000	true	8	30015	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	timeRegistrationEntries	5510	true	8000	true	8	30041	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferOrderLines	5741	false	2000000000	true	8	30205	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferOrders	5740	false	2000000000	true	8	30204	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferReceiptLines	5747	false	2000000000	true	8	30209	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferReceipts	5746	false	2000000000	true	8	30208	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferShipmentLines	5745	false	2000000000	true	8	30207	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	transferShipments	5744	false	2000000000	true	8	30206	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	trialBalances	5488	true	11	true	8	30034	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	unitsOfMeasure	204	false	2000000000	true	8	30030	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	vendorPaymentJournals	232	false	2000000000	true	8	30061	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	vendorPayments	81	false	2000000000	true	8	30060	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	vendorPurchases	23	false	1	false	9	30001	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	vendors	23	false	2000000000	true	8	30010	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	workflowApprovers	1573	true	2000000000	true	8	2148	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	workflowResponseOptions	1523	false	2000000000	true	8	2146	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	workflows	1501	false	2000000000	true	8	2145	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+		v2.0	workflowSteps	1502	false	2000000000	true	8	2147	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+bcrust	o15	v1.0	errorProbes	18	false	2000000000	true	8	50151	{604D88A0-11ED-4949-8592-88BEC55F12B4}
+bcrust	o15	v1.0	permProbes	18	false	2000000000	true	8	50150	{604D88A0-11ED-4949-8592-88BEC55F12B4}
+microsoft	admin	beta	supportContactInformation	9165	false	1	true	8	9166	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	aiTestToolkit	v2.0	aitTestLogEntries	149034	false	2000000000	true	8	149038	{107B6353-9AF2-443A-9CBB-1150C3BB712C}
+microsoft	aiTestToolkit	v2.0	aitTestMethodLines	149032	false	2000000000	true	8	149030	{107B6353-9AF2-443A-9CBB-1150C3BB712C}
+microsoft	analytics	v0.5	accountCategories	36953	false	1	false	9	36954	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	assemblyHeaders	900	false	1,2	false	9	36964	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	assemblyLines	901	false	1,2,3	false	9	36965	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	balanceSheetGeneralLedgerEntries	15	false	1	false	9	36955	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	bins	7354	false	1,2	false	9	36966	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	calendarEntries	99000757	false	1,2,4,6,7,5	false	9	36983	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	capacityLedgerEntries	5832	false	1	false	9	36984	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	closeIncomeStmtSourceCodes	36955	false	1	false	9	37013	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	closeOpportunityCodes	5094	false	1	false	8	37083	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	closingGeneralLedgerEntries	15	false	1	false	9	36956	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	contacts	5050	false	1	false	8	36966	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	customerLedgerEntries	21	false	1	false	9	36957	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	customers	18	false	1	false	8	36954	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	dateSetups	36951	false	1	false	8	36955	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	dimensions	98	false	1	false	9	36952	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	dimensionSetEntries	36954	false	1	false	9	36950	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	dynamicDimensions	480	false	1,2	false	9	37016	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	fromBinWarehouseJournalLines	7311	false	1,2,5,3	false	9	36980	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	generalLedgerAccountCategories	570	false	1	false	9	36958	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	generalLedgerAccounts	15	false	1	false	9	36959	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	generalLedgerBudgetEntries	96	false	1	false	9	36960	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	generalLedgerBudgets	95	false	1	false	9	36961	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	generalLedgerSetups	98	false	1	false	8	36956	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	incomeStatementGeneralLedgerEntries	15	false	1	false	9	36962	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	incomeStmtGeneralLedgerEntries	15	false	1	false	9	37014	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	inventoryAdjustmentEntryOrders	5896	false	1,2,3	false	9	37020	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	inventoryProdOrderComponentLines	5407	false	1,2,3,4	false	9	36971	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	inventoryProdOrderLines	5406	false	1,2,3	false	9	36972	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemBudgets	7132	false	1,2	false	9	37002	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemCategories	5722	false	1	false	8	36967	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemJobPlanningLines	1003	false	2,1000,1	false	9	36969	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemLedgerEntries	32	false	1	false	9	36968	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemOutstandingPurchaseLines	38	false	1,3	false	9	36998	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemOutstandingSalesLines	36	false	1,3	false	9	37003	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemReceivedNotInvoicedPurchaseLines	38	false	1,3	false	9	37001	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	items	27	false	1	false	9	36953	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemShippedNotInvoicedSalesLines	36	false	1,3	false	9	37006	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	itemValueEntries	5802	false	1	false	9	36967	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobLedgerEntries	169	false	1	false	9	36992	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobOutstandingPurchaseLines	39	false	1,3,4	false	9	36996	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobPlanningLines	1003	false	2,1000,1	false	9	36993	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobReceivedNotInvoicedPurchaseLines	39	false	1,3,4	false	9	36997	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobs	167	false	1	false	9	36995	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	jobTasks	1001	false	1,2	false	9	36994	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	locations	14	false	1	false	8	36957	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	machineCenters	99000758	false	1	false	9	36985	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	manufacturingProdOrderComponents	5407	false	1,2,3,4	false	9	36988	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	manufacturingProdOrderLines	5406	false	1,2,3	false	9	36989	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	manufacturingProductionOrders	5405	false	1,2	false	9	37008	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	manufacturingSetup	99000765	false	1	false	9	37007	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	manufacturingValueEntries	5802	false	1	false	9	37011	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	opportunities	5092	false	1	false	9	37017	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	opportunityEntries	5093	false	1	false	9	37018	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	orderServiceLines	5902	false	1,3,4	false	9	36976	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	outstandingPurchaseLines	39	false	1,3,4	false	9	36973	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	outstandingSalesLines	37	false	1,3,4	false	9	36975	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	pbiCountryRegions	9	false	1	false	9	6210	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiEmissionFees	6226	false	1,7,5,6,35,8	false	9	6211	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiEmployeeAbsences	5207	false	2	false	9	6212	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiEmployeeLedgerEntries	5222	false	1	false	9	6213	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiEmployeeQualifications	5203	false	1,2	false	9	6214	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiEmployees	5200	false	1	false	9	6215	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiResponsibilityCentres	5714	false	1	false	9	6216	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiSustainabilityAccountCategories	6211	false	1	false	9	6218	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiSustainabilityAccounts	6210	false	1	false	9	6219	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiSustainabilityGoals	6219	false	2,1,3	false	9	6220	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiSustainabilityLedgerEntries	6216	false	5155	false	9	6221	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	pbiSustainabilitySubAccountCategories	6212	false	3,1	false	9	6217	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v0.5	planningComponentLines	99000829	false	1,2,3,5	false	9	36970	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	prodItemLedgerEntries	32	false	1	false	9	36986	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	prodOrderCapacityNeeds	5410	false	1,2,42,3,10,5,4	false	9	36987	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	prodOrderRoutingLines	5409	false	74,75,3,1,4	false	9	36990	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	purchaseCreditMemoLines	125	false	3,4	false	9	37108	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	purchaseInvoiceLines	123	false	3,4	false	9	37107	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	purchaseItemBudgetEntries	7134	false	1	false	9	36999	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	purchaseLines	38	false	1,3	false	9	37073	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	purchaseValueEntries	32	false	1	false	9	37000	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	requisitionLines	246	false	1,2,3	false	9	36974	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	resources	156	false	1	false	9	37070	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	returnReasonCodes	6635	false	1	false	8	36965	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	routingLinks	99000777	false	1	false	9	37009	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	routings	99000763	false	1	false	9	37010	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesCreditLines	115	false	3,4	false	9	37109	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesCrProjectLedgerEntries	169	false	1	false	9	37071	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesCycleStages	5091	false	1,2	false	8	37082	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesInvoiceLines	113	false	3,4	false	9	37074	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesInvoiceProjectLedgerEntries	169	false	1	false	9	37110	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesItemBudgetEntries	7134	false	1	false	9	37004	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesLines	36	false	1,3	false	9	37019	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salespersonPurchasers	13	false	1	false	8	36958	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	salesValueEntries	32	false	1	false	9	37005	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	toBinWarehouseJournalLines	7311	false	1,2,5,3	false	9	36981	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	transferLines	5741	false	1,2	false	9	36977	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	vendorLedgerEntries	25	false	1	false	9	36963	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	vendors	23	false	1	false	8	36959	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	warehouseActivityLines	5767	false	1,2,3	false	9	36978	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	warehouseEntries	7312	false	1	false	9	36979	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	workCenterGroups	99000756	false	1	false	9	37012	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	workCenters	99000754	false	1	false	9	36991	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	workingDays	36952	false	1	false	8	36960	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v0.5	zones	7300	false	1,2	false	9	36982	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	abcAnalysisSetups	7160	false	1	false	9	37022	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	accountCategories	36953	false	1	false	9	36954	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	assemblyHeaders	900	false	1,2	false	9	36964	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	assemblyLines	901	false	1,2,3	false	9	36965	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	balanceSheetGeneralLedgerEntries	15	false	1	false	9	36955	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	bins	7354	false	1,2	false	9	36966	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	calendarEntries	99000757	false	1,2,4,6,7,5	false	9	36983	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	capacityLedgerEntries	5832	false	1	false	9	36984	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	closeIncomeStmtSourceCodes	36955	false	1	false	9	37013	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	closeOpportunityCodes	5094	false	1	false	8	37083	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	closingGeneralLedgerEntries	15	false	1	false	9	36956	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	contacts	5050	false	1	false	8	36966	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	customerLedgerEntries	21	false	1	false	9	36957	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	customers	18	false	1	false	8	36954	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	dateSetups	36951	false	1	false	8	36955	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	dimensions	98	false	1	false	9	36952	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	dimensionSetEntries	36954	false	1	false	9	36950	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	dynamicDimensions	480	false	1,2	false	9	37016	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	fromBinWarehouseJournalLines	7311	false	1,2,5,3	false	9	36980	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	generalLedgerAccountCategories	570	false	1	false	9	36958	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	generalLedgerAccounts	15	false	1	false	9	36959	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	generalLedgerBudgetEntries	96	false	1	false	9	36960	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	generalLedgerBudgets	95	false	1	false	9	36961	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	generalLedgerSetups	98	false	1	false	8	36956	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	incomeStatementGeneralLedgerEntries	15	false	1	false	9	36962	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	incomeStmtGeneralLedgerEntries	15	false	1	false	9	37014	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	inventoryAdjustmentEntryOrders	5896	false	1,2,3	false	9	37020	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	inventoryProdOrderComponentLines	5407	false	1,2,3,4	false	9	36971	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	inventoryProdOrderLines	5406	false	1,2,3	false	9	36972	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemBudgets	7132	false	1,2	false	9	37002	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemCategories	5722	false	1	false	8	36967	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemJobPlanningLines	1003	false	2,1000,1	false	9	36969	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemLedgerEntries	32	false	1	false	9	36968	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemOutstandingPurchaseLines	38	false	1,3	false	9	36998	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemOutstandingSalesLines	36	false	1,3	false	9	37003	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemReceivedNotInvoicedPurchaseLines	38	false	1,3	false	9	37001	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	items	27	false	1	false	9	36953	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemShippedNotInvoicedSalesLines	36	false	1,3	false	9	37006	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	itemValueEntries	5802	false	1	false	9	36967	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobLedgerEntries	169	false	1	false	9	36992	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobOutstandingPurchaseLines	39	false	1,3,4	false	9	36996	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobPlanningLines	1003	false	2,1000,1	false	9	36993	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobReceivedNotInvoicedPurchaseLines	39	false	1,3,4	false	9	36997	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobs	167	false	1	false	9	36995	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	jobTasks	1001	false	1,2	false	9	36994	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	locations	14	false	1	false	8	36957	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	machineCenters	99000758	false	1	false	9	36985	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	manufacturingProdOrderComponents	5407	false	1,2,3,4	false	9	36988	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	manufacturingProdOrderLines	5406	false	1,2,3	false	9	36989	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	manufacturingProductionOrders	5405	false	1,2	false	9	37008	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	manufacturingSetup	99000765	false	1	false	9	37007	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	manufacturingValueEntries	5802	false	1	false	9	37011	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	opportunities	5092	false	1	false	9	37017	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	opportunityEntries	5093	false	1	false	9	37018	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	orderServiceLines	5902	false	1,3,4	false	9	36976	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	outstandingPurchaseLines	39	false	1,3,4	false	9	36973	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	outstandingSalesLines	37	false	1,3,4	false	9	36975	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	pbiCountryRegions	9	false	1	false	9	6210	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiEmissionFees	6226	false	1,7,5,6,35,8	false	9	6211	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiEmployeeAbsences	5207	false	2	false	9	6212	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiEmployeeLedgerEntries	5222	false	1	false	9	6213	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiEmployeeQualifications	5203	false	1,2	false	9	6214	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiEmployees	5200	false	1	false	9	6215	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiResponsibilityCentres	5714	false	1	false	9	6216	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiSustainabilityAccountCategories	6211	false	1	false	9	6218	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiSustainabilityAccounts	6210	false	1	false	9	6219	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiSustainabilityGoals	6219	false	2,1,3	false	9	6220	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiSustainabilityLedgerEntries	6216	false	5155	false	9	6221	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	pbiSustainabilitySubAccountCategories	6212	false	3,1	false	9	6217	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	analytics	v1.0	planningComponentLines	99000829	false	1,2,3,5	false	9	36970	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	prodItemLedgerEntries	32	false	1	false	9	36986	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	prodOrderCapacityNeeds	5410	false	1,2,42,3,10,5,4	false	9	36987	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	prodOrderRoutingLines	5409	false	74,75,3,1,4	false	9	36990	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	purchaseCreditMemoLines	125	false	3,4	false	9	37108	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	purchaseInvoiceLines	123	false	3,4	false	9	37107	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	purchaseItemBudgetEntries	7134	false	1	false	9	36999	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	purchaseLines	38	false	1,3	false	9	37073	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	purchaseValueEntries	5802	false	1	false	9	37023	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	requisitionLines	246	false	1,2,3	false	9	36974	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	resources	156	false	1	false	9	37070	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	returnReasonCodes	6635	false	1	false	8	36965	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	routingLinks	99000777	false	1	false	9	37009	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	routings	99000763	false	1	false	9	37010	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesCreditLines	115	false	3,4	false	9	37109	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesCrProjectLedgerEntries	169	false	1	false	9	37071	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesCycleStages	5091	false	1,2	false	8	37082	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesInvoiceLines	113	false	3,4	false	9	37074	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesInvoiceProjectLedgerEntries	169	false	1	false	9	37110	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesItemBudgetEntries	7134	false	1	false	9	37004	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesLines	36	false	1,3	false	9	37024	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salespersonPurchasers	13	false	1	false	8	36958	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	salesValueEntries	32	false	1	false	9	37025	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	toBinWarehouseJournalLines	7311	false	1,2,5,3	false	9	36981	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	transferLines	5741	false	1,2	false	9	36977	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	vendorLedgerEntries	25	false	1	false	9	36963	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	vendors	23	false	1	false	8	36959	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	warehouseActivityLines	5767	false	1,2,3	false	9	36978	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	warehouseEntries	7312	false	1	false	9	36979	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	workCenterGroups	99000756	false	1	false	9	37012	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	workCenters	99000754	false	1	false	9	36991	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	workingDays	36952	false	1	false	8	36960	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	analytics	v1.0	zones	7300	false	1,2	false	9	36982	{A96EB472-7626-4C78-8C3F-98CBB73144DD}
+microsoft	automate	v1.0	postedPurchaseInvoices	122	false	2000000000	true	8	9971	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	automate	v1.0	postedSalesInvoices	112	false	2000000000	true	8	9970	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	automation	beta	extensionDeploymentStatus	2000000200	false	1	false	8	5448	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	automation	v1.0	automationCompanies	2000000006	false	8000	true	8	20001	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	configurationPackages	8623	false	1	false	8	20000	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	extensionDeploymentStatus	2000000200	false	1	false	8	20007	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	extensions	2000000206	false	2	true	8	20002	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	extensionUpload	5447	true	1	true	8	20006	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	permissionSets	2000000167	false	1,2,3	false	8	20005	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v1.0	users	2000000120	false	1	false	8	20004	{99523926-70E1-4C0B-8D6A-7FCA34BADF66}
+microsoft	automation	v2.0	accessControls	2000000053	false	2000000000	true	8	20767	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	aggregatePermissionSets	2000000167	false	2000000000	true	8	20770	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	automationCompanies	2000000006	false	8000	true	8	30001	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	configurationPackages	8623	false	2000000000	true	8	30000	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	expandedPermissionSets	2000000254	false	2000000000	true	8	20766	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	extensionDeploymentStatus	2000000200	false	1	false	8	30007	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	extensions	2000000206	false	2	true	8	30002	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	extensionUpload	5447	false	2000000000	true	8	30006	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	features	2000000211	false	1	true	8	30092	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	permissionSets	2000000167	false	1,2,3	false	8	30005	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	profiles	2000000178	false	1,2,3	false	8	30074	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	scheduledJobs	479	false	2000000000	true	8	30068	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	securityGroupMembers	9021	true	1,2	true	8	30081	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	securityGroups	9022	true	3	true	8	30082	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	userPermissions	2000000053	false	2000000000	true	8	30059	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	userPermissionSets	30432	true	2000000000	true	8	20769	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	users	2000000120	false	1	true	8	30004	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	automation	v2.0	usersPermissions	2000000120	false	2000000000	true	8	20768	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	cloudMigration	v1.0	cloudMigrationCompanies	4005	false	2000000000	true	8	40020	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	cloudMigration	v1.0	cloudMigrationStatus	4001	false	2000000000	true	8	40021	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	cloudMigration	v1.0	cloudMigrationStatusDetails	4002	false	2000000000	true	8	40026	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	cloudMigration	v1.0	setupCloudMigration	4003	false	2000000000	true	8	40023	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	cloudMigration	v1.0	sourceProductTypes	4000	true	1	true	8	40024	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	cloudMigration	v1.0	tableMappings	4009	false	2000000000	true	8	40022	{BE09068E-74BC-4C74-B9B8-7B42B9ABAC2C}
+microsoft	dataverse	v1.0	dataverseEntityChanges	5395	false	2000000000	true	8	5395	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	edocument	v1.0	eDocumentFileContent	6130	true	2000000000	true	8	6119	{4AB6C80A-DC12-4836-BACB-A1DE96E5D751}
+microsoft	edocument	v1.0	eDocuments	6121	false	2000000000	true	8	6112	{4AB6C80A-DC12-4836-BACB-A1DE96E5D751}
+microsoft	edocument	v1.0	eDocumentServices	6103	false	2000000000	true	8	6113	{4AB6C80A-DC12-4836-BACB-A1DE96E5D751}
+microsoft	edocument	v1.0	eDocumentServiceStatuses	6138	false	2000000000	true	8	6118	{4AB6C80A-DC12-4836-BACB-A1DE96E5D751}
+microsoft	edocument	v1.0	newEDocuments	6121	true	2000000000	true	8	6115	{4AB6C80A-DC12-4836-BACB-A1DE96E5D751}
+microsoft	exciseTaxes	v1.0	itemExciseTaxes	7415	false	2000000000	true	8	7417	{8CF7949A-4611-4606-B717-51EF76FE26A0}
+microsoft	expense	beta	approverViews	6923	false	2000000000	true	8	6969	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	employees	5200	false	2000000000	true	8	6917	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseActivityLogEntries	7100	false	2000000000	true	8	7122	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseAgentAccessControls	6943	false	2000000000	true	8	6984	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseAgentSetup	6930	false	2000000000	true	8	6942	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseApprovalSetups	6932	false	2000000000	true	8	6955	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseAttachments	5509	true	8000	true	8	6950	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseCapabilities	6914	true	1	true	8	7082	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseCategories	6921	false	2000000000	true	8	6914	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseGroups	6924	false	2000000000	true	8	6919	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseItemizations	6902	false	2000000000	true	8	6935	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseLocations	6925	false	2000000000	true	8	6921	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseParticipants	6904	false	2000000000	true	8	6936	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expensePaymentMethods	6913	false	2000000000	true	8	6907	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expensePerDiemLocations	6927	false	1,2,3	false	9	7082	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseperdiems	6905	false	2000000000	true	8	6954	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expensePolicies	7092	false	2000000000	true	8	7104	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expensePolicyEvaluations	7096	false	2000000000	true	8	7126	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expensePostingGroups	6928	false	2000000000	true	8	6924	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseProjects	7088	true	1,2,3	true	8	7092	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseProjectsList	167	false	1	false	9	7079	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportLineAttachments	5509	true	8000	true	8	6908	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportLineItemizations	6911	false	2000000000	true	8	6905	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportLineParticipants	6908	false	2000000000	true	8	6909	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportLinePerDiems	6909	false	2000000000	true	8	6915	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportLines	6907	false	2000000000	true	8	6929	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReportRuleViolations	6910	false	2000000000	true	8	6964	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseReports	6906	false	2000000000	true	8	6928	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseRuleConditions	6926	false	2000000000	true	8	6922	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseRules	6927	false	2000000000	true	8	6923	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseRuleViolations	6903	false	2000000000	true	8	6963	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenses	6900	false	2000000000	true	8	6927	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseSubcategories	6929	false	2000000000	true	8	6925	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseUserAssignedPlanningLines	6923	false	1	false	9	7080	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseUserAssignedProjects	6923	false	1	false	9	7081	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseUsers	6923	false	2000000000	true	8	6918	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseVATSpecifications	6918	false	2000000000	true	8	7085	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	expenseVehicleTypes	7108	false	2000000000	true	8	7107	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	locations	14	false	2000000000	true	8	6958	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	mileageRateSetups	6939	false	2000000000	true	8	7131	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	outboxEmails	6984	false	2000000000	true	8	6983	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	policiesToEvaluate	7106	true	1,2	true	8	7108	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	postedExpensePolicyEvaluations	7105	false	2000000000	true	8	7105	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	postedExpenseReportLineAttachments	5509	true	8000	true	8	6926	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	postedExpenseReportLineItemizations	6919	false	2000000000	true	8	6906	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	postedExpenseReportLines	6916	false	2000000000	true	8	6913	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	postedExpenseReports	6915	false	2000000000	true	8	6957	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	spendRequestDetails	6841	false	2000000000	true	8	7102	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	spendRequests	6840	false	2000000000	true	8	7099	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	tenantFeedbackSettings	6986	true	1	true	8	6986	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	travelers	6938	false	2000000000	true	8	7103	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	travelRequestDetails	6841	false	2000000000	true	8	7135	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	travelRequests	6840	false	2000000000	true	8	7134	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	expense	beta	userConsumptions	6923	false	2000000000	true	8	6968	{513A8329-4E52-4FE2-82C2-2AD71BD7BDA5}
+microsoft	fabric	v1.0	fabricCompanies	2000000012	false	2000000000	true	8	48503	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	fabric	v1.0	fabricConfigPackages	48501	false	2000000000	true	8	48504	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	fabric	v1.0	fabricExportDetails	2000000014	false	2000000000	true	8	48506	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	fabric	v1.0	fabricExportRuns	2000000013	false	2000000000	true	8	48505	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	fabric	v1.0	fabricSetups	2000000010	false	2000000000	true	8	48507	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	fabric	v1.0	fabricTables	2000000011	false	2000000000	true	8	48502	{611CBA3C-F084-43B4-A5DD-497799586316}
+microsoft	intercompany	v1.0	bufferIntercompanyCommentLines	603	false	2000000000	true	8	30416	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyDocumentDimensions	604	false	2000000000	true	8	30417	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxJournalLines	605	false	2000000000	true	8	30418	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxPurchaseHeaders	607	false	2000000000	true	8	30420	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxPurchaseLines	606	false	2000000000	true	8	30419	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxSalesHeaders	608	false	2000000000	true	8	30421	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxSalesLines	609	false	2000000000	true	8	30422	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInboxTransactions	610	false	2000000000	true	8	30423	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	bufferIntercompanyInOutJournalLineDimensions	611	false	2000000000	true	8	30424	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	handledIntercompanyInboxTransactions	420	false	2000000000	true	8	30400	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyDimensions	411	false	2000000000	true	8	30402	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyDimensionValues	412	false	2000000000	true	8	30403	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyGeneralLedgerAccounts	410	false	2000000000	true	8	30405	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyInboxTransactions	418	false	2000000000	true	8	30411	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyIncomingNotification	613	false	1	true	8	30415	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyOutgoingNotification	612	false	1	true	8	30425	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanyPartners	413	false	2000000000	true	8	30413	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	intercompany	v1.0	intercompanySetup	443	false	2000000000	true	8	30414	{8525C625-2F36-4BC2-A7FF-C2B39AB2AA96}
+microsoft	powerbi	v2.0	reportLabels	6306	true	1	true	8	30078	{0BA18184-AB49-4665-9827-EE5DB65C65FD}
+microsoft	qualityManagement	v1.0	createQualityInspections	823	true	2000000000	true	8	20415	{7D489D78-27E8-42B2-B818-DD18BA54EDC2}
+microsoft	qualityManagement	v1.0	qualityInspections	20405	false	2000000000	true	8	20414	{7D489D78-27E8-42B2-B818-DD18BA54EDC2}
+microsoft	qualityManagement	v1.0	qualityInspectionValues	20405	false	1,2	false	9	20401	{7D489D78-27E8-42B2-B818-DD18BA54EDC2}
+microsoft	reportInbox	v1.0	reportInboxCompanies	478	true	6	true	8	694	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	reportInbox	v1.0	reportInboxContents	477	false	2000000000	true	8	691	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	reportInbox	v1.0	reportInboxFiles	476	true	1	true	8	692	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	reportInbox	v1.0	reportInboxItems	473	true	1	true	8	690	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	reportsFinance	beta	accountingPeriods	50	false	2000000000	true	8	30300	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	businessUnits	220	false	2000000000	true	8	30301	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	customerLedgerEntries	21	false	1	false	9	30302	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	customers	18	false	2000000000	true	8	30307	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	detailedCustomerLedgerEntries	379	false	1	false	9	30301	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	detailedVendorLedgerEntries	380	false	1	false	9	30304	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	dimensionSetEntries	480	false	2000000000	true	8	30303	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	dimensionValues	349	false	2000000000	true	8	30302	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	generalLedgerAccounts	15	false	2000000000	true	8	30304	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	generalLedgerBudgetEntries	96	false	1	false	9	30305	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	generalLedgerBudgets	95	false	2000000000	true	8	30305	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	generalLedgerEntries	17	false	1	false	9	30300	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	globalSettings	0	false		false	8	30306	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	vendorLedgerEntries	25	false	1	false	9	30303	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	reportsFinance	beta	vendors	23	false	2000000000	true	8	30308	{9FCDCFF6-5F61-4470-8D49-7FDD68723C20}
+microsoft	runtime	beta	apiRoutes	823	true	5	true	8	5462	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	runtime	beta	webhookLogs	710	false	1	true	8	5461	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	runtime	beta	webhookSupportedResources	823	true	5	true	8	5460	{38EBEE42-0A5E-4C3F-B357-0C506D6689FA}
+microsoft	subsBilling	v1.0	archivedBillingLines	8064	false	2000000000	true	8	8022	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	billingLines	8061	false	2000000000	true	8	8021	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	contractAnalysisEntries	8019	false	2000000000	true	8	8087	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	customerContractDeferrals	8066	false	2000000000	true	8	8046	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	customerContractLines	8062	false	1,2	false	8	8045	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	customerContracts	8052	false	2000000000	true	8	8024	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	generalLedgerSetup	98	false	2000000000	true	8	8049	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	salesperson	13	false	2000000000	true	8	8050	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	salesServiceCommitments	8068	false	2000000000	true	8	8019	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	serviceCommitments	8059	false	2000000000	true	8	8018	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	serviceObjects	8057	false	2000000000	true	8	8020	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	usageDataGenericImports	8018	false	2000000000	true	8	8039	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	usageDataImports	8013	false	2000000000	true	8	8040	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	vendorContractDeferrals	8072	false	2000000000	true	8	8048	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	vendorContractLines	8065	false	1,2	false	8	8047	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	subsBilling	v1.0	vendorContracts	8063	false	2000000000	true	8	8023	{3AB59E27-A180-44D0-ABD1-221923DE1FCF}
+microsoft	sustainability	v1.0	postedESGReportLines	6232	false	2000000000	true	8	6334	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityAccountCategories	6211	false	2000000000	true	8	6228	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityAccounts	6210	false	2000000000	true	8	6227	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityAccountSubcategories	6212	false	2000000000	true	8	6229	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityGoals	6219	false	2000000000	true	8	6337	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityJournalLines	6214	false	2000000000	true	8	6230	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityLedgerEntries	6216	false	2000000000	true	8	6231	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityPurchaseLines	39	false	2000000000	true	8	6336	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	sustainability	v1.0	sustainabilityValueEntries	6227	false	2000000000	true	8	6335	{77078038-9542-42F0-A34C-2254FF9F0B02}
+microsoft	vatGroup	v1.0	vatGroupSubmissions	4702	false	1	true	8	4701	{5E617DE8-B6DB-45BD-A79C-1EAD725793F2}
+microsoft	vatGroup	v1.0	vatGroupSubmissionStatus	4702	false	1	false	9	4700	{5E617DE8-B6DB-45BD-A79C-1EAD725793F2}

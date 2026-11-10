@@ -1,0 +1,37 @@
+[package]
+name = "al-runtime"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+al-syntax.workspace = true
+al-model.workspace = true
+bc-store.workspace = true
+rust_decimal.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+# DotNet / Xml / Http emulation (crates/al-runtime/src/dotnet): pure Rust, rustls for TLS
+chrono-tz = "0.10"
+fancy-regex = "0.14"
+quick-xml = "0.37"
+base64 = "0.22"
+encoding_rs = "0.8"
+ureq = { version = "2", default-features = false, features = ["tls"] }
+md-5 = "0.11"
+sha1 = { version = "0.10", features = ["oid"] }
+sha2 = "0.11"
+# RSA (dotnet/asym.rs): RustCrypto rsa 0.9 (RUSTSEC-2023-0071 timing advisory: fine for test emulation); its padding schemes take digest-0.10 hashes
+rsa = { version = "0.9", features = ["getrandom"] }
+sha2-010 = { package = "sha2", version = "0.10", features = ["oid"] }
+md5-010 = { package = "md-5", version = "0.10", features = ["oid"] }
+# X.509 certificates (dotnet/x509.rs); the PKCS#12 container is decoded by hand there
+x509-cert = "0.2.5"
+
+# Q7 of the U1 spec: CalcDate cost, cold and cached (std only)
+[[bench]]
+name = "datefml"
+harness = false

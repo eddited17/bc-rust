@@ -1,0 +1,121 @@
+# App set "standard": the apps installed in a BC 29.1.57326.57497 W1 sandbox tenant (container
+# bcside on the bc-sidebyside VM, Get-NAVAppInfo -TenantSpecificProperties), as listed in
+# docs/standard-apps.md. One BCApps source folder per line, relative to vendor/bcapps/src.
+# bc-server adds the dependency closure of these apps (al_model::missing_dependency_dirs).
+# Published-only apps (E-Document connectors other than Microsoft 365, Service Declaration,
+# Field Service Integration, ...) and the 25 language packs (not in BCApps) are left out.
+
+
+# Loaded today
+Apps/W1/APIV2/app                                                      # _Exclude_APIV2_
+Layers/W1/Application                                                  # Application
+Layers/W1/BaseApp                                                      # Base Application
+Business Foundation/App                                                # Business Foundation
+System Application/App                                                 # System Application
+
+# Business functionality
+Apps/W1/CrossEnvironmentIntercompany/app                               # API - Cross Environment Intercompany
+Apps/W1/APIReportsFinance/App                                          # API Reports - Finance
+Apps/W1/AuditFileExport/app                                            # Audit File Export
+Apps/W1/HybridBC14HistoricalData/app                                   # Business Central 14 Historical Data
+Apps/W1/DataArchive/App                                                # Data Archive
+Apps/W1/DataSearch/App                                                 # Data Search
+Apps/W1/HybridBC14/app                                                 # Dynamics 365 Business Central v14 Reimplementation
+Apps/W1/EDocument/App                                                  # E-Document Core
+Apps/W1/EnforcedDigitalVouchers/app                                    # Enforced Digital Vouchers
+Apps/W1/EssentialBusinessHeadlines/App                                 # Essential Business Headlines
+Apps/W1/EU3PartyTradePurchase/app                                      # EU 3-Party Trade Purchase
+Apps/W1/ExciseTaxes/app                                                # Excise Taxes
+Apps/W1/ExpenseWithholdingTax/app                                      # Expense Withholding Tax
+Apps/W1/External Storage - Document Attachments/app                    # External Storage - Document Attachments
+Apps/W1/Intrastat/app                                                  # Intrastat Core
+Apps/W1/Manufacturing/app                                              # Manufacturing
+Apps/W1/PaymentPractices/App                                           # Payment Practices
+Apps/W1/PEPPOL/App                                                     # PEPPOL
+Apps/W1/Quality Management/app                                         # Quality Management
+Apps/W1/ReviewGLEntries/app                                            # Review General Ledger Entries
+Apps/W1/SAF-T/app                                                      # SAF-T
+Apps/W1/UKSendRemittanceAdvice/App                                     # Send remittance advice by email
+Apps/W1/ServiceManagement/app                                          # Service Management
+Apps/W1/SimplifiedBankStatementImport/App                              # Simplified Bank Statement Import
+Apps/W1/StatisticalAccounts/app                                        # Statistical Accounts
+Apps/W1/Subcontracting/App                                             # Subcontracting
+Apps/W1/Subscription Billing/App                                       # Subscription Billing
+Apps/W1/Sustainability/app                                             # Sustainability
+Apps/W1/DataCorrectionFA/App                                           # Troubleshoot FA Ledger Entries
+Apps/W1/VATGroupManagement/app                                         # VAT Group Management
+Apps/W1/WithholdingTax/app                                             # Withholding Tax
+
+# Base App companions (_Exclude_)
+Apps/W1/APIV1/app                                                      # _Exclude_APIV1_
+Apps/W1/BankDeposits/app                                               # _Exclude_Bank Deposits
+Apps/W1/ExternalEvents/app                                             # _Exclude_Business_Events_
+Apps/W1/ClientAddIns/app                                               # _Exclude_ClientAddIns_
+Apps/W1/ConnectivityApps/app                                           # _Exclude_Connectivity Apps
+Apps/W1/EmailLogging/app                                               # _Exclude_Email Logging Using Graph API
+Apps/W1/MasterDataManagement/app                                       # _Exclude_Master_Data_Management
+Apps/W1/SmartList/app                                                  # _Exclude_Microsoft Dynamics 365 - SmartList
+Apps/W1/OnboardingSignals/app                                          # _Exclude_Onboarding Signals
+Apps/W1/PlanConfiguration/app                                          # _Exclude_PlanConfiguration_
+
+# Online services and connectors
+Apps/W1/HybridBCLast/app                                               # Business Central Cloud Migration - Previous Release
+Apps/W1/HybridAPI/app                                                  # Business Central Cloud Migration API
+Apps/W1/HybridBC/app                                                   # Business Central Intelligent Cloud
+Apps/W1/MicrosoftFabricMirroring/app                                   # Business Central Mirroring to Fabric
+Apps/W1/CompanyHub/app                                                 # Company Hub
+Apps/W1/ExcelReports/App                                               # Dynamics BC Excel Reports
+Apps/W1/EDocumentConnectors/Microsoft365/app                           # E-Document Connector - Microsoft 365
+Apps/W1/Email - Current User Connector/app                             # Email - Current User Connector
+Apps/W1/Email - Microsoft 365 Connector/app                            # Email - Microsoft 365 Connector
+Apps/W1/Email - Outlook REST API/app                                   # Email - Outlook REST API
+Apps/W1/Email - SMTP API/app                                           # Email - SMTP API
+Apps/W1/Email - SMTP Connector/app                                     # Email - SMTP Connector
+Apps/W1/External File Storage - Azure Blob Service Connector/App       # External File Storage - Azure Blob Service Connector
+Apps/W1/External File Storage - Azure File Service Connector/App       # External File Storage - Azure File Service Connector
+Apps/W1/External File Storage - SFTP Connector/App                     # External File Storage - SFTP Connector
+Apps/W1/External File Storage - SharePoint Connector/App               # External File Storage - SharePoint Connector
+Apps/W1/HybridBaseDeployment/app                                       # Intelligent Cloud Base
+Apps/W1/PayPalPaymentsStandard/app                                     # Payment Links to PayPal
+Apps/W1/PowerBIReports/App                                             # Power BI Report embeddings for Dynamics 365 Business Central
+Apps/W1/RecommendedApps/app                                            # Recommended Apps
+Apps/W1/SendToEmailPrinter/App                                         # Send To Email Printer
+Apps/W1/Shopify/App                                                    # Shopify Connector
+Apps/W1/MicrosoftUniversalPrint/app                                    # Universal Print Integration
+
+# Copilot, agents, AI/ML (Azure services)
+Apps/W1/AgentDesignExperience/app                                      # Agent Design Experience
+Apps/W1/AgentSamples/app                                               # Agent Samples
+Apps/W1/AIDevelopmentToolkit/app                                       # AI Development Toolkit
+Apps/W1/AIDevelopmentToolkitDesign/app                                 # AI Development Toolkit - Design
+Apps/W1/AIDevelopmentToolkitEvaluation/app                             # AI Development Toolkit - Evaluation
+Apps/W1/BankAccRecWithAI/app                                           # Bank Account Reconciliation With AI
+Apps/W1/SustainabilityCopilotSuggestion/app                            # Calculate Sustainability Emission with Copilot
+Apps/W1/CreateProductInformationWithCopilot/app                        # Create Product Information With Copilot
+Apps/W1/ErrorMessagesWithRecommendations/App                           # Error Messages with Recommendations
+Apps/W1/ExpenseAgent/app                                               # Expense Agent (Preview)
+Apps/W1/LatePaymentPredictor/app                                       # Late Payment Prediction
+Apps/W1/PayablesAgent/app                                              # Payables Agent
+Apps/W1/SalesAndInventoryForecast/app                                  # Sales and Inventory Forecast
+Apps/W1/SalesLinesSuggestions/app                                      # Sales Lines Suggestions
+Apps/W1/SalesOrderAgent/app                                            # Sales Order Agent
+
+# Demo data
+Apps/W1/ContosoCoffeeDemoDataset/app                                   # Contoso Coffee Demo Dataset
+Apps/W1/EDocument/Demo Data                                            # E-Document Core Demo Data
+Apps/W1/ESGStatisticalAccountsDemoTool/app                             # ESG Statistical Accounts Demo Tool
+Apps/W1/Intrastat/demo data                                            # Intrastat Core Demo Data
+Apps/W1/Quality Management/Demo Data                                   # Quality Management Contoso Coffee Demo Dataset
+Apps/W1/Subscription Billing/Demo Data                                 # Subscription Billing Demo Data
+Apps/W1/SustainabilityContosoCoffeeDemoDataset/app                     # Sustainability Contoso Coffee Demo Dataset
+
+# Test framework
+Apps/W1/AgentSamples/test                                              # Agent Samples Tests
+Tools/Test Framework/Test Libraries/LibraryAgent                       # Agent Test Library
+Tools/AI Test Toolkit                                                  # AI Test Toolkit
+Tools/Test Framework/Test Libraries/Any                                # Any
+Layers/W1/Tests/ApplicationTestLibrary                                 # Application Test Library
+Business Foundation/Test Library                                       # Business Foundation Test Libraries
+Tools/Test Framework/Test Libraries/Assert                             # Library Assert
+Tools/Test Framework/Test Libraries/Variable Storage                   # Library Variable Storage
+Tools/Test Framework/Test Runner                                       # Test Runner

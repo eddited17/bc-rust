@@ -1,0 +1,50 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-env
+# area: a28
+# title: Environment identity and server settings as AL sees them
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox container, on-prem, single tenant, no encryption key, user ADMIN, web service session). Probe ENV of the stream N probe app, run grid2-1128, 2026-11-10.
+# note: outcome ok: result is what the probe printed; outcome error: GetLastErrorCode and GetLastErrorText (line breaks as \n). Keys and values are the probe's own (k repeated n times, etc.).
+# rows: 38
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	outcome	result	error_code	error_text
+ApplicationIdentifier	value	NAV		
+Database.TenantId	value	default		
+ServiceInstanceId	value	18		
+SessionId	value	1048		
+CompanyName	value	CRONUS International Ltd.		
+UserId	value	ADMIN		
+CurrentClientType	value	ODataV4		
+DefaultClientType	value	Web		
+GuiAllowed	value	No		
+LockTimeout	value	Yes		
+LockTimeoutDuration	value	10		
+IsProduction	value	No		
+IsSandbox	value	Yes		
+IsSaaS	value	Yes		
+IsOnPrem	value	Yes		
+IsFinancials	value	No		
+IsSaaSInfrastructure	value	No		
+IsPreview	value	No		
+CanStartSession	value	Yes		
+GetEnvironmentName	value	[Sandbox]		
+GetApplicationFamily	value	[W1]		
+GetEnvironmentSetting(TENANTID)	value	[]		
+GetEnvironmentSetting(displayname)	value	[]		
+GetEnvironmentSetting(Nope)	value	[]		
+TenantInformation.GetTenantId	value	[default]		
+TenantInformation.GetTenantDisplayName	value	[]		
+AzureADTenant.GetAadTenantId	value	[common]		
+ServerSetting.EnableSaaSExtensionInstall	value	Yes		
+ServerSetting.IsSaasExcelAddinEnabled	value	No		
+ServerSetting.EnableEntraGroupsOnPrem	value	No		
+ServerSetting.ApiServicesEnabled	value	Yes		
+ServerSetting.ApiSubscriptionsEnabled	value	Yes		
+ServerSetting.ApiSubscriptionSendingNotificationTimeout	value	30000		
+ServerSetting.ApiSubscriptionMaxNumberOfNotifications	value	1000		
+ServerSetting.ApiSubscriptionDelayTime	value	30000		
+ServerSetting.TestAutomationEnabled	value	Yes		
+ServerSetting.UsePermissionSetsFromExtensions	value	Yes		
+ServerSetting.EnableMembershipEntitlement	value	No		

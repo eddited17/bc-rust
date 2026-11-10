@@ -1,0 +1,15 @@
+# Capture sets read by pass 1, in priority order: a name's scenario is the first record, in this order, that shows it.
+# Only recordings of Microsoft's web client against a REAL BC 29.1 service tier (container bcside in the
+# bc-sidebyside VM) belong here. Each set's provenance is checked when the tool runs (column expect):
+#   upstream=HOST:PORT  nst-proxy logs: the proxy's start record must name this upstream (the real NST's client services port)
+#   origin=HOST:PORT    browser captures: every URL the browser loaded must be on this web server
+# Columns: set, layer (nst = web server <-> service tier, browser = browser <-> web server), format, expect, files (globs
+# relative to the root, space separated), root (optional: captures = --captures, default <repo>/data/capture;
+# cleanroom = --corpus, default $BC_RUST_VOLUME/cleanroom/captures). The scenario column of the vocabulary is the file
+# path relative to its root, so cleanroom rows start with their scenario id (F13-dialogs/<stamp>/nst.jsonl#<seq>).
+nst-real	nst	nst-proxy	upstream=127.0.0.1:7085	nst-real/nst.jsonl
+nst-real-prefix	nst	nst-proxy	upstream=127.0.0.1:7085	nst-real/pre-fix/nst.jsonl
+real-29.1	browser	capture	origin=127.0.0.1:8180	real-29.1/frames.jsonl
+real-29.1-error	browser	capture	origin=127.0.0.1:8180	real-29.1-error/frames.jsonl
+linux-webserver-real-nst	browser	capture	origin=127.0.0.1:8190	linux-webserver-real-nst/frames.jsonl linux-webserver-real-nst/tz-utc/frames.jsonl linux-webserver-real-nst/run2/cold/frames.jsonl linux-webserver-real-nst/run2/warm-*/frames.jsonl
+linux-webserver-real-nst-windows	browser	capture	origin=127.0.0.1:8180	linux-webserver-real-nst/run2/windows-8180-*/frames.jsonl

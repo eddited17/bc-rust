@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Hosting startup assembly that runs the BC web server on Linux: IIS-style PathBase on Kestrel, console
+       logging, native shims for kernel32/user32/gdiplus, Windows time zone ids. See LinuxHostingStartup.cs. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>BcLinux.HostingStartup</AssemblyName>
+    <RootNamespace>BcLinux.HostingStartup</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <EmbeddedResource Include="windows-time-zones.tsv" LogicalName="windows-time-zones.tsv" />
+  </ItemGroup>
+</Project>

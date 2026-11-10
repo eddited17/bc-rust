@@ -1,0 +1,152 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-iso
+# area: a25
+# title: IsolatedStorage grid: key lengths, values, SetEncrypted, scopes, SecretText, missing keys, case, rollback
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: 40821170cff8eea9b3467a7c865edd86af31d2df4d6cc9bfcfbcd414c07c9945
+# runs: grid3-1142
+# note: Business Central 29.1.57326.57497 (W1 sandbox container, on-prem, single tenant, no encryption key, user ADMIN, web service session). Probe ISO of the stream N probe app, run grid3-1142, 2026-11-10.
+# note: outcome ok: result is what the probe printed; outcome error: GetLastErrorCode and GetLastErrorText (line breaks as \n). Keys and values are the probe's own (k repeated n times, etc.).
+# rows: 140
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	outcome	result	error_code	error_text
+keylen 1 set	ok			
+keylen 1 get	ok	len=1 eq=Yes		
+keylen 1 contains	ok	Yes		
+keylen 1 delete	ok			
+keylen 2 set	ok			
+keylen 2 get	ok	len=1 eq=Yes		
+keylen 2 contains	ok	Yes		
+keylen 2 delete	ok			
+keylen 10 set	ok			
+keylen 10 get	ok	len=1 eq=Yes		
+keylen 10 contains	ok	Yes		
+keylen 10 delete	ok			
+keylen 50 set	ok			
+keylen 50 get	ok	len=1 eq=Yes		
+keylen 50 contains	ok	Yes		
+keylen 50 delete	ok			
+keylen 100 set	ok			
+keylen 100 get	ok	len=1 eq=Yes		
+keylen 100 contains	ok	Yes		
+keylen 100 delete	ok			
+keylen 128 set	ok			
+keylen 128 get	ok	len=1 eq=Yes		
+keylen 128 contains	ok	Yes		
+keylen 128 delete	ok			
+keylen 199 set	ok			
+keylen 199 get	ok	len=1 eq=Yes		
+keylen 199 contains	ok	Yes		
+keylen 199 delete	ok			
+keylen 200 set	ok			
+keylen 200 get	ok	len=1 eq=Yes		
+keylen 200 contains	ok	Yes		
+keylen 200 delete	ok			
+keylen 201 set	error		AL	Key must not be longer than 200.
+keylen 201 get	error		AL	Key must not be longer than 200.
+keylen 201 contains	error		AL	Key must not be longer than 200.
+keylen 201 delete	error		AL	Key must not be longer than 200.
+keylen 202 set	error		AL	Key must not be longer than 200.
+keylen 202 get	error		AL	Key must not be longer than 200.
+keylen 202 contains	error		AL	Key must not be longer than 200.
+keylen 202 delete	error		AL	Key must not be longer than 200.
+keylen 250 set	error		AL	Key must not be longer than 200.
+keylen 250 get	error		AL	Key must not be longer than 200.
+keylen 250 contains	error		AL	Key must not be longer than 200.
+keylen 250 delete	error		AL	Key must not be longer than 200.
+keylen 256 set	error		AL	Key must not be longer than 200.
+keylen 256 get	error		AL	Key must not be longer than 200.
+keylen 256 contains	error		AL	Key must not be longer than 200.
+keylen 256 delete	error		AL	Key must not be longer than 200.
+keylen 300 set	error		AL	Key must not be longer than 200.
+keylen 300 get	error		AL	Key must not be longer than 200.
+keylen 300 contains	error		AL	Key must not be longer than 200.
+keylen 300 delete	error		AL	Key must not be longer than 200.
+keylen 1000 set	error		AL	Key must not be longer than 200.
+keylen 1000 get	error		AL	Key must not be longer than 200.
+keylen 1000 contains	error		AL	Key must not be longer than 200.
+keylen 1000 delete	error		AL	Key must not be longer than 200.
+key empty set	ok			
+key empty get	ok	len=1 eq=Yes		
+key 200 x ä set	ok			
+key 201 x ä set	error		AL	Key must not be longer than 200.
+vallen 0 set	ok			
+vallen 0 get	ok	len=0 eq=Yes		
+vallen 1 set	ok			
+vallen 1 get	ok	len=1 eq=Yes		
+vallen 1024 set	ok			
+vallen 1024 get	ok	len=1024 eq=Yes		
+vallen 10000 set	ok			
+vallen 10000 get	ok	len=10000 eq=Yes		
+vallen 100000 set	ok			
+vallen 100000 get	ok	len=100000 eq=Yes		
+setenc ascii 0	ok			
+setenc ascii 0 get	error		AL	To fetch the value you must enable encryption by providing an encryption key.
+setenc ascii 1	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 1 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 100	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 100 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 200	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 200 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 213	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 213 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 214	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 214 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 215	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ascii 215 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 216	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ascii 216 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 217	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ascii 217 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 250	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ascii 250 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ascii 300	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ascii 300 get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nenc'
+setenc ä 100	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ä 106	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ä 107	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc ä 108	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ä 109	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ä 110	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ä 120	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc ä 215	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc € 70	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc € 71	error		EncryptionNotCreated	An encryption key is required to complete the request.
+setenc € 72	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+setenc € 73	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+scope 0 set	ok			
+scope 1 set	ok			
+scope 2 set	ok			
+scope 3 set	ok			
+scope 0 get	ok	len=2 eq=Yes		
+scope 1 get	ok	len=2 eq=Yes		
+scope 2 get	ok	len=2 eq=Yes		
+scope 3 get	ok	len=2 eq=Yes		
+scope cu only set	ok			
+scope cu only, contains in 0	ok	No		
+scope cu only, contains in 1	ok	No		
+scope cu only, contains in 2	ok	No		
+scope cu only, contains in 3	ok	Yes		
+secret set	ok			
+secret get text	error		ForbiddenSecretAccess	The operation was aborted to prevent exposing a secret value.
+secret get secret	ok	secret isempty=No		
+secret contains	ok	Yes		
+encsecret set	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encsecret get text	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nsec2'
+encsecret get secret	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nsec2'
+plain set	ok			
+plain get secret	ok	secret isempty=No		
+missing get	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nmissing'
+missing delete	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='nmissing'
+missing contains	ok	No		
+missing get with return value	ok	returned=No value=[]		
+missing delete with return value	ok	returned=No		
+keylen 201 set with return value	error		AL	Key must not be longer than 200.
+keylen 200 set with return value	ok	returned=Yes		
+case set NCase	ok			
+case contains ncase	ok	No		
+case contains NCase	ok	Yes		
+case get ncase	error		DB:RecordNotFound	The Isolated Storage does not exist. Identification fields and values: App Id='{4E0B1C2A-6D3F-4A51-9B8E-2C1E0D0F6100}',Scope='Module',Company Name='',User Id='{00000000-0000-0000-0000-000000000000}',Key='ncase'
+rollback set_then_error	error		Dialog	N probe: error after Set
+rollback contains after	ok	No		
+table 2000000107 count	ok	count=0 fields=8		

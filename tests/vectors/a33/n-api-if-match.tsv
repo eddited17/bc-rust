@@ -1,0 +1,56 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-api-if-match
+# area: a33
+# title: API v2.0 If-Match, error bodies and permission errors (I15 O measurements)
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: n/a (Node.js clients, sha256 in the stream N evidence archive)
+# runs: 2026-11-10T03:54Z..05:12Z
+# note: Business Central 29.1.57326.57497 API v2.0 and an own API page (bcrust/o15/v1.0), measured from inside the container on 2026-11-10 03:54-05:12 UTC (stream I15 O). If-Match cases per entity kind: current, stale, missing, malformed, '*'. BC appends '  CorrelationId:  <guid>.' to every error message; it is removed here. CLERK is a user with D365 CUSTOMER, EDIT and an own API permission set.
+# rows: 45
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+probe	case	method	status	error_code	error_message
+I15-O-API	companies	GET	200		
+I15-O-API	itemCategories POST	POST	201		
+I15-O-API	itemCategory GET	GET	200		
+I15-O-API	itemCategory PATCH current If-Match	PATCH	200		
+I15-O-API	itemCategory PATCH stale If-Match	PATCH	409	Request_EntityChanged	Another user has already changed the record.
+I15-O-API	itemCategory PATCH no If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	itemCategory PATCH malformed If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	itemCategory PATCH If-Match *	PATCH	200		
+I15-O-API	itemCategory DELETE no If-Match	DELETE	204		
+I15-O-API	itemCategory DELETE stale If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'itemCategory'.
+I15-O-API	itemCategory DELETE current If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'itemCategory'.
+I15-O-API	itemCategory GET after delete	GET	404	BadRequest_ResourceNotFound	Resource not found for the segment 'itemCategories'.
+I15-O-API	customers POST	POST	201		
+I15-O-API	customer GET	GET	200		
+I15-O-API	customer PATCH current If-Match	PATCH	200		
+I15-O-API	customer PATCH stale If-Match	PATCH	409	Request_EntityChanged	Another user has already changed the record.
+I15-O-API	customer PATCH no If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	customer PATCH malformed If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	customer PATCH If-Match *	PATCH	200		
+I15-O-API	customer DELETE no If-Match	DELETE	204		
+I15-O-API	customer DELETE stale If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'customer'.
+I15-O-API	customer DELETE current If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'customer'.
+I15-O-API	customer GET after delete	GET	404	BadRequest_ResourceNotFound	Resource not found for the segment 'customers'.
+I15-O-API	salesInvoices POST	POST	201		
+I15-O-API	salesInvoice GET	GET	200		
+I15-O-API	salesInvoice PATCH current If-Match	PATCH	200		
+I15-O-API	salesInvoice PATCH stale If-Match	PATCH	409	Request_EntityChanged	Another user has already changed the record.
+I15-O-API	salesInvoice PATCH no If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	salesInvoice PATCH malformed If-Match	PATCH	400	BadRequest_InvalidToken	Could not validate the client concurrency token required by the service. Please provide a valid token in the client request.
+I15-O-API	salesInvoice PATCH If-Match *	PATCH	200		
+I15-O-API	salesInvoice DELETE no If-Match	DELETE	204		
+I15-O-API	salesInvoice DELETE stale If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'salesInvoice'.
+I15-O-API	salesInvoice DELETE current If-Match	DELETE	404	BadRequest_ResourceNotFound	Resource not found for the segment 'salesInvoice'.
+I15-O-API	salesInvoice GET after delete	GET	404	BadRequest_ResourceNotFound	Resource not found for the segment 'salesInvoices'.
+I15-O-DEL	companies	GET	200		
+I15-O-DEL	POST	POST	201		
+I15-O-DEL	PATCH current	PATCH	200		
+I15-O-DEL	DELETE stale If-Match	DELETE	409	Request_EntityChanged	Another user has already changed the record.
+I15-O-DEL	DELETE If-Match *	DELETE	204		
+I15-O-CLERK	companies	GET	200		
+I15-O-CLERK	admin permProbes	GET	200		
+I15-O-CLERK	CLERK permProbes	GET	403	Internal_ServerError	Sorry, the current permissions prevented the action. (Table 18 Customer Execute: O15 SaveValues Probe)
+I15-O-CLERK	admin errorProbes	GET	400	Application_DialogException	O15 probe error in OnAfterGetRecord
+I15-O-CLERK	CLERK errorProbes	GET	403	Internal_ServerError	Sorry, the current permissions prevented the action. (Table 18 Customer Execute: O15 SaveValues Probe)
+I15-O-CLERK	CLERK v2 customers (again)	GET	403	Internal_ServerError	Sorry, the current permissions prevented the action. (Page 30009 APIV2 - Customers Execute: _Exclude_APIV2_)

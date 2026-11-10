@@ -1,0 +1,1859 @@
+name	kind	scenario	step	layers
+#_c#	key-shape	real-29.1/frames.jsonl#23	sign in + role center	browser
+#_cControl#	key-shape	real-29.1/frames.jsonl#23	sign in + role center	browser
+$polyType	key	nst-real/nst.jsonl#29	sign in + role center	nst
+$type	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+/BC/	path	real-29.1/frames.jsonl#2	login page	browser
+/BC/boot/browser/desktop	path	real-29.1/frames.jsonl#9	sign in + role center	browser
+/BC/client/metadata/navigation	path	nst-real/nst.jsonl#34	sign in + role center	nst
+/BC/client/metadata/pagewithdependencies/#	path	nst-real/nst.jsonl#36	sign in + role center	nst
+/BC/client/metadata/systemparts/Notes	path	nst-real/nst.jsonl#266	open page 22	nst
+/BC/client/metadata/systemparts/RecordLinks	path	nst-real/nst.jsonl#262	open page 22	nst
+/BC/client/metadata/tables/#	path	nst-real/nst.jsonl#264	open page 22	nst
+/BC/client/ws/connect	path	nst-real/nst.jsonl#5	sign in + role center	nst
+/BC/csh	path	real-29.1/frames.jsonl#21	sign in + role center	browser
+/BC/csrf	path	real-29.1/frames.jsonl#19	sign in + role center	browser
+/BC/disposeSession	path	real-29.1/frames.jsonl#74	open page 22	browser
+/BC/img	path	real-29.1/frames.jsonl#69	sign in + role center	browser
+/BC/ping	path	real-29.1/frames.jsonl#24	sign in + role center	browser
+/BC/SignIn	path	real-29.1/frames.jsonl#3	login page	browser
+/BC/splashCheck	path	real-29.1/frames.jsonl#11	sign in + role center	browser
+__featureUninitialized	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+_v	query	real-29.1/frames.jsonl#24	sign in + role center	browser
+AadTenantId	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+abbreviatedDayNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+abbreviatedMonthGenitiveNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+abbreviatedMonthNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ABD0_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ABD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AboutText	key	real-29.1/frames.jsonl#90	open page 22	browser
+AboutTitle	key	real-29.1/frames.jsonl#90	open page 22	browser
+ac	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ac	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Access	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AccessByObjectID	key	nst-real/nst.jsonl#261	open page 22	nst
+AccessByObjectType	key	nst-real/nst.jsonl#261	open page 22	nst
+AccessByPermissionMask	key	nst-real/nst.jsonl#261	open page 22	nst
+Accessibility	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ACD0_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ACD0_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ackseqnb	query	real-29.1/frames.jsonl#21	sign in + role center	browser
+ACPD_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_10	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_11	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_12	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_13	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_14	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ACPD_15	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_16	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_18	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ACPD_4	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_6	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPD_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ACPH_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ACPH_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AcsUri	key	nst-real/nst.jsonl#8	sign in + role center	nst
+Action	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+action	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Action#	id-shape	nst-real/nst.jsonl#35	sign in + role center	browser,nst
+ACTIONBAR	enum	real-29.1/frames.jsonl#141	open page 21	browser
+ActionContainerDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ActionContainerPlaceHolder	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ActionContainerType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ActionContainerType	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ActionControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+ActionDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ActionGroupDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ActionGroupType	key	real-29.1/frames.jsonl#90	open page 22	browser
+ActionIcons	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ActionListControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+ActionQueryGroup	enum	real-29.1/frames.jsonl#90	open page 22	browser
+ActionRefDefinition	type-short	nst-real/nst.jsonl#261	open page 22	nst
+ActionReference	key	real-29.1/frames.jsonl#90	open page 22	browser
+ActionReferenceControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Actions	key	nst-real/nst.jsonl#155	sign in + role center	browser,nst
+ActionTriggerDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+AD_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AD_10	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_14	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_15	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_16	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AD_17	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_18	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AD_5	key	nst-real/nst.jsonl#570	open page 42	nst
+AD_6	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AD_8	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AddInReady	method	real-29.1/frames.jsonl#60	sign in + role center	browser
+AdvancedTellMe	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+AfterGetCurrRecord	method	nst-real/nst.jsonl#70	sign in + role center	nst
+afterRegionLabel	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+AGBD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+agc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AGD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+AGD_4	key	nst-real/nst.jsonl#261	open page 22	nst
+AgentControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+AgentPageRefreshToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+AgentServiceForm	enum	real-29.1/frames.jsonl#26	sign in + role center	browser
+AgentTaskToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+AgentToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+aid	query	real-29.1/frames.jsonl#24	sign in + role center	browser
+alc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+alc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ALCallStack	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+algorithmType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+All	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+AllowActionAutomate	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowActionExportReportDatasetToExcel	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowActionExportToExcel	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowAddRelatedFieldsinDataAnalysis	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowCopilotAnalysisAssist	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowCopilotAutofill	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowCopilotChat	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowCopilotSummary	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowDataAnalysis	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowDBNull	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+AllowedFileExtensions	key	real-29.1/frames.jsonl#90	open page 22	browser
+AllowFilterAsYouType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AllowInCustomizations	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AllowMultipleFiles	key	real-29.1/frames.jsonl#90	open page 22	browser
+AllowMultiSelect	key	real-29.1/frames.jsonl#90	open page 22	browser
+AllowPageScriptingPlayback	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllowPageScriptingRecording	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AllSelected	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ALNamespace	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AM	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+amDesignator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Analysis	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AnalysisModeEnabled	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+AndroidPrivacy	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AndroidSoftwareLicenseTerms	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AndroidThirdPartyNotice	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AppGroupId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AppId	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+AppInformation	key	nst-real/nst.jsonl#37	sign in + role center	nst
+appInsightsPartnerKey	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ApplicationBuild	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ApplicationCodeGuid	key	nst-real/nst.jsonl#70	sign in + role center	nst
+ApplicationCodeType	key	nst-real/nst.jsonl#70	sign in + role center	nst
+ApplicationExtension	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ApplicationId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+applicationId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+ApplicationInsightsConnectionString	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ApplicationVersion	key	nst-real/nst.jsonl#8	sign in + role center	nst
+AppName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AppPublisher	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+AppSource	type-short	real-29.1/frames.jsonl#22	sign in + role center	browser
+AppVersion	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+arc	enum	real-29.1/frames.jsonl#90	open page 22	browser
+arc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ARD_#	key-shape	nst-real/nst.jsonl#261	open page 22	nst
+ARD_1	key	nst-real/nst.jsonl#261	open page 22	nst
+ARD_2	key	nst-real/nst.jsonl#261	open page 22	nst
+ARD_3	key	nst-real/nst.jsonl#261	open page 22	nst
+areaRange	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Args	key	nst-real/nst.jsonl#178	sign in + role center	nst
+argument	key	nst-real/nst.jsonl#183	sign in + role center	nst
+Arguments	key	nst-real/nst.jsonl#43	sign in + role center	browser,nst
+arguments	key	nst-real/nst.jsonl#45	sign in + role center	browser,nst
+Ascending	key	nst-real/nst.jsonl#30	sign in + role center	nst
+AssemblyFullName	key	nst-real/nst.jsonl#43	sign in + role center	nst
+AssistEditAction	key	real-29.1/frames.jsonl#141	open page 21	browser
+ATD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+AuthenticationObjectId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+authenticationObjectId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+Authorization	header	nst-real/nst.jsonl#5	sign in + role center	nst
+AutoIncrement	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+AutoIncrementSeed	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+AutoIncrementStep	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+AutomationId	key	nst-real/nst.jsonl#29	sign in + role center	nst
+AvailableCompanies	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Avatar	enum	real-29.1/frames.jsonl#90	open page 22	browser
+Avatar	key	real-29.1/frames.jsonl#90	open page 22	browser
+Average	enum	nst-real/nst.jsonl#261	open page 22	nst
+axis	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Azure OpenAI	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+AzureActiveDirectoryAuthCodeClientId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+AzureActiveDirectoryClientId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+AzureGeo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+baggage	header	nst-real/nst.jsonl#5	sign in + role center	nst
+baggage	key	nst-real/nst.jsonl#7	sign in + role center	nst
+bar	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+barSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+BaseTableKeyFromExtension	key	nst-real/nst.jsonl#261	open page 22	nst
+BC	path-segment	nst-real/nst.jsonl#5	sign in + role center	browser,nst
+bc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+bc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+beforeRegionLabel	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+BelowXRec	key	nst-real/nst.jsonl#178	sign in + role center	nst
+bigInt	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+Binding	key	nst-real/nst.jsonl#47	sign in + role center	nst
+Bing	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+BlankZero	key	nst-real/nst.jsonl#261	open page 22	browser,nst
+blobc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+BlobControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+BlobSubType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+BlockSize	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Bookmark	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+bookmark	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Boolean	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+boolean	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+BooleanControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+boot	path-segment	real-29.1/frames.jsonl#9	sign in + role center	browser
+BrickWide	enum	real-29.1/frames.jsonl#90	open page 22	browser
+Browser	enum	real-29.1/frames.jsonl#29	sign in + role center	browser
+browser	path-segment	real-29.1/frames.jsonl#9	sign in + role center	browser
+bubble	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+bubbleMultiple	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+bubbleSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+buffers	key	nst-real/nst.jsonl#31	sign in + role center	nst
+BusyPhase	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+byc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Byte	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ByteControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+ca	enum	real-29.1/frames.jsonl#141	open page 21	browser
+ca	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Cache-Control	header	real-29.1/frames.jsonl#4	login page	browser
+CachedSessionInitHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+CacheKey	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+cacheKey	key	linux-webserver-real-nst/run2/warm-5/frames.jsonl#23	sign in + role center	browser
+CacheSession	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+CAD0_1	key	nst-real/nst.jsonl#261	open page 22	nst
+CAD0_5	key	nst-real/nst.jsonl#261	open page 22	nst
+CAIMD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_10	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_12	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_13	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_15	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_16	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_17	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_18	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_5	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_7	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIMD_9	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIRD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CAIRD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CalcFields	key	nst-real/nst.jsonl#66	sign in + role center	nst
+CalcFormula	key	nst-real/nst.jsonl#37	sign in + role center	nst
+calendar	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CalendarTwoDigitYearMax	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+calendarType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+calendarWeekRule	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+callbackId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+CallbackResponseProperties	type-short	real-29.1/frames.jsonl#26	sign in + role center	browser
+CameraProvider	type-short	nst-real/nst.jsonl#85	sign in + role center	nst
+CanBeMovedToRoot	key	real-29.1/frames.jsonl#193	open page 42	browser
+canInvoke	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+CanRunInteractionsOnIdle	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CanShowSimpleLookup	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CanShowSynopsisHint	key	real-29.1/frames.jsonl#90	open page 22	browser
+Caption	key	nst-real/nst.jsonl#155	sign in + role center	browser,nst
+CaptionClass	key	nst-real/nst.jsonl#261	open page 22	nst
+Captions	key	nst-real/nst.jsonl#63	sign in + role center	nst
+CaptionTranslationKey	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD#_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD0_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD0_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD0_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_10	key	nst-real/nst.jsonl#261	open page 22	nst
+CBD_12	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_13	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_15	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_17	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+CBD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD_5	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CBD_7	key	nst-real/nst.jsonl#261	open page 22	nst
+CBD_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CCPH_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CCPH_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD#_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_10	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_15	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_16	key	nst-real/nst.jsonl#570	open page 42	nst
+CD2_17	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_18	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_19	key	nst-real/nst.jsonl#570	open page 42	nst
+CD2_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_22	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_23	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_24	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_25	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_26	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_27	key	nst-real/nst.jsonl#570	open page 42	nst
+CD2_28	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_4	key	nst-real/nst.jsonl#261	open page 22	nst
+CD2_5	key	nst-real/nst.jsonl#570	open page 42	nst
+CD2_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CD2_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_12	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_13	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_15	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_16	key	nst-real/nst.jsonl#261	open page 22	nst
+CDD_17	key	nst-real/nst.jsonl#261	open page 22	nst
+CDD_18	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_19	key	nst-real/nst.jsonl#261	open page 22	nst
+CDD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_5	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CDD_6	key	nst-real/nst.jsonl#261	open page 22	nst
+CDD_8	key	nst-real/nst.jsonl#261	open page 22	nst
+CDD_9	key	nst-real/nst.jsonl#261	open page 22	nst
+cells	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CGBD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+CGBD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CGBD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CGBD_5	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Changes	key	nst-real/nst.jsonl#63	sign in + role center	browser,nst
+CharControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+chartContainerLabel	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+chartTypes	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+chc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ChildInserted	enum	real-29.1/frames.jsonl#30	sign in + role center	browser
+Children	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+clact	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+clact	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+clactr	enum	real-29.1/frames.jsonl#90	open page 22	browser
+clactr	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ClassName	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+clfact	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ClickableStringControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+client	path-segment	nst-real/nst.jsonl#5	sign in + role center	nst
+ClientActivityId	header	nst-real/nst.jsonl#34	sign in + role center	nst
+ClientActivityId	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientAssemblyFileVersion	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientCompatibilityVersion	key	nst-real/nst.jsonl#7	sign in + role center	nst
+clientConfiguration	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ClientConnectionType	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientContext	key	nst-real/nst.jsonl#187	sign in + role center	nst
+ClientExtensions	type-short	nst-real/nst.jsonl#43	sign in + role center	nst
+ClientHostName	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientIs64BitProcess	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientMachineName	key	nst-real/nst.jsonl#16	sign in + role center	nst
+ClientPromptActions	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ClientRecordDraft	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ClientSessionId	header	nst-real/nst.jsonl#34	sign in + role center	nst
+ClientSessionId	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ClientSettings	key	nst-real/nst.jsonl#18	sign in + role center	nst
+CloseConnection	method	nst-real/nst.jsonl#9	sign in + role center	browser,nst
+CloseForm	method	nst-real/nst.jsonl#560	close page	nst
+ClrType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Clustered	key	nst-real/nst.jsonl#37	sign in + role center	nst
+code	key	nst-real/nst.jsonl#513	edit Country/Region Code	browser,nst
+CodeunitId	key	nst-real/nst.jsonl#155	sign in + role center	nst
+column	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ColumnBinder	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ColumnBinderPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ColumnGroups	key	real-29.1/frames.jsonl#90	open page 22	browser
+ColumnHeadersVisible	key	real-29.1/frames.jsonl#90	open page 22	browser
+ColumnMapping	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+columnMultiple	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ColumnName	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+columnRange	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Columns	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+columnSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ColumnStoreIndex	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CommandBarDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+CommandBarHelpGroup	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+CommandBarLayoutGroup	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+CommunityLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Company	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+company	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+company	query	real-29.1/frames.jsonl#24	sign in + role center	browser
+CompanyDisplayName	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+CompanyIds	key	nst-real/nst.jsonl#8	sign in + role center	nst
+CompanyName	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+companyName	key	nst-real/nst.jsonl#8	sign in + role center	nst
+companyNotAccessibleError	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+companyNotFoundError	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+CompanyTableId	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+CompletedInteractions	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+compressed	key	nst-real/nst.jsonl#31	sign in + role center	nst
+compressedData	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+compressedResult	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ConcurrentInventoryPosting	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ConcurrentJobPosting	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ConcurrentResourcePosting	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+Conditions	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ConditionType	key	nst-real/nst.jsonl#261	open page 22	nst
+ConditionValue	key	nst-real/nst.jsonl#261	open page 22	nst
+ConfigurationModeEnabled	key	nst-real/nst.jsonl#7	sign in + role center	nst
+configurationModeEnabled	key	nst-real/nst.jsonl#8	sign in + role center	nst
+connect	path-segment	nst-real/nst.jsonl#5	sign in + role center	nst
+Connection	header	nst-real/nst.jsonl#5	sign in + role center	nst
+ContactSalesLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Container	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Content-Encoding	header	real-29.1/frames.jsonl#4	login page	browser
+Content-Length	header	nst-real/nst.jsonl#35	sign in + role center	browser,nst
+Content-Security-Policy	header	real-29.1/frames.jsonl#4	login page	browser
+Content-Type	header	nst-real/nst.jsonl#35	sign in + role center	browser,nst
+ContentAreaDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+Context	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+Control#	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Control#_CurrencyCode	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Control#_DynamicCaption	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Control#_DynamicCueStyle	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Control#_Format	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlAddIn	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ControlAddInManifest	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ControlAddInManifestDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlAddInResourceDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlContainerPlaceHolder	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlEventId	key	nst-real/nst.jsonl#178	sign in + role center	nst
+ControlGroupDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+ControlId	key	nst-real/nst.jsonl#178	sign in + role center	browser,nst
+ControlIdentifier	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ControlIds	key	nst-real/nst.jsonl#42	sign in + role center	nst
+ControlInserted	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+controlPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ControlReference	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ControlTriggerDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+copilotAgentsEnabled	key	nst-real/nst.jsonl#8	sign in + role center	nst
+CopilotChatCreatesAnalysisView	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+CopilotChatIsAwareOfCopilotActions	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+CopilotChatSupportsAdditional1PContent	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+CopilotChatSupportsISVDocumentation	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+cores	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Count	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+count	key	nst-real/nst.jsonl#31	sign in + role center	nst
+countryCode	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Create	method	nst-real/nst.jsonl#51	sign in + role center	nst
+createdAt	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+createDateSyntheticFields	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+createdBy	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+CreateDotNetHandle	method	nst-real/nst.jsonl#43	sign in + role center	nst
+CreateInstance	key	nst-real/nst.jsonl#43	sign in + role center	nst
+Credentials	key	nst-real/nst.jsonl#7	sign in + role center	nst
+csh	path-segment	real-29.1/frames.jsonl#21	sign in + role center	browser
+csrf	path-segment	real-29.1/frames.jsonl#19	sign in + role center	browser
+csrfToken	key	real-29.1/frames.jsonl#20	sign in + role center	browser
+csrftoken	query	real-29.1/frames.jsonl#21	sign in + role center	browser
+cssc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CTD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+CTD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Cue_Cash_56x46	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+Cue_Checklist_56x46	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+CurrencyCode	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+currencyCode	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+currencyDecimalDigits	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrencyDecimalSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+currencyDecimalSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrencyGroupSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+currencyGroupSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+currencyGroupSizes	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+currencyNegativePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+currencyPositivePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+currencySymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrentFilterGroup	key	nst-real/nst.jsonl#30	sign in + role center	nst
+CurrentFilters	key	nst-real/nst.jsonl#30	sign in + role center	nst
+CurrentIndex	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+currentIndex	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrentNode	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrentRecord	key	nst-real/nst.jsonl#31	sign in + role center	nst
+CurrentRow	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CurrentSortingFieldIds	key	nst-real/nst.jsonl#31	sign in + role center	nst
+CurrentTab	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CustomActionControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+CustomActionDefinition	type-short	nst-real/nst.jsonl#261	open page 22	nst
+CustomActionInfo	key	real-29.1/frames.jsonl#141	open page 21	browser
+CustomActionType	key	real-29.1/frames.jsonl#141	open page 21	browser
+Customer Name	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+CustomImage	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+CustomTooltipText	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Data	key	nst-real/nst.jsonl#155	sign in + role center	nst
+data	key	nst-real/nst.jsonl#515	edit Country/Region Code	browser,nst
+Data.CurrentBookmark	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Data.Rows.MaxNumberOfDraftRows	key	real-29.1/frames.jsonl#193	open page 42	browser
+DataCaptionFields	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DataClassification	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DataColumnName	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DataFieldDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+DataRefreshChange	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+DataRowInserted	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+DataRowInserted	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DataRowUpdatedChanges	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+DataSearchPageId	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+DataSet	key	nst-real/nst.jsonl#63	sign in + role center	nst
+dataSet	key	nst-real/nst.jsonl#31	sign in + role center	nst
+DataSetState	key	nst-real/nst.jsonl#70	sign in + role center	nst
+DataSourceType	key	nst-real/nst.jsonl#30	sign in + role center	nst
+DataTable	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DataType	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Date	header	nst-real/nst.jsonl#6	sign in + role center	browser,nst
+dateFormattingInfo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DateSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+dateSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DateTime	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+DateTimeControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+DateTimeMode	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+dateTimeValue	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+dayNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+dc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+dc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DebugMode	key	nst-real/nst.jsonl#7	sign in + role center	nst
+dec	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+Decimal	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+DecimalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+DecimalPlaces	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DecimalSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+default	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DefaultAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+defaultChartTitle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DefaultCompanyId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+DefaultLCID	key	nst-real/nst.jsonl#7	sign in + role center	nst
+defaultLcid	key	nst-real/nst.jsonl#8	sign in + role center	nst
+defaultMultiple	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+defaultSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DefaultType	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DefaultValue	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DefinitionId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+delayed	key	real-29.1/frames.jsonl#27	sign in + role center	browser
+DelayedControls	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DeleteAllowed	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Description	key	nst-real/nst.jsonl#155	sign in + role center	browser,nst
+description	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Designer	type-short	real-29.1/frames.jsonl#22	sign in + role center	browser
+designerEnabled	key	nst-real/nst.jsonl#8	sign in + role center	nst
+DesignerLevels	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DesignMode	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+DesignName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DesignPageAddNewPageField	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+Desktop	enum	real-29.1/frames.jsonl#29	sign in + role center	browser
+desktop	path-segment	real-29.1/frames.jsonl#9	sign in + role center	browser
+DestinationFormCacheKey	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+detailedErrorMessage	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+detailedMessage	key	real-29.1-error/frames.jsonl#90	open page 99999	browser
+Device category	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+DeviceCategory	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+deviceCategory	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+DevicePerformanceWarning	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+DFD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_10	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_12	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_14	key	nst-real/nst.jsonl#570	open page 42	nst
+DFD_15	key	nst-real/nst.jsonl#570	open page 42	nst
+DFD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_5	key	nst-real/nst.jsonl#570	open page 42	nst
+DFD_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_7	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+DFD_9	key	nst-real/nst.jsonl#41	sign in + role center	nst
+DiagnosticsMessage	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+DiagnosticsSuppress	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+disableResponseSequencing	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+DisableSoapWebServicesOnMicrosoftUIPages	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+DisableUserProfileSave	key	nst-real/nst.jsonl#7	sign in + role center	nst
+displayName	key	real-29.1/frames.jsonl#31	sign in + role center	browser
+Displays	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DisposeAutomationObject	method	nst-real/nst.jsonl#55	sign in + role center	nst
+disposeSession	path-segment	real-29.1/frames.jsonl#74	open page 22	browser
+DllNotFoundException	type-short	linux-webserver-real-nst/tz-utc/frames.jsonl#25	sign in + role center	browser
+DN.ActionControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ActionListControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ActionReferenceControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.AgentControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.BlobControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.BooleanControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ByteControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.CachedSessionInitHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.CallbackResponseProperties	type	real-29.1/frames.jsonl#26	sign in + role center	browser
+DN.CharControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ClickableStringControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.CustomActionControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.DateTimeControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.DecimalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.DoubleControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.EditLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.EmptyPageStackHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FileUploadActionControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FileUploadLogicalAction	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FilterLineControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FilterLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FilterValueControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FilterValueSelectionControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FloatingPointControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.FormHostControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.GroupControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.GuidControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ImageControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.Int16Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.Int32Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.Int64Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.IntegerControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalAction	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalActionReference	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalClientChangeHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalClientEventRaisingHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalClientInitHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalForm	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalMessageDialog	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LogicalSessionChangeHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.LookupAction	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.MatrixLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.MediaThumbnailControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.NavigateToFormAction	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.NavigationPaneLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.NavigationServiceInitHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.NotificationLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.NumberControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.OpenFormAction	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ProgressControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.RepeaterColumnControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.RepeaterControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.RepeaterRowControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.ReportControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.SByteControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.SearchFilterLineControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.SelectionControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.SessionInitHandler	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.SingleControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.StackGroupLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.StackLogicalControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.StaticStringControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.StringControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.TimeSpanControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.TreeNodeControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.UInt16Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.UInt32Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.UInt64Control	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DN.UserControl	type	real-29.1/frames.jsonl#23	sign in + role center	browser
+DocumentReportExperience	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+DoubleControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+douc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+downlink	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+DrillDownAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+DrillDownFormId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+dstOffset	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+dstPeriodEnd	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+dstPeriodStart	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+dtc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+dtc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Duration	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+DynamicsQuickEntry	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+edc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Editable	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+editable	key	real-29.1/frames.jsonl#193	open page 42	browser
+EditLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+EDSpec	key	nst-real/nst.jsonl#35	sign in + role center	nst
+emptyChart	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+EmptyPageStackHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+enableCompactSerialization	key	nst-real/nst.jsonl#8	sign in + role center	nst
+Enabled	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+EnabledFeatures	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+enabledFeatures	key	nst-real/nst.jsonl#8	sign in + role center	nst
+enableSaveFromReportPreview	key	nst-real/nst.jsonl#8	sign in + role center	nst
+enableSaveToExcelForRdlcReports	key	nst-real/nst.jsonl#8	sign in + role center	nst
+enableSaveToWordForRdlcReports	key	nst-real/nst.jsonl#8	sign in + role center	nst
+EndClientAutomationMethodCall	method	nst-real/nst.jsonl#45	sign in + role center	nst
+EndClientCall	method	nst-real/nst.jsonl#57	sign in + role center	nst
+EnglishLanguageDiagnosticsMessage	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+EnumTypeId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+EnumTypeName	key	nst-real/nst.jsonl#37	sign in + role center	nst
+EnvironmentName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+EnvironmentType	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+eras	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+error	key	nst-real/nst.jsonl#515	edit Country/Region Code	browser,nst
+ErrorCode	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+errorLevel	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+errorType	key	real-29.1-error/frames.jsonl#90	open page 99999	browser
+Evaluate	method	nst-real/nst.jsonl#512	edit Country/Region Code	nst
+EvaluateFilter	method	nst-real/nst.jsonl#280	open page 22	nst
+EvaluationCompany	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+EventName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+EventRaisedChange	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExcelAlternateODataHost	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ExcelAuthenticationClientId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ExcelAuthenticationResourceId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+exceptionData	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+ExceptionMethod	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+ExchangeOnlineAppId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExchangeOnlineAppScope	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExcludeStartingRecord	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ExclusiveAccessTicket	key	nst-real/nst.jsonl#7	sign in + role center	nst
+Exist	enum	nst-real/nst.jsonl#261	open page 22	nst
+ExitActions	key	nst-real/nst.jsonl#560	close page	nst
+expectedForm	key	linux-webserver-real-nst/run2/warm-5/frames.jsonl#23	sign in + role center	browser
+ExpressedFilterValue	key	nst-real/nst.jsonl#308	open page 22	nst
+Expression	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ExpressionProperties	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+EXRPerformantTrialBalance	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ExtendedDatatype	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ExtendedDataTypeAction	key	real-29.1/frames.jsonl#90	open page 22	browser
+ExtendedProperties	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ExtensionName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExtensionObjectCreatedChange	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExtensionObjectMethodInvokedChange	enum	real-29.1/frames.jsonl#30	sign in + role center	browser
+extensionObjectReference	key	real-29.1/frames.jsonl#32	sign in + role center	browser
+ExtensionPublisher	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ExtensionsWithPromotedActionSyntax	key	real-29.1/frames.jsonl#193	open page 42	browser
+ExtensionType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FactBoxResizing	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+false	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+FatalityScope	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+FD_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+FD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+FD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+FD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+FD_4	key	nst-real/nst.jsonl#35	sign in + role center	nst
+features	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+FeedbackLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+fhc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+fhc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+field	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FieldBound	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FieldClass	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+FieldGroups	key	nst-real/nst.jsonl#37	sign in + role center	nst
+FieldId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+FieldIds	key	nst-real/nst.jsonl#261	open page 22	nst
+FieldRelations	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Fields	key	nst-real/nst.jsonl#37	sign in + role center	nst
+filc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+filc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FileUploadActionControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FileUploadActionDefinition	type-short	nst-real/nst.jsonl#261	open page 22	nst
+FileUploadLogicalAction	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+filter	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+Filterable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FilterColumns	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FilterDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+FilterField	key	nst-real/nst.jsonl#32	sign in + role center	nst
+FilterGroupNo	key	nst-real/nst.jsonl#32	sign in + role center	nst
+FilterLineControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FilterLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+filterName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Filters	key	nst-real/nst.jsonl#32	sign in + role center	nst
+FilterType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+FilterValue	key	nst-real/nst.jsonl#32	sign in + role center	nst
+FilterValueControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FilterValueSelectionControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FinancialReportDefaults	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+firstDayOfWeek	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+fla	enum	real-29.1/frames.jsonl#90	open page 22	browser
+fla	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+flc	enum	real-29.1/frames.jsonl#90	open page 22	browser
+flc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FloatingPointControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FlowCaption	key	real-29.1/frames.jsonl#141	open page 21	browser
+FlowFieldType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+FlowFilterColumns	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FlowTemplateCategoryName	key	real-29.1/frames.jsonl#141	open page 21	browser
+FlushDataCache	key	nst-real/nst.jsonl#30	sign in + role center	nst
+Force	key	nst-real/nst.jsonl#560	close page	nst
+Formatter	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+formattingInfo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FormCaptionWithMnemonic	key	real-29.1/frames.jsonl#141	open page 21	browser
+FormHandle	key	nst-real/nst.jsonl#43	sign in + role center	nst
+FormHandles	key	nst-real/nst.jsonl#63	sign in + role center	nst
+FormHostControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+FormId	key	nst-real/nst.jsonl#30	sign in + role center	nst
+formId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FormProperties	key	nst-real/nst.jsonl#63	sign in + role center	nst
+FormStyle	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FormUpdateRequest	key	nst-real/nst.jsonl#30	sign in + role center	nst
+FormVariables	key	nst-real/nst.jsonl#67	sign in + role center	nst
+fpc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+fsec	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FTWSE	enum	real-29.1/frames.jsonl#29	sign in + role center	browser
+FTWSE	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+FUAD_1	key	nst-real/nst.jsonl#261	open page 22	nst
+FUAD_3	key	nst-real/nst.jsonl#261	open page 22	nst
+fullDateTimePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+FunctionName	key	nst-real/nst.jsonl#155	sign in + role center	nst
+funnel	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+fvc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+fvc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+GatewayCorrelationId	header	nst-real/nst.jsonl#34	sign in + role center	nst
+GatewayCorrelationId	key	nst-real/nst.jsonl#7	sign in + role center	nst
+gc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+gc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+GetAddInRegistrations	method	nst-real/nst.jsonl#26	sign in + role center	nst
+GetAllowedCompanies	method	nst-real/nst.jsonl#74	sign in + role center	nst
+GetAutoStartTours	method	nst-real/nst.jsonl#64	sign in + role center	nst
+GetDotNetObject	method	nst-real/nst.jsonl#235	sign in + role center	nst
+GetIsLegacyActionBarEnabled	method	nst-real/nst.jsonl#20	sign in + role center	nst
+GetPage	method	nst-real/nst.jsonl#30	sign in + role center	nst
+GetPageUsageState	method	nst-real/nst.jsonl#22	sign in + role center	nst
+GetRoleCenterBannerPartId	method	nst-real/nst.jsonl#38	sign in + role center	nst
+GetUsersAndAgents	method	nst-real/nst.jsonl#72	sign in + role center	nst
+GIA Survey	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+GLD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+graphicContainerLabel	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+GridLayoutDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+GroupControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+GroupName	key	real-29.1/frames.jsonl#90	open page 22	browser
+GroupSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+guc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Guid	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+GuidControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Handle	key	nst-real/nst.jsonl#47	sign in + role center	nst
+handle	key	nst-real/nst.jsonl#45	sign in + role center	nst
+handler	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+handlerType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Hardware	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+HasAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HasDefaultAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HasEditAction	key	real-29.1/frames.jsonl#90	open page 22	browser
+HasFiltersApplied	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Hash	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+hash	key	linux-webserver-real-nst/run2/warm-5/frames.jsonl#23	sign in + role center	browser
+HasLookup	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HasMainForm	key	nst-real/nst.jsonl#268	open page 22	nst
+HasNamespace	key	nst-real/nst.jsonl#37	sign in + role center	nst
+HasOptimizedForTextSearchFields	key	real-29.1/frames.jsonl#90	open page 22	browser
+HasSortingChanged	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+HasUserTour	key	real-29.1/frames.jsonl#90	open page 22	browser
+HeaderActions	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Height	key	real-29.1/frames.jsonl#90	open page 22	browser
+Help	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HelpLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HelpServerPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HelpURL	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+HelpUrl	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HorizontalAlignment	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HorizontalShrink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+HorizontalStretch	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Host	header	nst-real/nst.jsonl#5	sign in + role center	nst
+Host type	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+HResult	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+i#c	key-shape	real-29.1/frames.jsonl#23	sign in + role center	browser
+i16c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+i32c	enum	real-29.1/frames.jsonl#90	open page 22	browser
+i32c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+i64c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ic	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Icon	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Id	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+id	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+Id#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Id1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Id2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Id3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Id4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IDED_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+Identifier	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IdNamespace	key	nst-real/nst.jsonl#37	sign in + role center	nst
+image	enum	real-29.1/frames.jsonl#90	open page 22	browser
+ImageControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+ImageDirectoryPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+img	path-segment	real-29.1/frames.jsonl#69	sign in + role center	browser
+imgc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Importance	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IncludedFields	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IncludeMoreDataInformation	key	nst-real/nst.jsonl#30	sign in + role center	nst
+IncludeNonRowData	key	nst-real/nst.jsonl#30	sign in + role center	nst
+Index	key	nst-real/nst.jsonl#155	sign in + role center	browser,nst
+Indicator	key	nst-real/nst.jsonl#29	sign in + role center	nst
+INFOPART	enum	real-29.1/frames.jsonl#90	open page 22	browser
+InfopartPageDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+InfopartsAreaDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+InfopartSystemDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+InherentEntitlements	key	nst-real/nst.jsonl#41	sign in + role center	nst
+InherentPermissions	key	nst-real/nst.jsonl#41	sign in + role center	nst
+InitialActiveControlPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+InitValue	key	nst-real/nst.jsonl#261	open page 22	nst
+InnerException	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+InsertAllowed	key	nst-real/nst.jsonl#63	sign in + role center	nst
+InsertUpperBoundBookmark	key	nst-real/nst.jsonl#68	sign in + role center	nst
+Int16Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Int32	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+Int32Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Int64	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+Int64Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+integer	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+IntegerControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+interactionName	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+interactionsToInvoke	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+InvocationId	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+Invoke	method	real-29.1/frames.jsonl#25	sign in + role center	browser
+InvokeApplicationMethod	method	nst-real/nst.jsonl#70	sign in + role center	nst
+InvokeAutomationMethod	method	nst-real/nst.jsonl#47	sign in + role center	nst
+InvokeEventTrigger	method	nst-real/nst.jsonl#178	sign in + role center	nst
+InvokeExtensibilityMethod	method	real-29.1/frames.jsonl#32	sign in + role center	browser
+InvokePageBackgroundTaskCompletion	method	nst-real/nst.jsonl#168	sign in + role center	nst
+InvokeSessionAction	method	real-29.1/frames.jsonl#25	sign in + role center	browser
+IosPrivacy	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IosSoftwareLicenseTerms	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IosThirdPartyNotice	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IPD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_10	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_12	key	nst-real/nst.jsonl#261	open page 22	nst
+IPD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_3	key	nst-real/nst.jsonl#261	open page 22	nst
+IPD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_5	key	nst-real/nst.jsonl#570	open page 42	nst
+IPD_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_7	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IPD_9	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IsAbleToOverwriteAllowedProperties	key	nst-real/nst.jsonl#63	sign in + role center	nst
+IsActionContainer	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsAnalysisSupported	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsAvailable	method	nst-real/nst.jsonl#47	sign in + role center	nst
+IsBookmarked	key	real-29.1/frames.jsonl#90	open page 22	browser
+IsBoundToSourceTable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsBoundToTemporaryTable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+isComObject	key	nst-real/nst.jsonl#45	sign in + role center	nst
+IsCookieCheckerEnabled	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ISD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ISD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IsDataPerCompany	key	nst-real/nst.jsonl#37	sign in + role center	nst
+IsDocument	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsEmbedded	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+isEvaluation	key	real-29.1/frames.jsonl#31	sign in + role center	browser
+IsExactValue	key	nst-real/nst.jsonl#32	sign in + role center	nst
+IsGroup	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsKeyColumn	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+isNarrowSplashImageOverridden	key	real-29.1/frames.jsonl#12	sign in + role center	browser
+IsNavigationStart	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+isNumericField	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsPart	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsPerson	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsPreviewRelease	key	nst-real/nst.jsonl#8	sign in + role center	nst
+IsPromotedBaseActionOnly	key	real-29.1/frames.jsonl#90	open page 22	browser
+isReadOnly	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsRepeaterDefaultAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsResourceDefinedForm	key	nst-real/nst.jsonl#30	sign in + role center	nst
+IsRestartNotification	key	nst-real/nst.jsonl#155	sign in + role center	nst
+IsScrollingEnabled	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsSideForm	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+isSplashImageOverridden	key	real-29.1/frames.jsonl#12	sign in + role center	browser
+IsSubForm	key	real-29.1/frames.jsonl#141	open page 21	browser
+IsSubFormUpdateRequest	key	nst-real/nst.jsonl#30	sign in + role center	nst
+IsSystemPage	key	real-29.1/frames.jsonl#90	open page 22	browser
+IsTemporary	key	nst-real/nst.jsonl#63	sign in + role center	nst
+isTenantAdmin	key	nst-real/nst.jsonl#8	sign in + role center	nst
+IsTenantInTrialMode	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+IsTreeOrIndented	key	real-29.1/frames.jsonl#193	open page 42	browser
+IsViewApplied	key	real-29.1/frames.jsonl#90	open page 22	browser
+IsWideLayout	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Item#	key-shape	nst-real/nst.jsonl#63	sign in + role center	nst
+Item1	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Item3	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Item4	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Item5	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Items	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+jsonData	key	nst-real/nst.jsonl#178	sign in + role center	nst
+jsonrpc	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+KeepAliveBroadcastInterval	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+KeyboardShortcutsLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+KeyName	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Keys	key	nst-real/nst.jsonl#37	sign in + role center	nst
+LanguageId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+languageInfo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Large	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LargeIcon	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+lastClientAckSequenceNumber	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+Layout	key	real-29.1/frames.jsonl#90	open page 22	browser
+LAYOUTGROUP	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+lc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+lc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LCID	key	nst-real/nst.jsonl#7	sign in + role center	nst
+lcid	key	nst-real/nst.jsonl#8	sign in + role center	nst
+LD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+LegalLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+legend	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+legendItem	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Length	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Level	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+lf	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+lf	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+licenseState	key	nst-real/nst.jsonl#8	sign in + role center	nst
+line	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+lineMultiple	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+lineSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+LineType	key	real-29.1/frames.jsonl#90	open page 22	browser
+LINK	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+Link	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LinkDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+lmd	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+loadData	key	real-29.1/frames.jsonl#27	sign in + role center	browser
+LoadForm	method	real-29.1/frames.jsonl#27	sign in + role center	browser
+locale	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LocalEditable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LocaleResourcePath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LocalId	key	nst-real/nst.jsonl#7	sign in + role center	nst
+localId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+LocalVisible	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LocationProvider	type-short	real-29.1/frames.jsonl#22	sign in + role center	browser
+LogicalAction	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalActionReference	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalClientChangeHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalClientEventRaisingHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalClientInitHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalForm	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalMessageDialog	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LogicalSessionChangeHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+longDatePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LongTimePattern	key	nst-real/nst.jsonl#18	sign in + role center	nst
+longTimePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+lookac	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+lookac	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Lookup	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+Lookup	key	nst-real/nst.jsonl#261	open page 22	nst
+LookupAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LookupAction	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+LookupCacheTimeToKeep	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+LookupFormId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+m365CollaborationLicense	key	nst-real/nst.jsonl#8	sign in + role center	nst
+MainCaption	key	real-29.1/frames.jsonl#141	open page 21	browser
+MainFormHandle	key	nst-real/nst.jsonl#42	sign in + role center	nst
+MaintainSiftIndex	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MaintainSqlIndex	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Manage	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ManyChanges	key	nst-real/nst.jsonl#63	sign in + role center	nst
+MappingHint	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MaskType	key	nst-real/nst.jsonl#261	open page 22	nst
+MasterNavigation	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+MasterPage	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MasterPage	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+MasterPages	key	nst-real/nst.jsonl#37	sign in + role center	nst
+matrixc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+matrixc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MatrixLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Max	enum	nst-real/nst.jsonl#317	drill into first row	nst
+MaxFileUploadSize	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MaximumStringLength	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MaximumWebSocketsMessageSize	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MaxLength	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+MaxNumberOfLookupsToCache	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+maxSupportedDateTime	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+maxUploadFileSize	key	nst-real/nst.jsonl#8	sign in + role center	nst
+MaxValue	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Measures	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+MeasureTypes	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+MediaThumbnailControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+memory	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+MenuActionEditInExcelByServerToolTip	enum	nst-real/nst.jsonl#261	open page 22	nst
+MenuActionSendToExcelByServerToolTip	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+Message	key	nst-real/nst.jsonl#155	sign in + role center	nst
+Message	method	real-29.1/frames.jsonl#30	sign in + role center	browser
+message	key	nst-real/nst.jsonl#515	edit Country/Region Code	browser,nst
+Metadata	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+metadata	path-segment	nst-real/nst.jsonl#34	sign in + role center	nst
+MetadataCache	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+MetadataToken	header	nst-real/nst.jsonl#35	sign in + role center	nst
+MetadataToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+MetaTables	key	nst-real/nst.jsonl#37	sign in + role center	nst
+method	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+MethodInvoked	enum	real-29.1/frames.jsonl#61	sign in + role center	browser
+MethodName	key	nst-real/nst.jsonl#47	sign in + role center	browser,nst
+methodName	key	real-29.1/frames.jsonl#32	sign in + role center	browser
+Microsoft	enum	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+Microsoft Copilot	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+Microsoft Learn	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+Microsoft.Dynamics.Nav.Client.Capabilities.AppSource	type	real-29.1/frames.jsonl#22	sign in + role center	browser
+Microsoft.Dynamics.Nav.Client.Capabilities.CameraProvider	type	nst-real/nst.jsonl#85	sign in + role center	nst
+Microsoft.Dynamics.Nav.Client.Capabilities.Designer	type	real-29.1/frames.jsonl#22	sign in + role center	browser
+Microsoft.Dynamics.Nav.Client.Capabilities.LocationProvider	type	real-29.1/frames.jsonl#22	sign in + role center	browser
+Microsoft.Dynamics.Nav.Client.Capabilities.Tour	type	nst-real/nst.jsonl#43	sign in + role center	browser,nst
+Microsoft.Dynamics.Nav.Client.Capabilities.UserTours	type	nst-real/nst.jsonl#77	sign in + role center	browser,nst
+Microsoft.Dynamics.Nav.Client.PageNotifier	type	nst-real/nst.jsonl#116	sign in + role center	browser,nst
+Microsoft.Dynamics.Nav.ClientExtensions	type	nst-real/nst.jsonl#43	sign in + role center	nst
+Microsoft.Dynamics.Nav.Ncl	type	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Microsoft.Dynamics.Nav.Service	type	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Microsoft.Dynamics.Nav.Types	assembly	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Microsoft.Dynamics.Nav.Types.Exceptions.NavCSideValidateTableRelationException	type	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Microsoft.Dynamics.Nav.Types.Exceptions.NavNSValidateFieldException	type	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Microsoft.Dynamics.Nav.Types.Exceptions.NavSCOpenConnectionException	type	linux-webserver-real-nst/frames.jsonl#25	sign in + role center	browser
+Microsoft.Dynamics.Nav.Types.Media.NSMediaSetWrapper	type	nst-real/nst.jsonl#570	open page 42	nst
+Microsoft.Dynamics.Nav.Types.Media.NSMediaWrapper	type	nst-real/nst.jsonl#261	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionContainerDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionContainerPlaceHolder	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionContainerType	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionGroupDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionRefDefinition	type	nst-real/nst.jsonl#261	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ActionTriggerDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.CommandBarDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ContentAreaDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlAddInManifestDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlAddInResourceDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlContainerPlaceHolder	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlGroupDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ControlTriggerDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.CustomActionDefinition	type	nst-real/nst.jsonl#261	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.DataFieldDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.FileUploadActionDefinition	type	nst-real/nst.jsonl#261	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.FilterDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.GridLayoutDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.InfopartPageDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.InfopartsAreaDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.InfopartSystemDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.LinkDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.MasterNavigation	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.MasterPage	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.NavigationAreaDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.NavigationGroupDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.NavigationPaneDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.NotesControlDefinition	type	nst-real/nst.jsonl#267	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.PageProperties	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.PageTriggerDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.RecordLinksControlDefinition	type	nst-real/nst.jsonl#263	open page 22	nst
+Microsoft.Dynamics.Nav.Types.Metadata.RelatedObjectDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.RepeaterDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.RunObjectType	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.SeparatorDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.SourceObjectDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.StackGroupDefinition	type	nst-real/nst.jsonl#37	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.TableRelationDefinition	type	nst-real/nst.jsonl#570	open page 42	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ViewDefinition	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.Metadata.ViewDefinitionSorting	type	nst-real/nst.jsonl#35	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.NavCancelCredentialPromptException	type	linux-webserver-real-nst/frames.jsonl#45	open page 22	browser
+Microsoft.Dynamics.Nav.Types.NavMetadataNotFoundException	type	nst-real/nst.jsonl#614	open page 99999	nst
+Microsoft.Dynamics.Nav.Types.NavPageBuildErrorException	type	real-29.1-error/frames.jsonl#90	open page 99999	browser
+Microsoft.Dynamics.Nav.Types.SendNotificationRequest	type	nst-real/nst.jsonl#155	sign in + role center	nst
+Microsoft.Dynamics.Nav.Types.WorkDateChangedRequest	type	nst-real/nst.jsonl#29	sign in + role center	nst
+millisecondsDurationValue	key	nst-real/nst.jsonl#513	edit Country/Region Code	nst
+Min	enum	nst-real/nst.jsonl#261	open page 22	nst
+MinimumHeight	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MinimumWidth	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+minSupportedDateTime	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MinValue	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MN_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+MN_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+MN_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+MN_3	key	nst-real/nst.jsonl#35	sign in + role center	nst
+modifiedAt	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+modifiedBy	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+Modifiers	key	nst-real/nst.jsonl#47	sign in + role center	nst
+ModifyAllowed	key	nst-real/nst.jsonl#63	sign in + role center	nst
+ModifyRecord	method	nst-real/nst.jsonl#374	edit Phone No.	nst
+monthDayPattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+monthGenitiveNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MonthNames	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+monthNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MoreDataInOppositeDirection	key	nst-real/nst.jsonl#30	sign in + role center	nst
+MoreDataInReadDirection	key	nst-real/nst.jsonl#30	sign in + role center	nst
+MP_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_10	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_11	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_12	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_13	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_14	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_15	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_16	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_17	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_7	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+MP_9	key	nst-real/nst.jsonl#37	sign in + role center	nst
+mtc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+mtc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Multiline	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+MultilineEdit	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+Multitask Is Child	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Multitask Is Host	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Multitask Window ID	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Multitasking	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+NAD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NAD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Name	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+name	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+namedParameters	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+Namespace	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Namespace # - Table # - Field # - Property #	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Namespace # - Table # - Property #	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Namespace # - TableExtension # - Field # - Property #	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+NaN	enum	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+nanSymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+nativeCalendarName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+nativeDigits	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+navc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+navc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NavCancelCredentialPromptException	type-short	linux-webserver-real-nst/frames.jsonl#45	open page 22	browser
+NavCSideValidateTableRelationException	type-short	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+NavFormEditable	key	nst-real/nst.jsonl#30	sign in + role center	nst
+NavigateToFormAction	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+navigation	path-segment	nst-real/nst.jsonl#34	sign in + role center	nst
+NavigationAreaDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+navigationContext	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+NavigationGroupDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+NavigationPaneDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+NavigationPaneLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+NavigationServiceInitHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+NavigationTree	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NavMetadataNotFoundException	type-short	nst-real/nst.jsonl#614	open page 99999	nst
+NavNSValidateFieldException	type-short	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+NavPageBuildErrorException	type-short	real-29.1-error/frames.jsonl#90	open page 99999	browser
+NavSCOpenConnectionException	type-short	linux-webserver-real-nst/frames.jsonl#25	sign in + role center	browser
+NavSymbolKind#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+NavSymbolKind1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NavSymbolKind2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NavSymbolKind3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NavSymbolKind4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NavSymbolKindNamespace	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Ncl	type-short	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+NED_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+NED_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+NED_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NED_3	key	nst-real/nst.jsonl#35	sign in + role center	nst
+NED_5	key	nst-real/nst.jsonl#35	sign in + role center	nst
+negativeInfinitySymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+negativeSign	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NewNotificationBar	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+NewRecord	method	nst-real/nst.jsonl#304	open page 22	nst
+NGD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+NGD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+nlc	enum	real-29.1/frames.jsonl#30	sign in + role center	browser
+nlc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NoDataAvailable	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Node	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NotBlank	key	nst-real/nst.jsonl#37	sign in + role center	nst
+NotBusy	enum	real-29.1/frames.jsonl#29	sign in + role center	browser
+Notes	path-segment	nst-real/nst.jsonl#266	open page 22	nst
+NotesControlDefinition	type-short	nst-real/nst.jsonl#267	open page 22	nst
+Notification	key	nst-real/nst.jsonl#155	sign in + role center	nst
+NotificationId	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+NotificationLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+NotifyPageReady	method	nst-real/nst.jsonl#148	sign in + role center	browser,nst
+NotifyShowTourWizard	method	nst-real/nst.jsonl#113	sign in + role center	browser,nst
+NPD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+NSMediaSetWrapper	type-short	nst-real/nst.jsonl#570	open page 42	nst
+NSMediaWrapper	type-short	nst-real/nst.jsonl#261	open page 22	nst
+nuc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+NumberControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberDecimalDigits	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberDecimalSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberFormattingInfo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberGroupSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberGroupSizes	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+numberNegativePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Numeric	key	nst-real/nst.jsonl#261	open page 22	nst
+nvact	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+nvact	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+obj	key	nst-real/nst.jsonl#29	sign in + role center	nst
+ObjectId	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+ObjectReference	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ObjectValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+objectValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ObsoleteReason	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ObsoleteState	key	nst-real/nst.jsonl#37	sign in + role center	nst
+OCV	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+ofact	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ofact	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+OfficeHome	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+Offset	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+OnAfterGetCurrRecord	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnAfterGetRecord	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnClosePage	enum	nst-real/nst.jsonl#41	sign in + role center	nst
+OnDeleteRecord	enum	nst-real/nst.jsonl#261	open page 22	nst
+OnFindRecord	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnInit	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnInsertRecord	enum	nst-real/nst.jsonl#570	open page 42	nst
+OnlyMaxLimit	key	nst-real/nst.jsonl#261	open page 22	nst
+OnModifyRecord	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnNewRecord	enum	nst-real/nst.jsonl#261	open page 22	nst
+OnOpenPage	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnPageBackgroundTaskCompleted	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnPageBackgroundTaskError	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+OnQueryClosePage	enum	nst-real/nst.jsonl#570	open page 42	nst
+OpenCompany	method	nst-real/nst.jsonl#28	sign in + role center	nst
+OpenConnection	method	nst-real/nst.jsonl#7	sign in + role center	nst
+OpenForm	method	nst-real/nst.jsonl#42	sign in + role center	browser,nst
+openForm	key	real-29.1/frames.jsonl#27	sign in + role center	browser
+OpenFormAction	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+openFormIds	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+OpenSession	method	real-29.1/frames.jsonl#22	sign in + role center	browser
+Operation	key	nst-real/nst.jsonl#63	sign in + role center	nst
+operationId	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+OptimizeForTextSearch	key	nst-real/nst.jsonl#261	open page 22	nst
+OptionCaption	key	nst-real/nst.jsonl#37	sign in + role center	nst
+OptionCaptionTranslationKey	key	nst-real/nst.jsonl#37	sign in + role center	nst
+OptionOrdinalValues	key	nst-real/nst.jsonl#37	sign in + role center	nst
+OptionsAsCaptionsFilterValue	key	nst-real/nst.jsonl#33	sign in + role center	nst
+OptionString	key	nst-real/nst.jsonl#37	sign in + role center	nst
+OptionValues	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Ordinal	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+p#p#*	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+page	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+page	query	real-29.1/frames.jsonl#73	open page 22	browser
+PageBackgroundTaskCompletedNotification	method	nst-real/nst.jsonl#120	sign in + role center	nst
+PageCaption	key	nst-real/nst.jsonl#63	sign in + role center	nst
+PageDataSourceType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PageHelpInfo	key	nst-real/nst.jsonl#63	sign in + role center	browser,nst
+PageMode	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PageNotifier	type-short	nst-real/nst.jsonl#116	sign in + role center	browser,nst
+PageProperties	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+PageReady	method	real-29.1/frames.jsonl#32	sign in + role center	browser
+PageSize	key	nst-real/nst.jsonl#30	sign in + role center	browser,nst
+PageSizeInOppositeDirection	key	nst-real/nst.jsonl#30	sign in + role center	nst
+PageTriggerDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+PageType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PAGEVIEWS	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+pagewithdependencies	path-segment	nst-real/nst.jsonl#36	sign in + role center	nst
+parameters	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+params	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+ParentForm	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ParentFormId	key	nst-real/nst.jsonl#30	sign in + role center	nst
+PartCommandBarManageGroup	enum	real-29.1/frames.jsonl#193	open page 42	browser
+PartnerOffersLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Password	key	nst-real/nst.jsonl#7	sign in + role center	nst
+Path	key	real-29.1/frames.jsonl#193	open page 42	browser
+Paths	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+pc	enum	real-29.1/frames.jsonl#141	open page 21	browser
+pc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PendingBackgroundTasks	key	nst-real/nst.jsonl#63	sign in + role center	browser,nst
+PendingUpdates	key	real-29.1/frames.jsonl#28	sign in + role center	browser
+percentDecimalDigits	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentDecimalSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentGroupSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentGroupSizes	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentNegativePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentPositivePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+percentSymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+perMilleSymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Permissions	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+PermissionToken	header	nst-real/nst.jsonl#35	sign in + role center	nst
+PermissionToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+PersonalizationDisabled	key	nst-real/nst.jsonl#7	sign in + role center	nst
+personalizationDisabled	key	nst-real/nst.jsonl#8	sign in + role center	nst
+PersonalizationHelpUrl	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PersonalizationId	key	nst-real/nst.jsonl#37	sign in + role center	nst
+personalizationId	query	nst-real/nst.jsonl#36	sign in + role center	nst
+pie	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+pieMultiple	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+pieSingle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ping	path-segment	real-29.1/frames.jsonl#24	sign in + role center	browser
+pivot	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PlaceholderField	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+PlaceholderInfoPart	enum	real-29.1/frames.jsonl#90	open page 22	browser
+PlaceholderPart	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+PlaceholderSystemInfoPart	enum	real-29.1/frames.jsonl#193	open page 42	browser
+PlatformVersion	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+PM	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+pmDesignator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+positiveInfinitySymbol	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+positiveSign	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Power Automate	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+PowerPlatformEnvironment	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+PP_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_13	key	nst-real/nst.jsonl#570	open page 42	nst
+PP_16	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_17	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_18	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_21	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_23	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_26	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_29	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_31	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_33	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_34	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_40	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_49	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_50	key	nst-real/nst.jsonl#261	open page 22	nst
+PP_7	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_8	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PP_9	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Pragma	header	real-29.1/frames.jsonl#4	login page	browser
+Prefix	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+primaryKeyIds	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PrivacyLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PrivacyNoticeAdmin	key	nst-real/nst.jsonl#29	sign in + role center	browser,nst
+PrivacyNotices	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PrivacyNoticeStates	key	nst-real/nst.jsonl#29	sign in + role center	nst
+PrivacyNoticeStatus	key	real-29.1/frames.jsonl#31	sign in + role center	browser
+profile	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+ProfileAppId	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+profileAppId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+profileCaption	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ProfileDescription	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+profileDescription	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+profileId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ProfileKey	key	nst-real/nst.jsonl#35	sign in + role center	nst
+ProfileName	key	nst-real/nst.jsonl#16	sign in + role center	nst
+ProgressControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+PromptActions	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+PromptMode	key	nst-real/nst.jsonl#30	sign in + role center	nst
+PropertyChange	enum	real-29.1/frames.jsonl#30	sign in + role center	browser
+PropertyChanges	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+PropertyName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PropertyValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+PTD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+PTD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Publisher	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+px#px#*	id-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+Query	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+query	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+QueryClose	key	real-29.1/frames.jsonl#193	open page 42	browser
+QueueInteractions	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+QuickEntry	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+rc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+rc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+rcc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+rcc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RD_4	key	nst-real/nst.jsonl#570	open page 42	nst
+RD_5	key	nst-real/nst.jsonl#570	open page 42	nst
+ReadDirection	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ReadOnly	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+RecDataSet	key	nst-real/nst.jsonl#178	sign in + role center	nst
+RecentlyUsedInSearchPage	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+ReconnectInterval	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RecordId	key	nst-real/nst.jsonl#63	sign in + role center	nst
+RecordLinks	path-segment	nst-real/nst.jsonl#262	open page 22	nst
+RecordLinksControlDefinition	type-short	nst-real/nst.jsonl#263	open page 22	nst
+RecordState	key	nst-real/nst.jsonl#30	sign in + role center	nst
+RecordTemporary	key	nst-real/nst.jsonl#30	sign in + role center	nst
+RecreateScript	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+refreshData	key	real-29.1/frames.jsonl#32	sign in + role center	browser
+RefreshOnActivate	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RefreshScript	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RegionalPlatformCopilotCapabilities	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RelatedObjectDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+Relations	key	nst-real/nst.jsonl#37	sign in + role center	nst
+remappable	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+rememberCompany	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+RemoteStackIndex	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+RemoteStackTraceString	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+RenamingMode	key	nst-real/nst.jsonl#30	sign in + role center	nst
+repc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RepeaterColumnControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+RepeaterControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+RepeaterDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+RepeaterRowControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+ReplicateData	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ReportControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+request-id	header	nst-real/nst.jsonl#6	sign in + role center	nst
+RequestedHeight	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RequestedWidth	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RequestRecentEntries	key	nst-real/nst.jsonl#30	sign in + role center	nst
+requests	key	nst-real/nst.jsonl#8	sign in + role center	nst
+RequestToken	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ResolvedFilterValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Resource	key	real-29.1/frames.jsonl#31	sign in + role center	browser
+resource	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Resources	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+responseQueue	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Restore	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+result	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ReturnUrl	query	real-29.1/frames.jsonl#3	login page	browser
+returnValue	key	nst-real/nst.jsonl#45	sign in + role center	nst
+ReverseSign	key	nst-real/nst.jsonl#261	open page 22	nst
+Right	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+RingName	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ROD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+ROD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ROD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ROD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ROD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+RoleCenterCardPartImage	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+RootPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RowChanges	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+rowGroup	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RowHeadersVisible	key	real-29.1/frames.jsonl#90	open page 22	browser
+rrc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+rrc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+rtt	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+RunFormOnRec	key	nst-real/nst.jsonl#30	sign in + role center	nst
+runinframe	query	real-29.1/frames.jsonl#13	sign in + role center	browser
+RunObjectId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RunObjectType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+RunObjectType	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+RuntimeFilter	key	nst-real/nst.jsonl#32	sign in + role center	nst
+RuntimeInfo	key	linux-webserver-real-nst/run2/warm-5/frames.jsonl#24	sign in + role center	browser
+RuntimeTenantId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+runtimeTenantId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+SafeToLogCaptionToTelemetry	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SaveOnNavigate	key	real-29.1/frames.jsonl#90	open page 22	browser
+SaveValueToDatabasePromptly	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+sbyc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SByteControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+sc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+sc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+scenario	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+Scope	key	nst-real/nst.jsonl#37	sign in + role center	nst
+scope	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ScopeType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+screenReaderSection	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Script	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ScriptUrls	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SD_2	key	nst-real/nst.jsonl#261	open page 22	nst
+SearchFilter	key	nst-real/nst.jsonl#42	sign in + role center	nst
+SearchFilterLineControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+sec	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+sec	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Sec-WebSocket-Accept	header	nst-real/nst.jsonl#6	sign in + role center	nst
+Sec-WebSocket-Key	header	nst-real/nst.jsonl#5	sign in + role center	nst
+Sec-WebSocket-Version	header	nst-real/nst.jsonl#5	sign in + role center	nst
+secondaryOpenFormIds	key	real-29.1/frames.jsonl#27	sign in + role center	browser
+Sections	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Selected	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+selected	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SelectedRecords	key	nst-real/nst.jsonl#30	sign in + role center	nst
+selection	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+SelectionControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+SemanticMetadataSearch	enum	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+SendNotificationRequest	type-short	nst-real/nst.jsonl#155	sign in + role center	nst
+SentFromServerFormHandleId	key	nst-real/nst.jsonl#155	sign in + role center	nst
+SeparatorDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+sequenceNo	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+SequenceNumber	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+sequenceNumber	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+serializedTimeZoneInfo	key	nst-real/nst.jsonl#8	sign in + role center	nst
+series	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+seriesTypeDescriptions	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Server	header	nst-real/nst.jsonl#6	sign in + role center	browser,nst
+server-session-id	header	nst-real/nst.jsonl#34	sign in + role center	nst
+server-tenant-id	header	nst-real/nst.jsonl#34	sign in + role center	nst
+serverAssemblyFileVersion	key	nst-real/nst.jsonl#8	sign in + role center	nst
+serverConnectionWarnings	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ServerExternalSessionId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+ServerFormHandle	key	nst-real/nst.jsonl#30	sign in + role center	browser,nst
+ServerId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ServerSessionId	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+ServerUniqueSessionId	key	nst-real/nst.jsonl#8	sign in + role center	nst
+Service	type-short	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Session Key	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+sessionId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+sessionid	query	real-29.1/frames.jsonl#24	sign in + role center	browser
+SessionInitHandler	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+SessionKey	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+sessionKey	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+SessionPropertyChange	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+SessionTimeout	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SetClientSettings	method	nst-real/nst.jsonl#18	sign in + role center	nst
+Setup	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+sfcl	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+sfcl	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SGD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SharedLayout	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShareToTeams	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+ShortcutKeys	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShortDatePattern	key	nst-real/nst.jsonl#18	sign in + role center	nst
+shortDatePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+shortestDayNames	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShortMonthNames	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ShortTimeFormat	key	nst-real/nst.jsonl#18	sign in + role center	nst
+shortTimePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShortTimeZero	key	nst-real/nst.jsonl#18	sign in + role center	nst
+ShowCaption	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShowChartCondensed	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ShowDetailsAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ShowMandatory	key	real-29.1/frames.jsonl#141	open page 21	browser
+showMandatory	key	real-29.1/frames.jsonl#193	open page 42	browser
+ShowTourWizard	method	real-29.1/frames.jsonl#32	sign in + role center	browser
+SidePanelResizing	enum	real-29.1/frames.jsonl#22	sign in + role center	browser
+SignIn	path-segment	real-29.1/frames.jsonl#3	login page	browser
+signInRedirected	query	linux-webserver-real-nst/frames.jsonl#8	sign in + role center	browser
+sinc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SingleControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Site	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+sk	query	real-29.1/frames.jsonl#24	sign in + role center	browser
+skipExtendingSessionLifetime	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+Small	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SocketRetryConnectionMaxDuration	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SOD_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_10	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_11	key	nst-real/nst.jsonl#570	open page 42	nst
+SOD_12	key	nst-real/nst.jsonl#41	sign in + role center	nst
+SOD_17	key	nst-real/nst.jsonl#41	sign in + role center	nst
+SOD_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_5	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SOD_8	key	nst-real/nst.jsonl#261	open page 22	nst
+SOD_9	key	nst-real/nst.jsonl#570	open page 42	nst
+Sortable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+sortableDateTimePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SortOrder	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+Source	key	nst-real/nst.jsonl#515	edit Country/Region Code	browser,nst
+source	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SourceAppId	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+SourceExpr	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+SourceExtensionType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SourceObjectDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+sourceTableId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SpaInstanceId	key	real-29.1/frames.jsonl#29	sign in + role center	browser
+spaInstanceId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+splashCheck	path-segment	real-29.1/frames.jsonl#11	sign in + role center	browser
+SqlDataType	key	nst-real/nst.jsonl#37	sign in + role center	nst
+SqlIndexFields	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ssc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ssc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+stackc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+stackc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+stackgc	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+stackgc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+STACKGROUP	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+StackGroupDefinition	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+StackGroupLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+StackLogicalControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+StackTraceString	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+StartFromPage	key	nst-real/nst.jsonl#30	sign in + role center	nst
+StartingBookmark	key	nst-real/nst.jsonl#66	sign in + role center	nst
+startTraceId	query	real-29.1/frames.jsonl#13	sign in + role center	browser
+StartUserTour	method	nst-real/nst.jsonl#183	sign in + role center	browser,nst
+State	key	nst-real/nst.jsonl#31	sign in + role center	browser,nst
+States	key	nst-real/nst.jsonl#42	sign in + role center	nst
+StaticStringControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+String	type-short	nst-real/nst.jsonl#37	sign in + role center	nst
+StringControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+StringValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+stringValue	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+style	key	nst-real/nst.jsonl#29	sign in + role center	nst
+StyleSheetForDeviceCategory	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+StyleSheetUrls	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+StyleView	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SubCaption	key	real-29.1/frames.jsonl#141	open page 21	browser
+SubFormUpdateRequests	key	nst-real/nst.jsonl#63	sign in + role center	nst
+Submenu	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Sum	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+SumIndexFields	key	nst-real/nst.jsonl#37	sign in + role center	nst
+summary	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+summing	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+supported	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+supportedExtensions	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+SupportsAdvancedFiltering	key	real-29.1/frames.jsonl#90	open page 22	browser
+SupportsDataReview	key	real-29.1/frames.jsonl#141	open page 21	browser
+SupportsDataSuggestions	key	real-29.1/frames.jsonl#141	open page 21	browser
+SupportsIsBookmarked	key	real-29.1/frames.jsonl#90	open page 22	browser
+SupportsPowerAutomate	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SuppressDispose	key	nst-real/nst.jsonl#55	sign in + role center	nst
+SuppressExceptionCreatedEvent	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+SuppressMessage	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+svgContainerTitle	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Synopsis	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+System.Boolean	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.Byte[]	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.DateTime	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.Decimal	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.DllNotFoundException	type	linux-webserver-real-nst/tz-utc/frames.jsonl#25	sign in + role center	browser
+System.Guid	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.Int32	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.Int64	type	nst-real/nst.jsonl#37	sign in + role center	nst
+System.String	type	nst-real/nst.jsonl#37	sign in + role center	nst
+SystemAction	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+systemAction	key	real-29.1/frames.jsonl#25	sign in + role center	browser
+SystemActionCount	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SystemHelpLinksInfo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SystemIcons	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+SystemId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+systemIndicatorText	key	real-29.1/frames.jsonl#31	sign in + role center	browser
+SystemPartForm	enum	real-29.1/frames.jsonl#90	open page 22	browser
+systemparts	path-segment	nst-real/nst.jsonl#262	open page 22	nst
+SystemTipStates	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+t	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Table	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+table	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Table # - Field # - Property #	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+TableCaptions	key	nst-real/nst.jsonl#63	sign in + role center	nst
+TableEditable	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TableFieldNo	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TableId	key	nst-real/nst.jsonl#30	sign in + role center	nst
+TableName	key	nst-real/nst.jsonl#37	sign in + role center	nst
+TableRelationDefinition	type-short	nst-real/nst.jsonl#570	open page 42	nst
+tables	path-segment	nst-real/nst.jsonl#264	open page 22	nst
+tableSummary	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+TableType	key	nst-real/nst.jsonl#41	sign in + role center	nst
+TableView	key	nst-real/nst.jsonl#30	sign in + role center	nst
+TargetId	key	real-29.1/frames.jsonl#90	open page 22	browser
+TargetName	key	real-29.1/frames.jsonl#90	open page 22	browser
+TaskId	key	nst-real/nst.jsonl#120	sign in + role center	nst
+telemetryClientActivityId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+TelemetryClientSessionId	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+telemetryClientSessionId	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+TelemetryConnectionString	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TelemetryRoleInstance	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+telemetryTraceId	key	real-29.1/frames.jsonl#30	sign in + role center	browser
+telemetryTraceStartInfo	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+TemplateControlPath	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TenantAdminCenterLink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TenantEnvironmentType	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+tenantEnvironmentType	key	nst-real/nst.jsonl#8	sign in + role center	nst
+TenantId	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+tenantId	key	nst-real/nst.jsonl#8	sign in + role center	browser,nst
+TestRelations	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Text	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+text	key	nst-real/nst.jsonl#29	sign in + role center	nst
+tid	query	real-29.1/frames.jsonl#13	sign in + role center	browser
+TimeAMDesignator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+Timeout	key	nst-real/nst.jsonl#30	sign in + role center	nst
+timeout	key	nst-real/nst.jsonl#8	sign in + role center	nst
+TimePMDesignator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+TimeSeparator	key	nst-real/nst.jsonl#18	sign in + role center	nst
+timeSeparator	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TimeSpanControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+timeZone	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+timeZoneBaseOffset	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+TimeZoneId	key	nst-real/nst.jsonl#7	sign in + role center	nst
+timeZoneInformation	key	real-29.1/frames.jsonl#22	sign in + role center	browser
+tnc	enum	real-29.1/frames.jsonl#193	open page 42	browser
+tnc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TokenAuthorityEndpoint	key	nst-real/nst.jsonl#8	sign in + role center	nst
+TOOLBAR	enum	real-29.1/frames.jsonl#23	sign in + role center	browser
+ToolTip	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ToolTipClearFilterAction	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipDeleteAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipDeleteActionOnList	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipEditAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipEditActionOnList	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipFindListAction	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipGoToAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipNewAction	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipNextAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipOneNoteAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipPreviousAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipRefreshAction	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipShowAsChartAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipShowAsListAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipTranslationKey	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ToolTipViewAction	enum	nst-real/nst.jsonl#261	open page 22	nst
+ToolTipViewActionOnList	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+TooManyDataPoints	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Tour	type-short	nst-real/nst.jsonl#43	sign in + role center	browser,nst
+traceparent	header	nst-real/nst.jsonl#5	sign in + role center	nst
+traceparent	key	nst-real/nst.jsonl#7	sign in + role center	nst
+Transfer-Encoding	header	nst-real/nst.jsonl#614	open page 99999	browser,nst
+TransientDiagnosticsMessage	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Translations	key	nst-real/nst.jsonl#37	sign in + role center	nst
+TRD_#	key-shape	nst-real/nst.jsonl#570	open page 42	nst
+TRD_1	key	nst-real/nst.jsonl#570	open page 42	nst
+TRD_2	key	nst-real/nst.jsonl#570	open page 42	nst
+TRD_3	key	nst-real/nst.jsonl#570	open page 42	nst
+TRD_4	key	nst-real/nst.jsonl#570	open page 42	nst
+TRD_5	key	nst-real/nst.jsonl#570	open page 42	nst
+TreeNodeControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+true	enum	nst-real/nst.jsonl#37	sign in + role center	nst
+ts	query	real-29.1/frames.jsonl#69	sign in + role center	browser
+tsc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+twoDigitYearMax	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Type	key	nst-real/nst.jsonl#37	sign in + role center	nst
+type	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+TypeHandle	key	nst-real/nst.jsonl#47	sign in + role center	nst
+typeHint	key	nst-real/nst.jsonl#45	sign in + role center	nst
+TypeName	key	nst-real/nst.jsonl#43	sign in + role center	browser,nst
+ui#c	key-shape	real-29.1/frames.jsonl#23	sign in + role center	browser
+ui16c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ui32c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ui64c	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+UIED_#	key-shape	nst-real/nst.jsonl#35	sign in + role center	nst
+UIED_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+UIED_5	key	nst-real/nst.jsonl#35	sign in + role center	nst
+UIED_6	key	nst-real/nst.jsonl#37	sign in + role center	nst
+UIED_7	key	nst-real/nst.jsonl#35	sign in + role center	nst
+UInt16Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+UInt32Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+UInt64Control	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+Unique	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+universalSortableDateTimePattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+UntrappableError	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+Update	method	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+UpdatePropagation	key	nst-real/nst.jsonl#30	sign in + role center	nst
+Upgrade	header	nst-real/nst.jsonl#5	sign in + role center	nst
+URL pageId	key	real-29.1/frames.jsonl#104	open page 22	browser
+UsageCategory	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+usc	enum	real-29.1/frames.jsonl#26	sign in + role center	browser
+usc	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+UseLocaleForCurrentSessionOnly	key	nst-real/nst.jsonl#7	sign in + role center	nst
+UseLocalStorage	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+UserControl	type-short	real-29.1/frames.jsonl#23	sign in + role center	browser
+UserDisplayName	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+userDisplayName	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UserFilter	key	real-29.1/frames.jsonl#62	sign in + role center	browser
+UserGuid	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+userGuid	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UserId	key	real-29.1/frames.jsonl#26	sign in + role center	browser
+UserName	key	nst-real/nst.jsonl#7	sign in + role center	browser,nst
+userName	key	nst-real/nst.jsonl#8	sign in + role center	nst
+userProfileTimeZoneChanged	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UserPuid	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+UserServiceForm	enum	real-29.1/frames.jsonl#26	sign in + role center	browser
+UserTelemetryGuid	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+userTelemetryGuid	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UserToken	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UserTours	type-short	nst-real/nst.jsonl#77	sign in + role center	browser,nst
+UserTypedFilterValue	key	nst-real/nst.jsonl#156	sign in + role center	browser,nst
+UserUpn	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+userUpn	key	nst-real/nst.jsonl#8	sign in + role center	nst
+useSimplifiedFilters	key	nst-real/nst.jsonl#8	sign in + role center	nst
+UseTimeZoneForCurrentSessionOnly	key	nst-real/nst.jsonl#7	sign in + role center	nst
+ValidateField	method	nst-real/nst.jsonl#372	edit Phone No.	nst
+ValidateFieldsInOnNewRecord	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ValidateRelation	key	nst-real/nst.jsonl#37	sign in + role center	nst
+ValidateRequired	key	nst-real/nst.jsonl#30	sign in + role center	nst
+ValidateTableRelation	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Validation	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Value	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+value	key	nst-real/nst.jsonl#45	sign in + role center	nst
+ValueIsFilter	key	nst-real/nst.jsonl#37	sign in + role center	nst
+VariableName	key	nst-real/nst.jsonl#47	sign in + role center	nst
+Vary	header	real-29.1/frames.jsonl#4	login page	browser
+VD_1	key	nst-real/nst.jsonl#35	sign in + role center	nst
+VD_2	key	nst-real/nst.jsonl#35	sign in + role center	nst
+VDS_#	key-shape	nst-real/nst.jsonl#37	sign in + role center	nst
+VDS_1	key	nst-real/nst.jsonl#37	sign in + role center	nst
+VDS_2	key	nst-real/nst.jsonl#37	sign in + role center	nst
+VDS_3	key	nst-real/nst.jsonl#37	sign in + role center	nst
+VDS_4	key	nst-real/nst.jsonl#37	sign in + role center	nst
+Version	key	nst-real/nst.jsonl#37	sign in + role center	browser,nst
+VersionNumber	key	nst-real/nst.jsonl#8	sign in + role center	nst
+VerticalShrink	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+VerticalStretch	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ViewDefinition	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ViewDefinitionSorting	type-short	nst-real/nst.jsonl#35	sign in + role center	nst
+ViewMode	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+Visible	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+VisibleRecursive	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+waterfall	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+WatsonBuckets	key	nst-real/nst.jsonl#515	edit Country/Region Code	nst
+WeekdayNames	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+Width	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+WindowsLCID	key	nst-real/nst.jsonl#18	sign in + role center	nst
+WorkDate	key	nst-real/nst.jsonl#29	sign in + role center	nst
+WorkDateChangedRequest	type-short	nst-real/nst.jsonl#29	sign in + role center	nst
+ws	path-segment	nst-real/nst.jsonl#5	sign in + role center	nst
+X-Content-Type-Options	header	real-29.1/frames.jsonl#4	login page	browser
+X-Frame-Options	header	real-29.1/frames.jsonl#4	login page	browser
+X-XSS-Protection	header	real-29.1/frames.jsonl#4	login page	browser
+xAxisDescription	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+xAxisDescriptionPlural	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+xAxisDescriptionSingular	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+XDimension	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+XDimensionColumn	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+yAxisDescription	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+yAxisDescriptionPlural	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+yAxisDescriptionSingular	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+YAxisMaximum	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+YAxisMinimum	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+YAxisRangeInvalid	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+yearMonthPattern	key	real-29.1/frames.jsonl#23	sign in + role center	browser
+ZDimension	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst
+ZDimensionColumn	key	nst-real/nst.jsonl#239	sign in + role center	browser,nst

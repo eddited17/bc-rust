@@ -1,0 +1,658 @@
+# U2 Excel number formats: probe P1 on a real BC, compacted for rdlc_numfmt's vector test.
+# source: probe u2-xlsx-numfmt (tools/probes vectors), bc-version: 29.1.57326.57497-W1 (container bcside, company CRONUS Probes), probe-source-sha256: 21d00c9d085b10c415626ec38479e37e16c804f5a58040d61b7ab517b6ec2235, runs: 2, 2026-11-10T11:38:04Z .. 2026-11-10T11:47:17Z
+# rows: P1 cells whose textbox Language is "invariant" (BC formats it as en-US, LCID 0409); kind Fractional from the
+# Decimal column, Integral from the Integer column (integral values only). bc: the cell's formatCode without BC's
+# [$-010409] prefix, General, #VALUE! for an error cell; several codes (value-dependent) joined by " | ".
+# expect: = (the converter writes bc), spelling (same display, other spelling; R-CANON), open:O-n (General with
+# the assume hit), culture (C and c: the currency symbol and patterns need the culture's data, O-3), error (BC writes
+# a #VALUE! cell; the converter writes General), differs (BC's code shows something other than the converter's, which
+# follows the spec's .NET display, e.g. P: BC #,##0.00% in all 48 cultures, the converter #,##0.00 %; R-CANON says
+# the P1 code wins: open).
+# escapes: \\ \t \n \r \xNN
+format	kind	bc	expect
+d	Fractional	#0	=
+d	Integral	#0	=
+N	Fractional	#,##0.00;-#,##0.00	=
+N	Integral	#,##0.00;-#,##0.00	=
+g	Fractional	General	=
+g	Integral	General	=
+D	Fractional	#0	=
+D	Integral	#0	=
+0.00;(0.00)	Fractional	0.00;(0.00)	=
+0.00;(0.00)	Integral	0.00;(0.00)	=
+f	Fractional	0.00	=
+f	Integral	0.00	=
+#,##0	Fractional	#,##0	=
+#,##0	Integral	#,##0	=
+#,##0.00	Fractional	#,##0.00	=
+#,##0.00	Integral	#,##0.00	=
+N2	Fractional	#,##0.00;-#,##0.00	=
+N2	Integral	#,##0.00;-#,##0.00	=
+T	Fractional	#VALUE!	error
+T	Integral	#VALUE!	error
+#,0.00;(#,0.00)	Fractional	#,0.00;(#,0.00)	=
+#,0.00;(#,0.00)	Integral	#,0.00;(#,0.00)	=
+dd-MM-yy	Fractional	"d""d"-"M""M"-"y""y"	spelling
+dd-MM-yy	Integral	"d""d"-"M""M"-"y""y"	spelling
+dd-MM-yyyy	Fractional	"d""d"-"M""M"-"y""y""y""y"	spelling
+dd-MM-yyyy	Integral	"d""d"-"M""M"-"y""y""y""y"	spelling
+0.00	Fractional	0.00	=
+0.00	Integral	0.00	=
+n2	Fractional	#,##0.00;-#,##0.00	=
+n2	Integral	#,##0.00;-#,##0.00	=
+N0	Fractional	#,##0;-#,##0	=
+N0	Integral	#,##0;-#,##0	=
+#,##0.00###	Fractional	#,##0.00###	=
+#,##0.00###	Integral	#,##0.00###	=
+F2	Fractional	0.00	=
+F2	Integral	0.00	=
+t	Fractional	#VALUE!	error
+t	Integral	#VALUE!	error
+0.00;- 0.00;''	Fractional	0.00;- 0.00;""	=
+0.00;- 0.00;''	Integral	0.00;- 0.00;""	=
+###0.00	Fractional	###0.00	=
+###0.00	Integral	###0.00	=
+#,0.00	Fractional	#,0.00	=
+#,0.00	Integral	#,0.00	=
+MM/dd/yyyy	Fractional	"M""M"/"d""d"/"y""y""y""y"	spelling
+MM/dd/yyyy	Integral	"M""M"/"d""d"/"y""y""y""y"	spelling
+MM-dd-yyyy	Fractional	"M""M"-"d""d"-"y""y""y""y"	spelling
+MM-dd-yyyy	Integral	"M""M"-"d""d"-"y""y""y""y"	spelling
+dd-mm-yy	Fractional	"d""d"-"m""m"-"y""y"	spelling
+dd-mm-yy	Integral	"d""d"-"m""m"-"y""y"	spelling
+d. MMMM yyyy	Fractional	"d". "M""M""M""M" "y""y""y""y"	open:O-9
+d. MMMM yyyy	Integral	"d". "M""M""M""M" "y""y""y""y"	open:O-9
+Fields!Prepayment_Inv__Line_Buffer__Amount_Control160Format.Value	Fractional	Fiel"d""s"!Prepa"y""m"e"n"t"_"I"n"v"_""_"Li"n"e"_""B"uffer"_""_"A"m"ou"n"t"_"Co"n"trol160For"m"at.Value	spelling
+Fields!Prepayment_Inv__Line_Buffer__Amount_Control160Format.Value	Integral	Fiel"d""s"!Prepa"y""m"e"n"t"_"I"n"v"_""_"Li"n"e"_""B"uffer"_""_"A"m"ou"n"t"_"Co"n"trol160For"m"at.Value	spelling
+#0.00######	Fractional	#0.00######	=
+#0.00######	Integral	#0.00######	=
+******** #,##0.00	Fractional	"*""*""*""*""*""*""*""*" #,##0.00	spelling
+******** #,##0.00	Integral	"*""*""*""*""*""*""*""*" #,##0.00	spelling
+n1	Fractional	#,##0.0;-#,##0.0	=
+n1	Integral	#,##0.0;-#,##0.0	=
+n	Fractional	#,##0.00;-#,##0.00	=
+n	Integral	#,##0.00;-#,##0.00	=
+#,#####0.00###	Fractional	#,#####0.00###	=
+#,#####0.00###	Integral	#,#####0.00###	=
+#,##0.#####	Fractional	#,##0.#####	=
+#,##0.#####	Integral	#,##0.#####	=
+dd/MM/yy	Fractional	"d""d"/"M""M"/"y""y"	spelling
+dd/MM/yy	Integral	"d""d"/"M""M"/"y""y"	spelling
+d MMMM yyyy	Fractional	"d" "M""M""M""M" "y""y""y""y"	spelling
+d MMMM yyyy	Integral	"d" "M""M""M""M" "y""y""y""y"	spelling
+F1	Fractional	0.0	=
+F1	Integral	0.0	=
+0;-0;''	Fractional	0;-0;""	=
+0;-0;''	Integral	0;-0;""	=
+M/d/yyyy	Fractional	"M"/"d"/"y""y""y""y"	spelling
+M/d/yyyy	Integral	"M"/"d"/"y""y""y""y"	spelling
+Fields!BreakdownAmt3Format.Value	Fractional	Fiel"d""s"!"B"reak"d"ow"n"A"m"t3For"m"at.Value	open:O-9
+Fields!BreakdownAmt3Format.Value	Integral	Fiel"d""s"!"B"reak"d"ow"n"A"m"t3For"m"at.Value	open:O-9
+dd.MM.yy	Fractional	"d""d"."M""M"."y""y"	open:O-9
+dd.MM.yy	Integral	"d""d"."M""M"."y""y"	open:O-9
+dd.MM.yyyy	Fractional	"d""d"."M""M"."y""y""y""y"	open:O-9
+dd.MM.yyyy	Integral	"d""d"."M""M"."y""y""y""y"	open:O-9
+0.00;(0.00);''	Fractional	0.00;(0.00);""	=
+0.00;(0.00);''	Integral	0.00;(0.00);""	=
+N1	Fractional	#,##0.0;-#,##0.0	=
+N1	Integral	#,##0.0;-#,##0.0	=
+N3	Fractional	#,##0.000;-#,##0.000	=
+N3	Integral	#,##0.000;-#,##0.000	=
+N4	Fractional	#,##0.0000;-#,##0.0000	=
+N4	Integral	#,##0.0000;-#,##0.0000	=
+N5	Fractional	#,##0.00000;-#,##0.00000	=
+N5	Integral	#,##0.00000;-#,##0.00000	=
+N10	Fractional	#,##0.0000000000;-#,##0.0000000000	=
+N10	Integral	#,##0.0000000000;-#,##0.0000000000	=
+N15	Fractional	#,##0.000000000000000;-#,##0.000000000000000	=
+N15	Integral	#,##0.000000000000000;-#,##0.000000000000000	=
+N20	Fractional	#,##0.00000000000000000000;-#,##0.00000000000000000000	=
+N20	Integral	#,##0.00000000000000000000;-#,##0.00000000000000000000	=
+N28	Fractional	#,##0.0000000000000000000000000000;-#,##0.0000000000000000000000000000	=
+N28	Integral	#,##0.0000000000000000000000000000;-#,##0.0000000000000000000000000000	=
+N30	Fractional	#,##0.000000000000000000000000000000;-#,##0.000000000000000000000000000000	=
+N30	Integral	#,##0.000000000000000000000000000000;-#,##0.000000000000000000000000000000	=
+N99	Fractional	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;-#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+N99	Integral	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;-#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+n0	Fractional	#,##0;-#,##0	=
+n0	Integral	#,##0;-#,##0	=
+n3	Fractional	#,##0.000;-#,##0.000	=
+n3	Integral	#,##0.000;-#,##0.000	=
+n4	Fractional	#,##0.0000;-#,##0.0000	=
+n4	Integral	#,##0.0000;-#,##0.0000	=
+n5	Fractional	#,##0.00000;-#,##0.00000	=
+n5	Integral	#,##0.00000;-#,##0.00000	=
+n10	Fractional	#,##0.0000000000;-#,##0.0000000000	=
+n10	Integral	#,##0.0000000000;-#,##0.0000000000	=
+n15	Fractional	#,##0.000000000000000;-#,##0.000000000000000	=
+n15	Integral	#,##0.000000000000000;-#,##0.000000000000000	=
+n20	Fractional	#,##0.00000000000000000000;-#,##0.00000000000000000000	=
+n20	Integral	#,##0.00000000000000000000;-#,##0.00000000000000000000	=
+n28	Fractional	#,##0.0000000000000000000000000000;-#,##0.0000000000000000000000000000	=
+n28	Integral	#,##0.0000000000000000000000000000;-#,##0.0000000000000000000000000000	=
+n30	Fractional	#,##0.000000000000000000000000000000;-#,##0.000000000000000000000000000000	=
+n30	Integral	#,##0.000000000000000000000000000000;-#,##0.000000000000000000000000000000	=
+n99	Fractional	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;-#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+n99	Integral	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;-#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+F	Fractional	0.00	=
+F	Integral	0.00	=
+F0	Fractional	0	=
+F0	Integral	0	=
+F3	Fractional	0.000	=
+F3	Integral	0.000	=
+F4	Fractional	0.0000	=
+F4	Integral	0.0000	=
+F5	Fractional	0.00000	=
+F5	Integral	0.00000	=
+F10	Fractional	0.0000000000	=
+F10	Integral	0.0000000000	=
+F15	Fractional	0.000000000000000	=
+F15	Integral	0.000000000000000	=
+F20	Fractional	0.00000000000000000000	=
+F20	Integral	0.00000000000000000000	=
+F28	Fractional	0.0000000000000000000000000000	=
+F28	Integral	0.0000000000000000000000000000	=
+F30	Fractional	0.000000000000000000000000000000	=
+F30	Integral	0.000000000000000000000000000000	=
+F99	Fractional	0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+F99	Integral	0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+f0	Fractional	0	=
+f0	Integral	0	=
+f1	Fractional	0.0	=
+f1	Integral	0.0	=
+f2	Fractional	0.00	=
+f2	Integral	0.00	=
+f3	Fractional	0.000	=
+f3	Integral	0.000	=
+f4	Fractional	0.0000	=
+f4	Integral	0.0000	=
+f5	Fractional	0.00000	=
+f5	Integral	0.00000	=
+f10	Fractional	0.0000000000	=
+f10	Integral	0.0000000000	=
+f15	Fractional	0.000000000000000	=
+f15	Integral	0.000000000000000	=
+f20	Fractional	0.00000000000000000000	=
+f20	Integral	0.00000000000000000000	=
+f28	Fractional	0.0000000000000000000000000000	=
+f28	Integral	0.0000000000000000000000000000	=
+f30	Fractional	0.000000000000000000000000000000	=
+f30	Integral	0.000000000000000000000000000000	=
+f99	Fractional	0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+f99	Integral	0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000	=
+C	Fractional	"$"#,##0.00;("$"#,##0.00)	culture
+C	Integral	"$"#,##0.00;("$"#,##0.00)	culture
+C0	Fractional	"$"#,##0;("$"#,##0)	culture
+C0	Integral	"$"#,##0;("$"#,##0)	culture
+C1	Fractional	"$"#,##0.0;("$"#,##0.0)	culture
+C1	Integral	"$"#,##0.0;("$"#,##0.0)	culture
+C2	Fractional	"$"#,##0.00;("$"#,##0.00)	culture
+C2	Integral	"$"#,##0.00;("$"#,##0.00)	culture
+C3	Fractional	"$"#,##0.000;("$"#,##0.000)	culture
+C3	Integral	"$"#,##0.000;("$"#,##0.000)	culture
+C4	Fractional	"$"#,##0.0000;("$"#,##0.0000)	culture
+C4	Integral	"$"#,##0.0000;("$"#,##0.0000)	culture
+C5	Fractional	"$"#,##0.00000;("$"#,##0.00000)	culture
+C5	Integral	"$"#,##0.00000;("$"#,##0.00000)	culture
+C10	Fractional	"$"#,##0.0000000000;("$"#,##0.0000000000)	culture
+C10	Integral	"$"#,##0.0000000000;("$"#,##0.0000000000)	culture
+C15	Fractional	"$"#,##0.000000000000000;("$"#,##0.000000000000000)	culture
+C15	Integral	"$"#,##0.000000000000000;("$"#,##0.000000000000000)	culture
+C20	Fractional	"$"#,##0.00000000000000000000;("$"#,##0.00000000000000000000)	culture
+C20	Integral	"$"#,##0.00000000000000000000;("$"#,##0.00000000000000000000)	culture
+C28	Fractional	"$"#,##0.0000000000000000000000000000;("$"#,##0.0000000000000000000000000000)	culture
+C28	Integral	"$"#,##0.0000000000000000000000000000;("$"#,##0.0000000000000000000000000000)	culture
+C30	Fractional	"$"#,##0.000000000000000000000000000000;("$"#,##0.000000000000000000000000000000)	culture
+C30	Integral	"$"#,##0.000000000000000000000000000000;("$"#,##0.000000000000000000000000000000)	culture
+C99	Fractional	"$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;("$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)	culture
+C99	Integral	"$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;("$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)	culture
+c	Fractional	"$"#,##0.00;("$"#,##0.00)	culture
+c	Integral	"$"#,##0.00;("$"#,##0.00)	culture
+c0	Fractional	"$"#,##0;("$"#,##0)	culture
+c0	Integral	"$"#,##0;("$"#,##0)	culture
+c1	Fractional	"$"#,##0.0;("$"#,##0.0)	culture
+c1	Integral	"$"#,##0.0;("$"#,##0.0)	culture
+c2	Fractional	"$"#,##0.00;("$"#,##0.00)	culture
+c2	Integral	"$"#,##0.00;("$"#,##0.00)	culture
+c3	Fractional	"$"#,##0.000;("$"#,##0.000)	culture
+c3	Integral	"$"#,##0.000;("$"#,##0.000)	culture
+c4	Fractional	"$"#,##0.0000;("$"#,##0.0000)	culture
+c4	Integral	"$"#,##0.0000;("$"#,##0.0000)	culture
+c5	Fractional	"$"#,##0.00000;("$"#,##0.00000)	culture
+c5	Integral	"$"#,##0.00000;("$"#,##0.00000)	culture
+c10	Fractional	"$"#,##0.0000000000;("$"#,##0.0000000000)	culture
+c10	Integral	"$"#,##0.0000000000;("$"#,##0.0000000000)	culture
+c15	Fractional	"$"#,##0.000000000000000;("$"#,##0.000000000000000)	culture
+c15	Integral	"$"#,##0.000000000000000;("$"#,##0.000000000000000)	culture
+c20	Fractional	"$"#,##0.00000000000000000000;("$"#,##0.00000000000000000000)	culture
+c20	Integral	"$"#,##0.00000000000000000000;("$"#,##0.00000000000000000000)	culture
+c28	Fractional	"$"#,##0.0000000000000000000000000000;("$"#,##0.0000000000000000000000000000)	culture
+c28	Integral	"$"#,##0.0000000000000000000000000000;("$"#,##0.0000000000000000000000000000)	culture
+c30	Fractional	"$"#,##0.000000000000000000000000000000;("$"#,##0.000000000000000000000000000000)	culture
+c30	Integral	"$"#,##0.000000000000000000000000000000;("$"#,##0.000000000000000000000000000000)	culture
+c99	Fractional	"$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;("$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)	culture
+c99	Integral	"$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;("$"#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)	culture
+P	Fractional	#,##0.00%	differs
+P	Integral	#,##0.00%	differs
+P0	Fractional	#,##0%	differs
+P0	Integral	#,##0%	differs
+P1	Fractional	#,##0.0#%	differs
+P1	Integral	#,##0.0#%	differs
+P2	Fractional	#,##0.00#%	differs
+P2	Integral	#,##0.00#%	differs
+P3	Fractional	#,##0.000#%	differs
+P3	Integral	#,##0.000#%	differs
+P4	Fractional	#,##0.0000#%	differs
+P4	Integral	#,##0.0000#%	differs
+P5	Fractional	#,##0.00000#%	differs
+P5	Integral	#,##0.00000#%	differs
+P10	Fractional	#,##0.0000000000#%	differs
+P10	Integral	#,##0.0000000000#%	differs
+P15	Fractional	#,##0.000000000000000#%	differs
+P15	Integral	#,##0.000000000000000#%	differs
+P20	Fractional	#,##0.00000000000000000000#%	differs
+P20	Integral	#,##0.00000000000000000000#%	differs
+P28	Fractional	#,##0.0000000000000000000000000000#%	differs
+P28	Integral	#,##0.0000000000000000000000000000#%	differs
+P30	Fractional	#,##0.000000000000000000000000000000#%	differs
+P30	Integral	#,##0.000000000000000000000000000000#%	differs
+P99	Fractional	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#%	differs
+P99	Integral	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#%	differs
+p	Fractional	#,##0.00%	differs
+p	Integral	#,##0.00%	differs
+p0	Fractional	#,##0%	differs
+p0	Integral	#,##0%	differs
+p1	Fractional	#,##0.0#%	differs
+p1	Integral	#,##0.0#%	differs
+p2	Fractional	#,##0.00#%	differs
+p2	Integral	#,##0.00#%	differs
+p3	Fractional	#,##0.000#%	differs
+p3	Integral	#,##0.000#%	differs
+p4	Fractional	#,##0.0000#%	differs
+p4	Integral	#,##0.0000#%	differs
+p5	Fractional	#,##0.00000#%	differs
+p5	Integral	#,##0.00000#%	differs
+p10	Fractional	#,##0.0000000000#%	differs
+p10	Integral	#,##0.0000000000#%	differs
+p15	Fractional	#,##0.000000000000000#%	differs
+p15	Integral	#,##0.000000000000000#%	differs
+p20	Fractional	#,##0.00000000000000000000#%	differs
+p20	Integral	#,##0.00000000000000000000#%	differs
+p28	Fractional	#,##0.0000000000000000000000000000#%	differs
+p28	Integral	#,##0.0000000000000000000000000000#%	differs
+p30	Fractional	#,##0.000000000000000000000000000000#%	differs
+p30	Integral	#,##0.000000000000000000000000000000#%	differs
+p99	Fractional	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#%	differs
+p99	Integral	#,##0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#%	differs
+E	Fractional	0.000000E+000	=
+E	Integral	0.000000E+000	=
+E0	Fractional	0E+000	=
+E0	Integral	0E+000	=
+E1	Fractional	0.0E+000	=
+E1	Integral	0.0E+000	=
+E2	Fractional	0.00E+000	=
+E2	Integral	0.00E+000	=
+E6	Fractional	0.000000E+000	=
+E6	Integral	0.000000E+000	=
+E10	Fractional	0.0000000000E+000	=
+E10	Integral	0.0000000000E+000	=
+e	Fractional	0.000000E+000	=
+e	Integral	0.000000E+000	=
+e0	Fractional	0E+000	=
+e0	Integral	0E+000	=
+e1	Fractional	0.0E+000	=
+e1	Integral	0.0E+000	=
+e2	Fractional	0.00E+000	=
+e2	Integral	0.00E+000	=
+e6	Fractional	0.000000E+000	=
+e6	Integral	0.000000E+000	=
+e10	Fractional	0.0000000000E+000	=
+e10	Integral	0.0000000000E+000	=
+G	Fractional	General	=
+G	Integral	General	=
+G0	Fractional	0 | 0E+000	open:O-1
+G0	Integral	0 | 0E+000	open:O-1
+G1	Fractional	0.0 | 0.0E+000	open:O-1
+G1	Integral	0.0 | 0.0E+000	open:O-1
+G4	Fractional	0.0000 | 0.0000E+000	open:O-1
+G4	Integral	0.0000 | 0.0000E+000	open:O-1
+G15	Fractional	0.000000000000000 | 0.000000000000000E+000	open:O-1
+G15	Integral	0.000000000000000 | 0.000000000000000E+000	open:O-1
+G17	Fractional	0.00000000000000000 | 0.00000000000000000E+000	open:O-1
+G17	Integral	0.00000000000000000 | 0.00000000000000000E+000	open:O-1
+G29	Fractional	0.00000000000000000000000000000 | 0.00000000000000000000000000000E+000	open:O-1
+G29	Integral	0.00000000000000000000000000000 | 0.00000000000000000000000000000E+000	open:O-1
+g0	Fractional	0 | 0E+000	open:O-1
+g0	Integral	0 | 0E+000	open:O-1
+g1	Fractional	0.0 | 0.0E+000	open:O-1
+g1	Integral	0.0 | 0.0E+000	open:O-1
+g4	Fractional	0.0000 | 0.0000E+000	open:O-1
+g4	Integral	0.0000 | 0.0000E+000	open:O-1
+g15	Fractional	0.000000000000000 | 0.000000000000000E+000	open:O-1
+g15	Integral	0.000000000000000 | 0.000000000000000E+000	open:O-1
+g17	Fractional	0.00000000000000000 | 0.00000000000000000E+000	open:O-1
+g17	Integral	0.00000000000000000 | 0.00000000000000000E+000	open:O-1
+g29	Fractional	0.00000000000000000000000000000 | 0.00000000000000000000000000000E+000	open:O-1
+g29	Integral	0.00000000000000000000000000000 | 0.00000000000000000000000000000E+000	open:O-1
+R	Fractional	General	=
+R	Integral	General	=
+R0	Fractional	General	=
+R0	Integral	General	=
+R1	Fractional	General	=
+R1	Integral	General	=
+R4	Fractional	General	=
+R4	Integral	General	=
+R15	Fractional	General	=
+R15	Integral	General	=
+R17	Fractional	General	=
+R17	Integral	General	=
+R29	Fractional	General	=
+R29	Integral	General	=
+r	Fractional	General	=
+r	Integral	General	=
+r0	Fractional	General	=
+r0	Integral	General	=
+r1	Fractional	General	=
+r1	Integral	General	=
+r4	Fractional	General	=
+r4	Integral	General	=
+r15	Fractional	General	=
+r15	Integral	General	=
+r17	Fractional	General	=
+r17	Integral	General	=
+r29	Fractional	General	=
+r29	Integral	General	=
+D0	Fractional	0	=
+D0	Integral	0	=
+D1	Fractional	0	=
+D1	Integral	0	=
+D5	Fractional	00000	=
+D5	Integral	00000	=
+D10	Fractional	0000000000	=
+D10	Integral	0000000000	=
+d0	Fractional	0	=
+d0	Integral	0	=
+d1	Fractional	0	=
+d1	Integral	0	=
+d5	Fractional	00000	=
+d5	Integral	00000	=
+d10	Fractional	0000000000	=
+d10	Integral	0000000000	=
+X	Fractional	#VALUE!	error
+X	Integral	builtin:0	open:O-1
+X0	Fractional	#VALUE!	error
+X0	Integral	builtin:0	open:O-1
+X1	Fractional	#VALUE!	error
+X1	Integral	builtin:0	open:O-1
+X5	Fractional	#VALUE!	error
+X5	Integral	builtin:0	open:O-1
+X10	Fractional	#VALUE!	error
+X10	Integral	builtin:0	open:O-1
+x	Fractional	#VALUE!	error
+x	Integral	builtin:0	open:O-1
+x0	Fractional	#VALUE!	error
+x0	Integral	builtin:0	open:O-1
+x1	Fractional	#VALUE!	error
+x1	Integral	builtin:0	open:O-1
+x5	Fractional	#VALUE!	error
+x5	Integral	builtin:0	open:O-1
+x10	Fractional	#VALUE!	error
+x10	Integral	builtin:0	open:O-1
+B	Fractional	#VALUE!	error
+B	Integral	#VALUE!	error
+B0	Fractional	#VALUE!	error
+B0	Integral	#VALUE!	error
+B1	Fractional	#VALUE!	error
+B1	Integral	#VALUE!	error
+B5	Fractional	#VALUE!	error
+B5	Integral	#VALUE!	error
+B10	Fractional	#VALUE!	error
+B10	Integral	#VALUE!	error
+b	Fractional	#VALUE!	error
+b	Integral	#VALUE!	error
+b0	Fractional	#VALUE!	error
+b0	Integral	#VALUE!	error
+b1	Fractional	#VALUE!	error
+b1	Integral	#VALUE!	error
+b5	Fractional	#VALUE!	error
+b5	Integral	#VALUE!	error
+b10	Fractional	#VALUE!	error
+b10	Integral	#VALUE!	error
+Q	Fractional	#VALUE!	error
+Q	Integral	#VALUE!	error
+Z	Fractional	#VALUE!	error
+Z	Integral	#VALUE!	error
+A	Fractional	#VALUE!	error
+A	Integral	#VALUE!	error
+H	Fractional	#VALUE!	error
+H	Integral	#VALUE!	error
+M	Fractional	#VALUE!	error
+M	Integral	#VALUE!	error
+Y	Fractional	#VALUE!	error
+Y	Integral	#VALUE!	error
+K	Fractional	#VALUE!	error
+K	Integral	#VALUE!	error
+U	Fractional	#VALUE!	error
+U	Integral	#VALUE!	error
+O	Fractional	#VALUE!	error
+O	Integral	#VALUE!	error
+o	Fractional	#VALUE!	error
+o	Integral	#VALUE!	error
+s	Fractional	#VALUE!	error
+s	Integral	#VALUE!	error
+u	Fractional	#VALUE!	error
+u	Integral	#VALUE!	error
+y	Fractional	#VALUE!	error
+y	Integral	#VALUE!	error
+m	Fractional	#VALUE!	error
+m	Integral	#VALUE!	error
+h	Fractional	#VALUE!	error
+h	Integral	#VALUE!	error
+NN	Fractional	"N""N"	spelling
+NN	Integral	"N""N"	spelling
+N2 	Fractional	#,##0.00;-#,##0.00	open:O-7
+N2 	Integral	#,##0.00;-#,##0.00	open:O-7
+ N2	Fractional	 "N"2	open:O-7
+ N2	Integral	 "N"2	open:O-7
+n02	Fractional	#,##0.00;-#,##0.00	=
+n02	Integral	#,##0.00;-#,##0.00	=
+N-1	Fractional	#,##0;-#,##0	differs
+N-1	Integral	#,##0;-#,##0	differs
+N1000000000	Fractional	"N"1000000000	open:O-7
+N1000000000	Integral	"N"1000000000	open:O-7
+N999999999	Fractional	"N"999999999	differs
+N999999999	Integral	"N"999999999	differs
+N 2	Fractional	#,##0.00;-#,##0.00	differs
+N 2	Integral	#,##0.00;-#,##0.00	differs
+N2.5	Fractional	"N"2.5	open:O-9
+N2.5	Integral	"N"2.5	open:O-9
+	Fractional	General	=
+	Integral	General	=
+0	Fractional	0	=
+0	Integral	0	=
+00	Fractional	#VALUE!	differs
+00	Integral	#VALUE!	differs
+000000	Fractional	000000	=
+000000	Integral	000000	=
+#	Fractional	#	=
+#	Integral	#	=
+##	Fractional	##	=
+##	Integral	##	=
+#0	Fractional	#VALUE!	differs
+#0	Integral	#VALUE!	differs
+0.0	Fractional	0.0	=
+0.0	Integral	0.0	=
+0.000	Fractional	0.000	=
+0.000	Integral	0.000	=
+.##	Fractional	.##	=
+.##	Integral	.##	=
+#.##	Fractional	#.##	=
+#.##	Integral	#.##	=
+0.##	Fractional	0.##	=
+0.##	Integral	0.##	=
+#,#	Fractional	#,#	=
+#,#	Integral	#,#	=
+#,0	Fractional	#,0	=
+#,0	Integral	#,0	=
+0,0	Fractional	0,0	=
+0,0	Integral	0,0	=
+##,##0.00	Fractional	##,##0.00	=
+##,##0.00	Integral	##,##0.00	=
+#,##0.###	Fractional	#,##0.###	=
+#,##0.###	Integral	#,##0.###	=
+#,##0.	Fractional	#,##0.	differs
+#,##0.	Integral	#,##0.	differs
+###0.	Fractional	###0.	differs
+###0.	Integral	###0.	differs
+0.	Fractional	0.	differs
+0.	Integral	0.	differs
+#,##0,	Fractional	#,##0,	=
+#,##0,	Integral	#,##0,	=
+#,##0,,	Fractional	#,##0,,	=
+#,##0,,	Integral	#,##0,,	=
+#,##0,,,	Fractional	#,##0,,,	=
+#,##0,,,	Integral	#,##0,,,	=
+0,.00	Fractional	0,.00	differs
+0,.00	Integral	0,.00	differs
+#,##0.00,	Fractional	#,##0.00,	open:O-12
+#,##0.00,	Integral	#,##0.00,	open:O-12
+,0	Fractional	#VALUE!	error
+,0	Integral	#VALUE!	error
+0,	Fractional	0,	=
+0,	Integral	0,	=
+0.0,0	Fractional	0.0,0	open:O-12
+0.0,0	Integral	0.0,0	open:O-12
+00.00	Fractional	00.00	=
+00.00	Integral	00.00	=
+0.00.00	Fractional	0.00.00	differs
+0.00.00	Integral	0.00.00	differs
+0%	Fractional	0%	=
+0%	Integral	0%	=
+0.0%	Fractional	0.0%	=
+0.0%	Integral	0.0%	=
+0%%	Fractional	0%%	open:O-11
+0%%	Integral	0%%	open:O-11
+%0	Fractional	#VALUE!	differs
+%0	Integral	#VALUE!	differs
+0‰	Fractional	0‰	open:O-11
+0‰	Integral	0‰	open:O-11
+#0.00‰	Fractional	#0.00‰	open:O-11
+#0.00‰	Integral	#0.00‰	open:O-11
+0.00E+00	Fractional	0.00E+00	=
+0.00E+00	Integral	0.00E+00	=
+0.###E-0	Fractional	0.###E-0	=
+0.###E-0	Integral	0.###E-0	=
+0E0	Fractional	0E-0	=
+0E0	Integral	0E-0	=
+0e+0	Fractional	0e+0	=
+0e+0	Integral	0e+0	=
+0.0E	Fractional	0.0E	spelling
+0.0E	Integral	0.0E	spelling
+0.0e-00	Fractional	0.0e-00	=
+0.0e-00	Integral	0.0e-00	=
+#0.0e0	Fractional	#0.0e-0	open:O-13
+#0.0e0	Integral	#0.0e-0	open:O-13
+0.00 'pcs'	Fractional	0.00 "pcs"	=
+0.00 'pcs'	Integral	0.00 "pcs"	=
+0.00 "pcs"	Fractional	0.00 "pcs"	=
+0.00 "pcs"	Integral	0.00 "pcs"	=
+\\#0	Fractional	"\\"#0	differs
+\\#0	Integral	"\\"#0	differs
+'#'0	Fractional	"#"0	=
+'#'0	Integral	"#"0	=
+0\\%	Fractional	0"\\"%	differs
+0\\%	Integral	0"\\"%	differs
+\\\\0	Fractional	"\\""\\"0	differs
+\\\\0	Integral	"\\""\\"0	differs
+$#,##0.00	Fractional	$#,##0.00	=
+$#,##0.00	Integral	$#,##0.00	=
+USD #,##0.00	Fractional	U"S""D" #,##0.00	spelling
+USD #,##0.00	Integral	U"S""D" #,##0.00	spelling
+#,##0.00 EUR	Fractional	#,##0.00 EUR	spelling
+#,##0.00 EUR	Integral	#,##0.00 EUR	spelling
+#,##0.00 kr.	Fractional	#,##0.00 kr.	differs
+#,##0.00 kr.	Integral	#,##0.00 kr.	differs
+#,##0.00 'Zero'	Fractional	#,##0.00 "Zero"	=
+#,##0.00 'Zero'	Integral	#,##0.00 "Zero"	=
+0;-0	Fractional	0;-0	=
+0;-0	Integral	0;-0	=
+0;(0)	Fractional	0;(0)	=
+0;(0)	Integral	0;(0)	=
+0;(0);'zero'	Fractional	0;(0);"zero"	=
+0;(0);'zero'	Integral	0;(0);"zero"	=
+0;;'zero'	Fractional	0;;"zero"	open:O-10
+0;;'zero'	Integral	0;;"zero"	open:O-10
+0;(0);	Fractional	0;(0);	open:O-10
+0;(0);	Integral	0;(0);	open:O-10
+0;	Fractional	0;	open:O-10
+0;	Integral	0;	open:O-10
+;0	Fractional	#VALUE!	error
+;0	Integral	#VALUE!	error
+;;	Fractional	;;	open:O-10
+;;	Integral	;;	open:O-10
+0;-0;0;0	Fractional	0;-0;0;0	open:O-10
+0;-0;0;0	Integral	0;-0;0;0	open:O-10
+#,##0.00;(#,##0.00);Zero	Fractional	#,##0.00;(#,##0.00);Zero	spelling
+#,##0.00;(#,##0.00);Zero	Integral	#,##0.00;(#,##0.00);Zero	spelling
+#,##0.00;#,##0.00-	Fractional	#,##0.00;#,##0.00-	=
+#,##0.00;#,##0.00-	Integral	#,##0.00;#,##0.00-	=
+###0.00;###0.00-	Fractional	###0.00;###0.00-	=
+###0.00;###0.00-	Integral	###0.00;###0.00-	=
+#0.0#;(#0.0#);-\\0-	Fractional	#0.0#;(#0.0#);-"\\"0-	differs
+#0.0#;(#0.0#);-\\0-	Integral	#0.0#;(#0.0#);-"\\"0-	differs
+[Red]0	Fractional	[Re"d"]0	differs
+[Red]0	Integral	[Re"d"]0	differs
+0_)	Fractional	0"_")	=
+0_)	Integral	0"_")	=
+0*-	Fractional	0"*"-	=
+0*-	Integral	0"*"-	=
+0 ?	Fractional	0 "?"	=
+0 ?	Integral	0 "?"	=
+?0	Fractional	#VALUE!	differs
+?0	Integral	#VALUE!	differs
+@	Fractional	#VALUE!	differs
+@	Integral	#VALUE!	differs
+0 d	Fractional	0 "d"	=
+0 d	Integral	0 "d"	=
+0 m	Fractional	0 "m"	=
+0 m	Integral	0 "m"	=
+0 y	Fractional	0 "y"	=
+0 y	Integral	0 "y"	=
+0 h	Fractional	0 "h"	=
+0 h	Integral	0 "h"	=
+0 s	Fractional	0 "s"	=
+0 s	Integral	0 "s"	=
+0:00	Fractional	0:00	differs
+0:00	Integral	0:00	differs
+0/0	Fractional	0/0	differs
+0/0	Integral	0/0	differs
+# ?/?	Fractional	# "?"/"?"	spelling
+# ?/?	Integral	# "?"/"?"	spelling
+General	Fractional	"G"e"n"eral	spelling
+General	Integral	"G"e"n"eral	spelling
+0 General	Fractional	0 "G"e"n"eral	spelling
+0 General	Integral	0 "G"e"n"eral	spelling
+abc	Fractional	a"b"c	spelling
+abc	Integral	a"b"c	spelling
+dd	Fractional	"d""d"	spelling
+dd	Integral	"d""d"	spelling
+(###) ###-####	Fractional	(###) ###-####	=
+(###) ###-####	Integral	(###) ###-####	=
+[##-##-##]	Fractional	[##-##-##]	differs
+[##-##-##]	Integral	[##-##-##]	differs
+#,##0.0K	Fractional	#,##0.0K	spelling
+#,##0.0K	Integral	#,##0.0K	spelling
+##.0 '%'	Fractional	##.0 "%"	=
+##.0 '%'	Integral	##.0 "%"	=
+0############################################################################################################################################################################################################################################################################################################	Fractional	0############################################################################################################################################################################################################################################################################################################	differs
+0############################################################################################################################################################################################################################################################################################################	Integral	0############################################################################################################################################################################################################################################################################################################	differs
+¤0.00	Fractional	¤0.00	spelling
+¤0.00	Integral	¤0.00	spelling
+0.00 €	Fractional	0.00 €	spelling
+0.00 €	Integral	0.00 €	spelling
+'unterminated	Fractional	"unterminated	open:O-7
+'unterminated	Integral	"unterminated	open:O-7
+0.00 "unterminated	Fractional	0.00 "unterminated	open:O-7
+0.00 "unterminated	Integral	0.00 "unterminated	open:O-7
+0\\	Fractional	0"\\"	open:O-7
+0\\	Integral	0"\\"	open:O-7

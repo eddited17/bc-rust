@@ -1,0 +1,48 @@
+# Runner self-test: checks the probe harness itself (result kept after an error, last error after a cell that
+# succeeds, extra outputs, the session language context, rollback of writes). Run it after changing tools/probes.
+id = "selftest"
+area = "selftest"
+title = "probe harness self-test"
+contexts = ["locale=en-US&lang=1033", "locale=en-US&lang=1031", "locale=de-DE"]
+
+vars = """
+I: Integer;
+Line: Record "BCR Probe Line";
+"""
+
+body = """
+case step of
+    1:
+        Result := 'plain';
+    2:
+        begin
+            Result := 'set before the error';
+            Error('selftest error %1', 42);
+        end;
+    3:
+        if not Evaluate(I, 'x') then
+            Result := 'Evaluate returned false';
+    4:
+        begin
+            Out.Add('extra', 7);
+            Result := 'with out';
+        end;
+    5:
+        Result := Format(GlobalLanguage());
+    6:
+        begin
+            // a write in the cell; step 7 checks that it was rolled back
+            Line."Run Id" := 'SELFTEST-ROLLBACK';
+            Line.Chunk := 1;
+            Line.Insert();
+            Result := 'inserted';
+        end;
+    7:
+        Result := Format(Line.Get('SELFTEST-ROLLBACK', 1));
+end;
+"""
+
+[[dim]]
+name = "step"
+type = "Integer"
+values = [1, 2, 3, 4, 5, 6, 7]

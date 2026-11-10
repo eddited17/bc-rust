@@ -1,0 +1,36 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-enc
+# area: a24
+# title: Encrypt and Decrypt grid on a server without an encryption key
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox container, on-prem, single tenant, no encryption key, user ADMIN, web service session). Probe ENC of the stream N probe app, run grid2-1128, 2026-11-10.
+# note: outcome ok: result is what the probe printed; outcome error: GetLastErrorCode and GetLastErrorText (line breaks as \n). Keys and values are the probe's own (k repeated n times, etc.).
+# rows: 24
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	outcome	result	error_code	error_text
+EncryptionEnabled	value	No EncryptionKeyExists=No		
+encrypt ascii 0	ok	cipherlen=0 roundtrip=Yes		
+encrypt ascii 1	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 100	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 200	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 213	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 214	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 215	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ascii 216	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt ascii 217	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt ascii 250	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt ä 100	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ä 106	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ä 107	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt ä 108	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt ä 109	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt ä 110	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt € 70	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt € 71	error		EncryptionNotCreated	An encryption key is required to complete the request.
+encrypt € 72	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+encrypt € 73	error		EncryptionDataTooLong	Unable to encrypt data. The provided string is too long.
+decrypt garbage	error		Encryption:Format	Unable to decrypt data. The data was encrypted using a different key.
+decrypt base64 of zeros	error		EncryptionNotCreated	An encryption key is required to complete the request.
+decrypt empty	ok	len=0		

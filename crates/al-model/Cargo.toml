@@ -1,0 +1,20 @@
+[package]
+name = "al-model"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+al-syntax.workspace = true
+rayon.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+
+[[bin]]
+name = "alcheck"
+path = "src/bin/alcheck.rs"
+
+[[bin]]
+name = "alstats"
+path = "src/bin/alstats.rs"

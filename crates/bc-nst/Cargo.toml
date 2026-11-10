@@ -1,0 +1,38 @@
+[package]
+name = "bc-nst"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+# bc-rust posing as the Business Central service tier (NST) so Microsoft's web
+# server and browser client run unchanged on top of it.
+# See docs/nst-protocol-transport.md and docs/nst-protocol-metadata.md.
+
+[dependencies]
+al-syntax.workspace = true
+al-model.workspace = true
+al-runtime.workspace = true
+bc-store.workspace = true
+serde.workspace = true
+# preserve_order: the web server's typeHint and NavDataSet readers (and the
+# EDSpec-first rule in metadata) need JSON properties in insertion order.
+serde_json = { workspace = true, features = ["preserve_order"] }
+anyhow.workspace = true
+rust_decimal.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+tokio.workspace = true
+axum = { workspace = true, features = ["ws"] }
+base64 = "0.22"
+flate2 = "1"
+futures-util = "0.3"
+parking_lot.workspace = true
+# bc-nst binary boots the catalog and PostgreSQL backend the way bc-server does
+bc-server = { path = "../bc-server" }
+
+[dev-dependencies]
+tokio-tungstenite = "0.29"
+
+[[bin]]
+name = "bc-nst"
+path = "src/bin/bc-nst.rs"

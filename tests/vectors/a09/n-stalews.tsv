@@ -1,0 +1,13 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-stalews
+# area: a09
+# title: Stale write in the web service session after a background session committed a change
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: 40821170cff8eea9b3467a7c865edd86af31d2df4d6cc9bfcfbcd414c07c9945
+# runs: grid3-1142 (2026-11-10T11:42Z)
+# note: Business Central 29.1.57326.57497 (W1 sandbox container, on-prem, single tenant, no encryption key, user ADMIN, web service session). Probe STALEWS of the stream N probe app, run grid3-1142, 2026-11-10.
+# note: outcome ok: result is what the probe printed; outcome error: GetLastErrorCode and GetLastErrorText (line breaks as \n). Keys and values are the probe's own (k repeated n times, etc.).
+# rows: 1
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+case	outcome	result	error_code	error_text
+stale write in the web service session	error		DB:RecordChanged	Sorry, we just updated this page. Reopen it, and try again.

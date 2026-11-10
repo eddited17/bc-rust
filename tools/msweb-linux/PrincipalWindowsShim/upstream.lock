@@ -1,0 +1,8 @@
+# dotnet/runtime files that fetch-upstream.sh downloads, pinned by tag, commit and SHA-256.
+# Every download is checked against these rows. `fetch-upstream.sh --update-lock` pins a new tag.
+# The tag is the .NET release the web server's deps.json names (v10.0.13 for BC 29.1.57326.57497).
+# v10.0.14, the runtime installed here, is the same commit.
+# tag	commit	sha256	path
+v10.0.13	6aa72daa24f66c01c3d7b6a32519e9d21396deec	f845e5e6708b9900e0e1527821d4d59daa757819cda08b9447746e2147192857	src/libraries/System.Security.Principal.Windows/ref/System.Security.Principal.Windows.cs
+v10.0.13	6aa72daa24f66c01c3d7b6a32519e9d21396deec	70e1accb103c189a9f1ca77b302472b5788e93cb3ca11eb4049eb2107e2a0b3c	src/libraries/System.Security.Principal.Windows/src/Resources/Strings.resx
+v10.0.13	6aa72daa24f66c01c3d7b6a32519e9d21396deec	46b3b7b5622a18196cad013b67e290117747769f58a7c12f472218e513efac98	src/libraries/System.Security.Principal.Windows/src/System.Security.Principal.Windows.csproj

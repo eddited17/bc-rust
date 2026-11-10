@@ -1,0 +1,129 @@
+# bc-rust probe vectors, compiled from hand-written probes of stream N (outside tools/probes); do not edit by hand.
+# probe: n-virt-page-control-field-21
+# area: a13
+# title: Virtual table Page Control Field, page 21
+# bc-version: 29.1.57326.57497-W1 (container bcside, single tenant, company CRONUS International Ltd., user ADMIN)
+# probe-source-sha256: a86e437a357c4ff6b4aa4d5b75067e56b4cf7f92bd08147b338a16a17942f58e
+# runs: grid2-1128
+# note: Business Central 29.1.57326.57497 (W1 sandbox, CRONUS International Ltd.), virtual table 2000000192: Page Control Field; filter field 1 = '21'; 118 rows, 118 listed. Values in XML format (Format(v, 0, 9)); options as ordinals. Probe VIRT-2000000192-1-21 (stream N), 2026-11-10.
+# rows: 118
+# format: tab-separated; first line after the comments is the header; \n in a field is a line break
+PageNo	ControlId	ControlName	TableNo	FieldNo	Enabled	Editable	Visible	SourceExpression	OptionString	Sequence
+21	3550131	PaidOnTimeCount	18	0	true	True	true	PaidOnTimeCount		102
+21	23012995	Post Code	18	91	true	True	true	Post Code		28
+21	46168848	Shipping Agent Code	18	31	true	True	true	Shipping Agent Code		81
+21	75023320	AmountOnPostedInvoices	18	0	true	True	true	AmountOnPostedInvoices		108
+21	156215907	GLN	18	90	true	True	true	GLN		42
+21	218755466	AdjCustProfit	18	0	true	false	true	AdjCustProfit		17
+21	238150152	Payments (LCY)	18	0	true	True	true	CustPaymentsLCY		98
+21	280453540	EORI Number	18	93	true	True	true	EORI Number		41
+21	294012819	TotalMoneyOwed	18	0	true	True	true	TotalMoneyOwed		94
+21	301673938	LastPaymentOnTime	18	0	true	True	true	LastPaymentOnTime		107
+21	302108426	Def. Transport Method	18	4812	true	True	true	Def. Transport Method		88
+21	305684661	Primary Contact No.	18	5049	true	True	true	Primary Contact No.		37
+21	356391844	Registration Number	18	25	true	True	true	Registration Number		47
+21	391851894	Allow Line Disc.	18	7001	true	True	true	Allow Line Disc.		56
+21	409538560	Reminder Terms Code	18	104	true	True	true	Reminder Terms Code		66
+21	417953314	Address 2	18	6	true	True	true	Address 2		24
+21	461092308	Currency Code	18	22	true	True	true	Currency Code		52
+21	501713934	Reserve	18	115	true	True	true	Reserve	Never,Optional,Always	78
+21	505526935	Balance (LCY)	18	59	true	False	true	Balance (LCY)		5
+21	508535328	Bill-to Customer No.	18	45	true	True	true	Bill-to Customer No.		39
+21	527784143	InteractionCount	18	0	true	True	true	InteractionCount		114
+21	572740591	Invoice Disc. Code	18	33	true	True	true	Invoice Disc. Code		57
+21	591772797	Price Calculation Method	18	7000	true	True	p21p21ExtendedPriceEnabled	Price Calculation Method	 ,Lowest Price	53
+21	597499554	Customer Disc. Group	18	34	true	True	true	Customer Disc. Group		55
+21	597610776	VAT Bus. Posting Group	18	110	true	True	true	VAT Bus. Posting Group		49
+21	624318197	DaysPaidPastDueDate	18	0	true	True	true	DaysPastDueDate		100
+21	640644145	No.	18	1	true	True	p21p21NoFieldVisible	No.		0
+21	656194011	MostFrequentInteractionType	18	0	true	True	true	MostFrequentInteractionType		117
+21	657865896	Customer Price Group	18	23	true	True	true	Customer Price Group		54
+21	667278025	Responsibility Center	18	5700	true	True	true	Responsibility Center		12
+21	687845151	Language Code	18	24	true	True	true	Language Code		35
+21	693266338	Document Sending Profile	18	11	true	True	true	Document Sending Profile		14
+21	713431689	Totals	18	0	true	True	true	Totals		112
+21	739949452	Shipment Method Code	18	30	true	True	true	Shipment Method Code		80
+21	828682406	Blocked	18	39	true	True	true	Blocked	 ,Ship,Invoice,All	9
+21	833249165	Copy Sell-to Addr. to Qte From	18	7601	true	True	true	Copy Sell-to Addr. to Qte From	Company,Person	44
+21	842886795	PaidLateCount	18	0	true	True	true	PaidLateCount		101
+21	892856811	Allow Multiple Posting Groups	18	175	true	True	p21p21IsAllowMultiplePostingGroupsVisible	Allow Multiple Posting Groups		51
+21	911817531	Fin. Charge Terms Code	18	28	true	True	true	Fin. Charge Terms Code		67
+21	913744933	Combine Service Shipments	18	5930	true	True	true	Combine Service Shipments		77
+21	945286918	CreditLimit	18	20	true	True	true	Credit Limit (LCY)		95
+21	952288383	Search Name	18	3	true	True	false	Search Name		3
+21	968663385	City	18	7	true	True	true	City		26
+21	979996532	Base Calendar Code	18	7600	true	True	true	Base Calendar Code		84
+21	981015251	Application Method	18	80	true	True	true	Application Method	Manual,Apply to Oldest	61
+21	1011864425	ShowMap	18	0	true	False	true	ShowMapLbl		29
+21	1017416524	Tax Liable	18	109	true	True	true	Tax Liable		45
+21	1044272998	LastPaymentAmount	18	0	true	True	true	LastPaymentAmount		106
+21	1049176482	DistinctItemsSold	18	0	true	True	true	DistinctItemsSold		91
+21	1066811740	County	18	92	true	True	true	County		27
+21	1070240188	Payment Terms Code	18	27	true	True	true	Payment Terms Code		64
+21	1143098565	Name 2	18	4	true	True	false	Name 2		2
+21	1159676447	Preferred Bank Account Code	18	288	true	True	true	Preferred Bank Account Code		72
+21	1161478134	BalanceAsVendor	18	0	p21p21BalanceAsVendorEnabled	false	true	BalanceAsVendor		6
+21	1162088137	Gen. Bus. Posting Group	18	88	true	True	true	Gen. Bus. Posting Group		48
+21	1164636762	Home Page	18	103	true	True	true	Home Page		34
+21	1165569367	Name	18	2	true	True	true	Name		1
+21	1174278659	Default Trans. Type - Return	18	4811	true	True	true	Default Trans. Type - Return		87
+21	1202638051	MobilePhoneNo	18	5061	true	True	true	Mobile Phone No.		31
+21	1224250944	Address	18	5	true	True	true	Address		23
+21	1230320484	Statistics Group	18	26	true	True	false	Statistics Group		22
+21	1240934187	Balance Due (LCY)	18	67	true	False	true	Balance Due (LCY)		7
+21	1271758082	Fax No.	18	84	true	True	true	Fax No.		33
+21	1299582904	AmountOnCrMemo	18	0	true	True	true	AmountOnPostedCrMemos		109
+21	1301289344	Disable Search by Name	18	160	true	True	true	Disable Search by Name		20
+21	1333258459	CustSalesLCY - CustProfit - AdjmtCostLCY	18	0	true	False	true	CustSalesLCY - CustProfit - AdjmtCostLCY		16
+21	1337366040	CustomerMgt.AvgDaysToPay("No.")	18	0	true	True	true	AvgDaysToPay		99
+21	1338513929	Print Statements	18	42	true	True	true	Print Statements		69
+21	1364513557	VAT Registration No.	18	86	true	True	true	VAT Registration No.		40
+21	1376712183	Ship-to Code	18	12	true	True	true	Ship-to Code		74
+21	1401180286	LastPaymentDate	18	0	true	True	true	LastPaymentDate		105
+21	1401928070	Intrastat Partner Type	18	133	true	True	true	Intrastat Partner Type	 ,Company,Person,Government	63
+21	1407261070	Prepayment %	18	124	true	True	true	Prepayment %		60
+21	1422360278	Last Statement No.	18	41	true	True	true	Last Statement No.		70
+21	1448911126	LastInteractionType	18	0	true	True	true	LastInteractionType		116
+21	1449451463	Shipping Time	18	5790	true	True	true	Shipping Time		83
+21	1449648156	Balance Due	18	0	true	True	true	OverdueBalance		97
+21	1455472303	Cash Flow Payment Terms Code	18	840	true	True	true	Cash Flow Payment Terms Code		68
+21	1514720409	CalcCreditLimitLCYExpendedPct	18	0	true	False	true	Rec.CalcCreditLimitLCYExpendedPct()		96
+21	1519916622	E-Document Service Participation Ids	18	0	true	false	true	ParticipantIdCount		59
+21	1526452495	OverdueCount	18	0	true	True	true	OverdueCount		104
+21	1528926467	Format Region	18	48	true	True	true	Format Region		36
+21	1532675297	CustInvDiscAmountLCY	18	0	true	True	true	CustInvDiscAmountLCY		113
+21	1534522296	Partner Type	18	132	true	True	true	Partner Type	 ,Company,Person,Government	62
+21	1541522561	IC Partner Code	18	119	true	True	true	IC Partner Code		4
+21	1591741192	Privacy Blocked	18	150	true	True	true	Privacy Blocked		10
+21	1594976894	Location Code	18	83	true	True	true	Location Code		75
+21	1598423374	Use GLN in Electronic Document	18	95	true	True	true	Use GLN in Electronic Document		43
+21	1633058496	AdjProfitPct	18	0	true	false	true	AdjProfitPct		18
+21	1640817493	Customer Posting Group	18	21	true	True	true	Customer Posting Group		50
+21	1645359021	Balance (LCY)2	18	59	true	False	true	Balance (LCY)		92
+21	1655226876	Block Payment Tolerance	18	116	true	True	true	Block Payment Tolerance		71
+21	1674928937	ContactName	18	8	true	p21p21ContactEditable	true	Contact		38
+21	1690301790	DaysSinceLastSale	18	0	true	True	true	DaysSinceLastSale		90
+21	1699493760	Shipping Advice	18	5750	true	True	true	Shipping Advice	Partial,Complete	79
+21	1780276939	AmountOnOutstandingInvoices	18	0	true	True	true	AmountOnOutstandingInvoices		110
+21	1789368545	E-Mail	18	102	true	True	true	E-Mail		32
+21	1805470310	LastInteractionDate	18	0	true	True	true	LastInteractionDate		115
+21	1808626666	Payment Method Code	18	47	true	True	true	Payment Method Code		65
+21	1843410170	Salesperson Code	18	29	true	True	true	Salesperson Code		11
+21	1898174680	ExpectedCustMoneyOwed	18	0	true	false	true	ExpectedMoneyOwed		93
+21	1954377681	AmountOnOutstandingCrMemos	18	0	true	True	true	AmountOnOutstandingCrMemos		111
+21	1956086741	Customized Calendar	18	0	true	False	true	Format(HasCustomBaseCalendar())		85
+21	1961910182	TotalSales2	18	0	true	false	true	CustSalesLCY		15
+21	1996418165	PercentPaidLate	18	0	true	True	true	PercentPaidLate		103
+21	2009581022	Prices Including VAT	18	82	true	True	true	Prices Including VAT		58
+21	2028224376	CustomerSince	18	52	true	True	true	First Transaction Date		89
+21	2052925788	Service Zone Code	18	5900	true	True	true	Service Zone Code		13
+21	2054119235	Phone No.	18	9	true	True	true	Phone No.		30
+21	2065383396	Combine Shipments	18	87	true	True	true	Combine Shipments		76
+21	2067777833	Tax Area Code	18	108	true	True	true	Tax Area Code		46
+21	2068286383	Last Date Modified	18	54	true	False	true	Last Date Modified		19
+21	2073389468	Priority	18	46	true	True	false	Priority		21
+21	2090874039	Credit Limit (LCY)	18	20	true	True	true	Credit Limit (LCY)		8
+21	2096727027	Shipping Agent Service Code	18	5792	true	True	true	Shipping Agent Service Code		82
+21	2131093847	Exclude from Pmt. Practices	18	134	true	True	true	Exclude from Pmt. Practices		73
+21	2137571916	Default Trans. Type	18	4810	true	True	true	Default Trans. Type		86
+21	2146705836	Country/Region Code	18	35	true	True	true	Country/Region Code		25

@@ -1,0 +1,20 @@
+# App set "standard-prod": the "standard" set (BC 29.1 W1 sandbox tenant) without the
+# test-framework apps, for a live server. `@<set>` includes a set; `- <folder>` removes a folder.
+# bc-server checks that the dependency closure doesn't pull any of them back in.
+
+@standard
+
+# Test framework (installed in the sandbox artifact itself)
+- Apps/W1/AgentSamples/test                                          # Agent Samples Tests
+- Tools/Test Framework/Test Libraries/LibraryAgent                   # Agent Test Library
+- Tools/AI Test Toolkit                                              # AI Test Toolkit
+- Tools/Test Framework/Test Libraries/Any                            # Any
+- Layers/W1/Tests/ApplicationTestLibrary                             # Application Test Library
+- Business Foundation/Test Library                                   # Business Foundation Test Libraries
+- Tools/Test Framework/Test Libraries/Assert                         # Library Assert
+- Tools/Test Framework/Test Libraries/Variable Storage               # Library Variable Storage
+- Tools/Test Framework/Test Runner                                   # Test Runner
+
+# Empty shells (no AL) that only depend on the test framework
+- Apps/W1/AIDevelopmentToolkit/app                                   # AI Development Toolkit
+- Apps/W1/AIDevelopmentToolkitEvaluation/app                         # AI Development Toolkit - Evaluation

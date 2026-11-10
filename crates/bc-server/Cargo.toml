@@ -1,0 +1,51 @@
+[package]
+name = "bc-server"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "bc"
+path = "src/main.rs"
+
+[dependencies]
+al-syntax.workspace = true
+al-model.workspace = true
+bc-store.workspace = true
+al-runtime.workspace = true
+rust_decimal.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+axum.workspace = true
+tokio.workspace = true
+chrono.workspace = true
+postgres = "0.19"
+# authentication (src/auth.rs, src/jwt.rs, docs/authentication.md): Basic credentials, Entra RS256 tokens
+base64 = "0.22"
+sha2 = "0.11"
+# RS256 signature checks with public keys only (RUSTSEC-2023-0071 concerns private-key operations);
+# rsa 0.9's padding takes digest-0.10 hashes, hence sha2 0.10 next to 0.11
+rsa = { version = "0.9", features = ["getrandom"] }
+sha2-010 = { package = "sha2", version = "0.10", features = ["oid"] }
+ureq = { version = "2", default-features = false, features = ["tls"] }
+
+# thread CPU time for `bc sales` BENCH=1 (clock_gettime(CLOCK_THREAD_CPUTIME_ID))
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+# mimalloc, the global allocator of the bc binary (src/main.rs), where it builds everywhere we check:
+# Linux and Windows. On macOS its C sources need the SDK's CommonCrypto headers, which the zig-based
+# cross check (tools/macos-check.sh) does not have; macOS keeps the system allocator.
+[target.'cfg(any(target_os = "linux", target_os = "windows"))'.dependencies]
+# The v2 line (mimalloc 2.x): libmimalloc-sys builds v3 unless asked, and an al-test run died with
+# SIGSEGV inside v3's malloc (mi_page_malloc_zero, a corrupt free list; P9, 2026-11-08 01:54 UTC).
+# Optional since 2026-11-08 05:25 UTC (feature `mimalloc`, off by default): v2 crashed the same way
+# (P12, 04:26 UTC, _mi_page_malloc_zero), so a heap corruption both versions trip over is still
+# open; the system allocator is the default until it is found.
+mimalloc = { version = "0.1", default-features = false, features = ["v2"], optional = true }
+
+[features]
+default = []
+# mimalloc as the global allocator of bc and al-test (Linux and Windows only; elsewhere a no-op)
+mimalloc = ["dep:mimalloc"]

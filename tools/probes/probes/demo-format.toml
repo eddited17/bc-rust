@@ -1,0 +1,37 @@
+# Demo grid: Format(Value, 0, FormatNumber) for Integer and Decimal values, English and German session language.
+id = "demo-format"
+area = "demo"
+title = "Format(Integer or Decimal, 0, format number)"
+contexts = ["locale=en-US&lang=1033", "locale=de-DE&lang=1031"]
+
+vars = """
+I: Integer;
+"""
+
+body = """
+if typ = 'Integer' then begin
+    if v <> Round(v, 1) then begin
+        Skip := true; // fractions apply to Decimal only
+        exit;
+    end;
+    I := v;
+    Result := Format(I, 0, fmt);
+end else
+    Result := Format(v, 0, fmt);
+"""
+
+[[dim]]
+name = "typ"
+type = "Text"
+values = ["Integer", "Decimal"]
+
+[[dim]]
+name = "v"
+type = "Decimal"
+values = ["0.5", "-0.5", "1234567.891", "-1234567.891", "2147483647", "-2147483647"]
+gen = [{ kind = "nines", max_digits = 7, signs = true, fractions = [".5", ".125"] }]
+
+[[dim]]
+name = "fmt"
+type = "Integer"
+values = [0, 1, 2, 9]

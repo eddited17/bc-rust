@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- App-local replacement for the framework's System.Security.Principal.Windows (Linux build), built from
+       dotnet/runtime source. fetch-upstream.sh downloads the reference source at the .NET release the web
+       server names, makes the Linux "not supported" implementation from it as dotnet/runtime's build does,
+       and applies bc-linux.patch, so that SafeAccessTokenHandle and WindowsIdentity.RunImpersonated* work
+       instead of throwing. Run it before building; the install step of run.sh does.
+       The FileVersion must be higher than the framework copy (10.0.1426.52326) so the .NET host picks this
+       one (see ../patch-deps.py). -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <RootNamespace>System.Security.Principal</RootNamespace>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <FileVersion>10.99.0.0</FileVersion>
+    <Nullable>annotations</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <!-- The generated source keeps upstream's obsolete serialization members. -->
+    <NoWarn>$(NoWarn);SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="gen/System.Security.Principal.Windows.cs;gen/SR.cs" />
+  </ItemGroup>
+  <Target Name="RequireGeneratedSource" BeforeTargets="BeforeBuild" Condition="!Exists('gen/System.Security.Principal.Windows.cs')">
+    <Error Text="gen/System.Security.Principal.Windows.cs is missing. Run fetch-upstream.sh first; the install step of run.sh does." />
+  </Target>
+  <!-- Do not compile against the reference assembly that this project replaces. -->
+  <Target Name="DropSelfReference" AfterTargets="ResolveTargetingPackAssets">
+    <ItemGroup>
+      <Reference Remove="@(Reference)" Condition="'%(Filename)' == 'System.Security.Principal.Windows'" />
+    </ItemGroup>
+  </Target>
+</Project>
